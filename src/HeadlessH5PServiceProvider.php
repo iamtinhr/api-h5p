@@ -6,7 +6,6 @@ use EscolaLms\HeadlessH5P\Commands\H5PSeedCommand;
 use EscolaLms\HeadlessH5P\Commands\StorageH5PCopyStorageCommand;
 use EscolaLms\HeadlessH5P\Commands\StorageH5PLinkCommand;
 use EscolaLms\HeadlessH5P\Enums\ConfigEnum;
-use EscolaLms\HeadlessH5P\Providers\SettingsServiceProvider;
 use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
 use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PLibraryLanguageRepositoryContract;
 use EscolaLms\HeadlessH5P\Repositories\H5PContentRepository;
@@ -40,7 +39,6 @@ class HeadlessH5PServiceProvider extends ServiceProvider
         $this->commands([H5PSeedCommand::class, StorageH5PLinkCommand::class, StorageH5PCopyStorageCommand::class]);
         $this->bindH5P();
         $this->app->register(AuthServiceProvider::class);
-        $this->app->register(SettingsServiceProvider::class);
     }
 
     private function bindH5P(): void

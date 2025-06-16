@@ -28,6 +28,6 @@ class CreateHH5pTempFilesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_temp_files');
+        Schema::dropIfExists('hh5p_temp_files');
     }
 }

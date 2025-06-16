@@ -4,9 +4,6 @@ namespace EscolaLms\HeadlessH5P\Database\Seeders;
 
 use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 
 class ContentLibrarySeeder extends Seeder
 {
@@ -14,7 +11,6 @@ class ContentLibrarySeeder extends Seeder
 
     private function downloadAndSeed($lib, $addContent = false)
     {
-        // eg https://h5p.org/sites/default/files/h5p/exports/interactive-video-2-618.h5p
         $url = "https://h5p.org/sites/default/files/h5p/exports/$lib";
 
         $filename = storage_path("app/h5p/temp/$lib");
@@ -42,13 +38,8 @@ class ContentLibrarySeeder extends Seeder
         $h5p_upgrade_only = false;
 
         if ($this->hh5pService->getValidator()->isValidPackage($skipContent, $h5p_upgrade_only)) {
-            $this->hh5pService->getRepository()->setMainData($this->hh5pService->getCore()->mainJsonData);
+            $content['title'] = $lib;
             $this->hh5pService->getStorage()->savePackage($content, null, $skipContent);
-
-            $id = $this->hh5pService->getStorage()->contentId;
-            $content = $this->hh5pService->getCore()->loadContent($id);
-            $this->hh5pService->getCore()->filterParameters($content);
-
         } else {
             echo "Invalid package $filename \n";
         }

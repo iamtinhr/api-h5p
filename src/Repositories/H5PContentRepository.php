@@ -32,9 +32,16 @@ class H5PContentRepository implements H5PContentRepositoryContract
         $this->hh5pService = $hh5pService;
     }
 
-    public function create(string $library, string $params, string $nonce): int
+    public function create($request): int
     {
-        $user = auth()->user();
+        $library = $request->library;
+        $params = $request->params;
+        $nonce = $request->nonce;
+        $courseId = $request->course_id;
+        $courseType = $request->course_type;
+        $title = $request->title;
+        $userId = auth()->id();
+
         $libNames = $this->hh5pService->getCore()->libraryFromString($library);
         $libDb = H5PLibrary::where([
             ['name', $libNames['machineName']],
@@ -53,13 +60,14 @@ class H5PContentRepository implements H5PContentRepositoryContract
         }
 
         $content = $this->hh5pService->getCore()->saveContent([
+            'course_id' => $courseId,
+            'course_type' => $courseType,
+            'user_id' => $userId,
             'library_id' => $libDb->id,
             'library' => $library,
             'parameters' => $params,
             'nonce' => $nonce,
-            'user_id' => $user->getKey(),
-            // @phpstan-ignore-next-line
-            'author' => $user->email,
+            'title' => $title,
         ]);
 
         $this->filterParameters(H5PContent::findOrFail($content), $libDb);

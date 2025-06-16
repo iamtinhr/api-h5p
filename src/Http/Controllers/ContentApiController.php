@@ -68,11 +68,7 @@ class ContentApiController extends BaseController implements ContentApiSwagger
     public function store(ContentCreateRequest $request): JsonResponse
     {
         try {
-            $contentId = $this->contentRepository->create(
-                $request->get('library'),
-                $request->get('params'),
-                $request->get('nonce')
-            );
+            $contentId = $this->contentRepository->create($request);
         } catch (Exception $error) {
             return $this->sendError($error->getMessage(), 422);
         }

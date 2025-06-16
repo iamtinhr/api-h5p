@@ -30,6 +30,6 @@ class CreateHH5pLibrariesLanguagesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_libraries_languages');
+        Schema::dropIfExists('hh5p_libraries_languages');
     }
 }

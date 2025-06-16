@@ -47,6 +47,6 @@ class CreateH5pLibrariesHubCacheTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_libraries_hub_cache');
+        Schema::dropIfExists('hh5p_libraries_hub_cache');
     }
 }

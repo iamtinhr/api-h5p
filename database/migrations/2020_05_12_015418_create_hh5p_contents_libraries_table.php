@@ -31,6 +31,6 @@ class CreateHH5pContentsLibrariesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_contents_libraries');
+        Schema::dropIfExists('hh5p_contents_libraries');
     }
 }

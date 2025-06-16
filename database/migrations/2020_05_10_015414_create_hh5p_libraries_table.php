@@ -15,7 +15,6 @@ class CreateHH5pLibrariesTable extends Migration
     {
         Schema::create('hh5p_libraries', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
             $table->string('name', 127);
             $table->string('title');
             $table->bigInteger('major_version')->unsigned();
@@ -28,10 +27,13 @@ class CreateHH5pLibrariesTable extends Migration
             $table->text('preloaded_js', 65535)->nullable();
             $table->text('preloaded_css', 65535)->nullable();
             $table->text('drop_library_css', 65535)->nullable();
+            $table->text('add_to')->nullable();
             // TODO: this should be json
             $table->text('semantics', 65535);
             $table->string('tutorial_url', 1023);
             $table->integer('has_icon')->unsigned()->default(0);
+
+            $table->timestamps();
             $table->index(['name', 'major_version', 'minor_version', 'patch_version'], 'name_version');
         });
     }
@@ -43,6 +45,6 @@ class CreateHH5pLibrariesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_libraries');
+        Schema::dropIfExists('hh5p_libraries');
     }
 }

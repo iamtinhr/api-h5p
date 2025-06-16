@@ -15,8 +15,11 @@ class CreateHH5pContentsTable extends Migration
     {
         Schema::create('hh5p_contents', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->timestamps();
-            $table->bigInteger('user_id')->nullable()->unsigned(); // ADD key
+            $table->uuid('uuid')->unique()->nullable();
+            $table->bigInteger('user_id')->unsigned(); // ADD key
+            $table->bigInteger('course_id')->unsigned(); // ADD key
+            $table->bigInteger('course_type')->unsigned(); // ADD key
+            $table->bigInteger('activity_id')->nullable()->unsigned(); // ADD key
             $table->string('title');
             $table->bigInteger('library_id')->unsigned(); // ADD key
             $table->mediumText('parameters');
@@ -28,10 +31,10 @@ class CreateHH5pContentsTable extends Migration
             $table->string('embed_type', 127)->nullable();
             $table->bigInteger('disable')->unsigned()->default(0);
             $table->string('content_type', 127)->nullable();
-            $table->string('author', 127)->nullable();
             $table->string('license', 7)->nullable();
             $table->text('keywords', 65535)->nullable();
             $table->text('description', 65535)->nullable();
+            $table->timestamps();
         });
     }
 
@@ -42,6 +45,6 @@ class CreateHH5pContentsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_contents');
+        Schema::dropIfExists('hh5p_contents');
     }
 }

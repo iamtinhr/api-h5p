@@ -406,7 +406,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         $lang = config('hh5p.language');
 
-        $user = Auth::user();
+        $user = profile();
 
         $config = $this->getConfig();
 
@@ -430,7 +430,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         if ($user) {
             $settings['user'] = [
-                "name" => $user->name,
+                "name" => $user->full_name,
                 "mail" => $user->email,
             ];
         }
@@ -448,7 +448,6 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         foreach (H5PCore::$scripts as $script) {
             $settings['core']['scripts'][] = $config['get_h5pcore_url'] . '/' . $script;
         }
-        //$settings['core']['scripts'][] = $config['get_h5peditor_url'].'/language/' . $lang . '.js';
 
         [$h5pEditorDir, $h5pCoreDir] = $this->getH5pEditorDir();
         $language_script = $this->getEditorLangScript($lang, $h5pEditorDir);
@@ -654,7 +653,6 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
      */
     public function getContentTypeCache(): array
     {
-        // https://github.com/Lumieducation/H5P-Nodejs-library/wiki/Communication-with-the-H5P-Hub
         $cacheOutdated = $this->isContentTypeCacheUpdated();
 
         $canUpdateOrInstall = ($this->core->h5pF->hasPermission(H5PPermission::INSTALL_RECOMMENDED) ||

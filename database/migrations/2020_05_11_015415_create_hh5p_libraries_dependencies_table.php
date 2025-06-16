@@ -30,6 +30,6 @@ class CreateHH5pLibrariesDependenciesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('hh5p_libraries_dependencies');
+        Schema::dropIfExists('hh5p_libraries_dependencies');
     }
 }

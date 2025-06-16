@@ -1,8 +1,8 @@
 <?php
 return [
-    'domain' => 'domain',
+    'domain' => config('app.url'),
     'url' => 'h5p',
-    'ajaxSetFinished' => 'api/contentSolved',
+    'ajaxSetFinished' => config('app.url') . '/online/detail/finish-activity-h5p',
     'ajaxContentUserData' => 'contentUserData',
     'saveFreq' => 'saveFreq',
     'l10n' => 'l10n',
@@ -12,13 +12,13 @@ return [
     'libraryUrl' => 'h5p-editor',
     'get_laravelh5p_url' => 'editor',
     'get_h5peditor_url' => 'h5p-editor',
-    'get_language' => 'en',
-    'language' => 'en',
+    'get_language' => 'vi',
+    'language' => 'vi',
     'get_h5pcore_url' => 'h5p-core',
 
     // Content screen setting
-    'h5p_show_display_option' => true,
-    'h5p_frame' => true,
+    'h5p_show_display_option' => false,
+    'h5p_frame' => false,
     'h5p_export' => false,
     'h5p_embed' => false,
     'h5p_copyright' => false,

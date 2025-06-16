@@ -10,5 +10,4 @@ providers:
   - Spatie\Permission\PermissionServiceProvider
   - Laravel\Passport\PassportServiceProvider
   - EscolaLms\Core\EscolaLmsServiceProvider
-  - EscolaLms\Settings\EscolaLmsSettingsServiceProvider
   - EscolaLms\HeadlessH5P\HeadlessH5PServiceProvider

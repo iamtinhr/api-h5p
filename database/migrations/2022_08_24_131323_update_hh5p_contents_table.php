@@ -17,16 +17,11 @@ return new class extends Migration
                 $table->json('parameters')->change();
             });
         }
-
-        Schema::table('hh5p_contents', function (Blueprint $table) {
-            $table->dropColumn('title');
-        });
     }
 
     public function down()
     {
         Schema::table('hh5p_contents', function (Blueprint $table) {
-            $table->string('title');
             $table->mediumText('parameters')->change();
         });
     }
