@@ -33,12 +33,12 @@ To play the content you can use [EscolaLMS H5P Player](https://github.com/Escola
 
 You need to publish many of files to be availabe as public link.
 
-`php artisan h5p:storage-link` which creates a symbolic link from `storage/app/h5` and `vendor/h5p/h5p-core` and `vendor/h5p/h5p-editor` to be accesible to public, as follows
+`php artisan h5p:storage-link` which creates a symbolic link from `storage/app/h5` and `vendor/tinhr/h5p-core` and `vendor/tinhr/h5p-editor` to be accesible to public, as follows
 
 ```
 public_path('h5p') => storage_path('app/h5p'),
-public_path('h5p-core') => base_path().'vendor/h5p/h5p-core',
-public_path('h5p-editor') => base_path().'vendor/h5p/h5p-editor',
+public_path('h5p-core') => base_path().'vendor/tinhr/h5p-core',
+public_path('h5p-editor') => base_path().'vendor/tinhr/h5p-editor',
 ```
 
 ### Cors

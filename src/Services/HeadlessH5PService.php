@@ -846,8 +846,8 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     private function getH5pEditorDir(): array
     {
         return [
-            base_path('vendor/h5p/h5p-editor'),
-            base_path('vendor/h5p/h5p-core'),
+            base_path('vendor/tinhr/h5p-editor'),
+            base_path('vendor/tinhr/h5p-core'),
         ];
     }
 }
