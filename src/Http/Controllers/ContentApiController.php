@@ -101,7 +101,7 @@ class ContentApiController extends BaseController implements ContentApiSwagger
     public function frontShow(ContentReadRequest $request, string $id): JsonResponse
     {
         try {
-            $settings = $this->hh5pService->getContentSettings($request->getH5PContent()->id);
+            $settings = $this->hh5pService->getContentSettings($request, $request->getH5PContent()->id);
         } catch (Exception $error) {
             return $this->sendError($error->getMessage(), 422);
         }

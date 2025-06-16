@@ -402,8 +402,11 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         return $settings;
     }
 
-    public function getContentSettings($id): array
+    public function getContentSettings($request, $id): array
     {
+        $courseId = $request->courseId;
+        $courseType = $request->courseType;
+
         $lang = config('hh5p.language');
 
         $user = profile();
@@ -432,6 +435,13 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             $settings['user'] = [
                 "name" => $user->full_name,
                 "mail" => $user->email,
+            ];
+        }
+
+        if ($courseId && $courseType) {
+            $settings['course'] = [
+                "courseId" => $courseId,
+                "courseType" => $courseType,
             ];
         }
 
