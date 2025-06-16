@@ -22,12 +22,8 @@ class ContentReadRequest extends FormRequest
 
     public function getH5PContent(): H5PContent
     {
-        $uuid = $this->route('uuid');
+        $id = $this->route('id');
 
-        if (!Uuid::isValid($uuid)) {
-            abort(422, "Invalid uuid parameter");
-        }
-
-        return H5PContent::whereUuid($this->route('uuid'))->firstOrFail();
+        return H5PContent::whereId($id)->firstOrFail();
     }
 }
