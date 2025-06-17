@@ -6,8 +6,8 @@
         "php": ">=7.4",
         "bensampo/laravel-enum": ">=2.0",
         "laravel/framework": ">=9.0",
-        "tinhr/h5p-core": "dev-master",
-        "tinhr/h5p-editor": "dev-master"
+        "tinhr/h5p-core": "^1|dev-main",
+        "tinhr/h5p-editor": "^1|dev-main"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0",
