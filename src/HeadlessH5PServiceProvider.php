@@ -31,12 +31,11 @@ class HeadlessH5PServiceProvider extends ServiceProvider
 {
     public $singletons = [
         H5PContentRepositoryContract::class => H5PContentRepository::class,
-        H5PLibraryLanguageRepositoryContract::class => H5PLibraryLanguageRepository::class,
     ];
 
     public function register(): void
     {
-        $this->commands([H5PSeedCommand::class, StorageH5PLinkCommand::class, StorageH5PCopyStorageCommand::class]);
+        $this->commands([H5PSeedCommand::class, StorageH5PLinkCommand::class]);
         $this->bindH5P();
         $this->app->register(AuthServiceProvider::class);
     }
@@ -46,9 +45,9 @@ class HeadlessH5PServiceProvider extends ServiceProvider
         $this->app->singleton(HeadlessH5PServiceContract::class, function ($app) {
             $languageRepository = new H5PLibraryLanguageRepository();
             $repository = new H5PRepository($languageRepository);
-            $fileStorage = new H5PFileStorageRepository(config('filesystems.default') === 's3' ? Storage::path('/') . '/h5p' : storage_path('app/h5p'));
-            $core = new H5PCoreService($repository, $fileStorage, url('h5p'), config('hh5p.language'), config('hh5p.h5p_export'));
-            $core->aggregateAssets = boolval(config('hh5p.aggregateAssets'));
+            $fileStorage = new H5PFileStorageRepository(storage_path('app/h5p'));
+            $core = new H5PCoreService($repository, $fileStorage, url('h5p'), config('hh5p.language'), true);
+            $core->aggregateAssets = true;
             $validator = new H5PValidator($repository, $core);
             $storage = new H5PStorage($repository, $core);
             $editorStorage = new H5PEditorStorageRepository($languageRepository);
@@ -73,12 +72,12 @@ class HeadlessH5PServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
         //$this->loadFactoriesFrom(__DIR__ . '/../database/factories');
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-        $this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'h5p');
-        $this->loadJsonTranslationsFrom(__DIR__ . '/../resources/lang');
-        $this->mergeConfigFrom(__DIR__ . '/../config/hh5p.php', 'hh5p');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'h5p');
+        $this->loadJsonTranslationsFrom(__DIR__.'/../resources/lang');
+        $this->mergeConfigFrom(__DIR__.'/../config/hh5p.php', 'hh5p');
         // Load configs
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
