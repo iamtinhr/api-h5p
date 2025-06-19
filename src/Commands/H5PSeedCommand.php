@@ -21,9 +21,50 @@ class H5PSeedCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Seed the database and files with most of H5P libraries and content. Fetched from h5p.org';
+    protected $description = 'Seed the database and files with most of h5p libraries and content. Fetched from h5p.org';
 
     private HeadlessH5PServiceContract $hh5pService;
+
+
+    private function downloadAndSeed($lib, $addContent = false)
+    {
+        // eg https://h5p.org/sites/default/files/h5p/exports/interactive-video-2-618.h5p
+        $url = "https://h5p.org/sites/default/files/h5p/exports/$lib";
+
+        $filename = storage_path("app/h5p/temp/$lib");
+
+        $dirname = dirname($filename);
+
+        if (!is_dir($dirname)) {
+            mkdir($dirname, 0777, true);
+        }
+
+        if (!is_file($filename)) {
+            if (file_put_contents($filename, file_get_contents($url))) {
+                echo "File downloaded from $url \n";
+            } else {
+                echo "File downloading failed. \n";
+                return;
+            }
+        }
+
+        copy($filename, $this->hh5pService->getRepository()->getUploadedH5pPath());
+
+        // Content update is skipped because it is new registration
+        $content = null;
+        $skipContent = !$addContent;
+        $h5p_upgrade_only = false;
+
+        if ($this->hh5pService->getValidator()->isValidPackage($skipContent, $h5p_upgrade_only)) {
+            $this->hh5pService->getStorage()->savePackage($content, null, $skipContent);
+        } else {
+            echo "Invalid package $filename \n";
+        }
+
+        @unlink($this->hh5pService->getRepository()->getUploadedH5pPath());
+
+        return true;
+    }
 
     /**
      * Execute the console command.
@@ -32,9 +73,9 @@ class H5PSeedCommand extends Command
      */
     public function handle(HeadlessH5PServiceContract $hh5pService)
     {
-        $this->hh5pService = $hh5pService;
         $addContent = $this->option('addContent');
 
+        $this->hh5pService = $hh5pService;
         $libs = [
             "example-content-arts-of-europe-443085.h5p",
             "advanced-blanks-example-1-503253.h5p",
@@ -85,64 +126,8 @@ class H5PSeedCommand extends Command
         ];
 
         foreach ($libs as $lib) {
-            $this->info("Seeding: {$lib}");
+            echo "seeding $lib \n";
             $this->downloadAndSeed($lib, $addContent);
         }
-    }
-
-    /**
-     * Download and seed a single H5P package using cURL.
-     *
-     * @param string $lib
-     * @param bool $addContent
-     * @return void
-     */
-    private function downloadAndSeed(string $lib, bool $addContent = false): void
-    {
-        $url = "https://h5p.org/sites/default/files/h5p/exports/{$lib}";
-        $tempPath = storage_path("app/h5p/temp/{$lib}");
-
-        // Ensure directory exists
-        File::ensureDirectoryExists(dirname($tempPath));
-
-        // Download using cURL if file not available locally
-        if (!File::exists($tempPath)) {
-            $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-            curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-            $fileContents = curl_exec($ch);
-            $curlError = curl_error($ch);
-            curl_close($ch);
-
-            if ($fileContents === false || !empty($curlError)) {
-                $this->error("File download failed for {$url}. Error: {$curlError}");
-                return;
-            }
-
-            if (file_put_contents($tempPath, $fileContents) === false) {
-                $this->error("Unable to save the downloaded file: {$tempPath}");
-                return;
-            }
-
-            $this->info("File downloaded from {$url}");
-        }
-
-        // Move to H5P upload path for validation
-        $uploadedPath = $this->hh5pService->getRepository()->getUploadedH5pPath();
-        copy($tempPath, $uploadedPath);
-
-        $content = null;
-        $skipContent = !$addContent;
-        $upgradeOnly = false;
-
-        if ($this->hh5pService->getValidator()->isValidPackage($skipContent, $upgradeOnly)) {
-            $this->hh5pService->getStorage()->savePackage($content, null, $skipContent);
-        } else {
-            $this->error("Invalid package: {$tempPath}");
-        }
-
-        @unlink($uploadedPath);
     }
 }
