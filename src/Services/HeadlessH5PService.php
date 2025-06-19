@@ -406,6 +406,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         $courseId = $request->courseId;
         $courseType = $request->courseType;
+        $activityId = $request->activityId;
 
         $lang = config('hh5p.language');
 
@@ -438,10 +439,11 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             ];
         }
 
-        if ($courseId && $courseType) {
+        if ($courseId && $courseType && $activityId) {
             $settings['course'] = [
                 "courseId" => $courseId,
                 "courseType" => $courseType,
+                "activityId" => $activityId,
             ];
         }
 

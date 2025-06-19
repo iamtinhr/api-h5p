@@ -2,7 +2,7 @@
 return [
     'domain' => config('app.url'),
     'url' => 'h5p',
-    'ajaxSetFinished' => config('app.url') . '/online/detail/finish-activity-h5p',
+    'ajaxSetFinished' => config('app.url') . '/api/finish-activity-h5p',
     'ajaxContentUserData' => 'contentUserData',
     'saveFreq' => 'saveFreq',
     'l10n' => 'l10n',
