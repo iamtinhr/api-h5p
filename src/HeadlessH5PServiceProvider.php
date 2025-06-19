@@ -3,11 +3,9 @@
 namespace EscolaLms\HeadlessH5P;
 
 use EscolaLms\HeadlessH5P\Commands\H5PSeedCommand;
-use EscolaLms\HeadlessH5P\Commands\StorageH5PCopyStorageCommand;
 use EscolaLms\HeadlessH5P\Commands\StorageH5PLinkCommand;
 use EscolaLms\HeadlessH5P\Enums\ConfigEnum;
 use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PContentRepositoryContract;
-use EscolaLms\HeadlessH5P\Repositories\Contracts\H5PLibraryLanguageRepositoryContract;
 use EscolaLms\HeadlessH5P\Repositories\H5PContentRepository;
 use EscolaLms\HeadlessH5P\Repositories\H5PEditorAjaxRepository;
 use EscolaLms\HeadlessH5P\Repositories\H5PEditorStorageRepository;
