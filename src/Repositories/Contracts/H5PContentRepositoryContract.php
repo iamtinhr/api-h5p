@@ -14,7 +14,7 @@ interface H5PContentRepositoryContract
 {
     public function create($request): int;
 
-    public function edit(int $id, string $library, string $params, string $nonce): int;
+    public function edit(int $id, $request): int;
 
     public function list(
         ContentFilterCriteriaDto $contentFilterDto,

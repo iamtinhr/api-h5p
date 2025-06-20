@@ -76,8 +76,14 @@ class H5PContentRepository implements H5PContentRepositoryContract
         return $content;
     }
 
-    public function edit(int $id, string $library, string $params, string $nonce): int
+    public function edit(int $id, $request): int
     {
+        $library = $request->library;
+        $params = $request->params;
+        $nonce = $request->nonce;
+        $courseId = $request->course_id;
+        $courseType = $request->course_type;
+        $title = $request->title;
         $content = H5PContent::where('id', $id)->first();
         $previousLib = H5PLibrary::where('id', $content->library_id)->first();
 
@@ -111,6 +117,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
 
         $id = $this->hh5pService->getCore()->saveContent([
             'id' => $id,
+            'title' => $title,
             'library_id' => $libDb->id,
             'library' => $library,
             'parameters' => $params,

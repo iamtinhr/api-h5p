@@ -53,11 +53,7 @@ class ContentApiController extends BaseController implements ContentApiSwagger
     public function update(ContentUpdateRequest $request, int $id): JsonResponse
     {
         try {
-            $contentId = $this->contentRepository->edit(
-                $id,
-                $request->get('library'), $request->get('params'),
-                $request->get('nonce')
-            );
+            $contentId = $this->contentRepository->edit($id, $request);
         } catch (Exception $error) {
             return $this->sendError($error->getMessage(), 422);
         }
