@@ -601,9 +601,9 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
     public function uploadFile($contentId, $field, $token, $nonce = null)
     {
-        if (!$this->isValidEditorToken($token)) {
-            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
-        }
+//        if (!$this->isValidEditorToken($token)) {
+//            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+//        }
 
         $file = new H5peditorFile($this->getRepository());
         if (!$file->isLoaded()) {
