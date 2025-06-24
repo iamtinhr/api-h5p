@@ -26,42 +26,80 @@ class H5PSeedCommand extends Command
     private HeadlessH5PServiceContract $hh5pService;
 
 
-    private function downloadAndSeed($lib, $addContent = false)
+    private function downloadAndSeed(string $lib, bool $addContent = false): bool
     {
-        // eg https://h5p.org/sites/default/files/h5p/exports/interactive-video-2-618.h5p
-        $url = "https://h5p.org/sites/default/files/h5p/exports/$lib";
+        $url = "https://h5p.org/sites/default/files/h5p/exports/{$lib}";
+        $localPath = storage_path("app/h5p/temp/{$lib}");
+        $uploadedPath = $this->hh5pService->getRepository()->getUploadedH5pPath();
 
-        $filename = storage_path("app/h5p/temp/$lib");
-
-        $dirname = dirname($filename);
-
-        if (!is_dir($dirname)) {
-            mkdir($dirname, 0777, true);
-        }
-
-        if (!is_file($filename)) {
-            if (file_put_contents($filename, file_get_contents($url))) {
-                echo "File downloaded from $url \n";
-            } else {
-                echo "File downloading failed. \n";
-                return;
+        // Ensure temp directory exists
+        if (!is_dir($dir = dirname($localPath))) {
+            if (!mkdir($dir, 0777, true) && !is_dir($dir)) {
+                echo "Failed to create directory: {$dir} \n";
+                return false;
             }
         }
 
-        copy($filename, $this->hh5pService->getRepository()->getUploadedH5pPath());
-
-        // Content update is skipped because it is new registration
-        $content = null;
-        $skipContent = !$addContent;
-        $h5p_upgrade_only = false;
-
-        if ($this->hh5pService->getValidator()->isValidPackage($skipContent, $h5p_upgrade_only)) {
-            $this->hh5pService->getStorage()->savePackage($content, null, $skipContent);
-        } else {
-            echo "Invalid package $filename \n";
+        // Use helper to download
+        if (!file_exists($localPath)) {
+            if (!$this->downloadFileWithCurl($url, $localPath)) {
+                return false;
+            }
+            echo "Downloaded file from {$url} \n";
         }
 
-        @unlink($this->hh5pService->getRepository()->getUploadedH5pPath());
+        // Copy to uploaded path
+        if (!copy($localPath, $uploadedPath)) {
+            echo "Failed to copy file to: {$uploadedPath} \n";
+            return false;
+        }
+
+        $skipContent = !$addContent;
+        $h5pUpgradeOnly = false;
+        $content = null;
+
+        if ($this->hh5pService->getValidator()->isValidPackage($skipContent, $h5pUpgradeOnly)) {
+            $this->hh5pService->getStorage()->savePackage($content, null, $skipContent);
+        } else {
+            echo "Invalid H5P package: {$localPath} \n";
+            @unlink($uploadedPath);
+            return false;
+        }
+
+        @unlink($uploadedPath);
+
+        return true;
+    }
+
+    private function downloadFileWithCurl(string $url, string $savePath, int $timeout = 30): bool
+    {
+        $fp = fopen($savePath, 'w+');
+        if ($fp === false) {
+            echo "Unable to open file for writing: {$savePath} \n";
+            return false;
+        }
+
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_FILE => $fp,
+            CURLOPT_TIMEOUT => $timeout,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_FAILONERROR => true,
+            CURLOPT_SSL_VERIFYPEER => false, // Turn ON in production
+        ]);
+
+        $success = curl_exec($ch);
+        $error = curl_error($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+        curl_close($ch);
+        fclose($fp);
+
+        if (!$success || $httpCode !== 200) {
+            echo "Download failed. HTTP Code: {$httpCode}, Error: {$error} \n";
+            @unlink($savePath);
+            return false;
+        }
 
         return true;
     }
