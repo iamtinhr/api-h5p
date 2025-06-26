@@ -47,7 +47,8 @@ class Helpers
      */
     public static function deleteFileTree(string $dir): bool
     {
-        if (!Storage::directoryExists($dir)) {
+        $disk = Storage::disk('upload');
+        if (!$disk->directoryExists($dir)) {
             return false;
         }
         if (is_link($dir)) {
@@ -56,14 +57,14 @@ class Helpers
             return true;
         }
 
-        foreach (Storage::directories($dir) as $directory) {
+        foreach ($disk->directories($dir) as $directory) {
             self::deleteFileTree($directory);
         }
-        foreach (Storage::files($dir) as $file) {
-            Storage::delete($file);
+        foreach ($disk->files($dir) as $file) {
+            $disk->delete($file);
         }
 
-        return Storage::deleteDirectory($dir);
+        return $disk->deleteDirectory($dir);
     }
 
     public static function deleteFileTreeLocal($dir)

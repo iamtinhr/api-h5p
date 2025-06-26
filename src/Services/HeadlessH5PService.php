@@ -847,9 +847,14 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         $language_script = '/language/' . $lang . '.js';
 
-        if ($lang === 'pl') {
+        if ($lang === 'vi') {
             $resourceFile = __DIR__ . '/../../resources/lang/' . $lang . '/h5p.js';
-            !File::exists($resourceFile) ?: Storage::put(Str::after($h5pEditorDir, env('AWS_URL')) . $language_script, File::get($resourceFile));
+
+            if (File::exists($resourceFile)) {
+                // Convert absolute path to relative path on disk
+                $relativePath = Str::after($h5pEditorDir, Storage::disk('upload')->path(''));
+                Storage::disk('upload')->put($relativePath . $language_script, File::get($resourceFile));
+            }
         }
 
         return $language_script;

@@ -43,8 +43,8 @@ class HeadlessH5PServiceProvider extends ServiceProvider
         $this->app->singleton(HeadlessH5PServiceContract::class, function ($app) {
             $languageRepository = new H5PLibraryLanguageRepository();
             $repository = new H5PRepository($languageRepository);
-            $fileStorage = new H5PFileStorageRepository(storage_path('app/h5p'));
-            $core = new H5PCoreService($repository, $fileStorage, url('h5p'), config('hh5p.language'), true);
+            $fileStorage = new H5PFileStorageRepository(Storage::disk('upload')->path('h5p'));
+            $core = new H5PCoreService($repository, $fileStorage, Storage::disk('upload')->path('h5p'), config('hh5p.language'), true);
             $core->aggregateAssets = true;
             $validator = new H5PValidator($repository, $core);
             $storage = new H5PStorage($repository, $core);

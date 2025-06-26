@@ -187,11 +187,12 @@ class H5PEditorStorageRepository implements H5peditorStorage
      */
     public static function removeTemporarilySavedFiles($filePath)
     {
-        if (Storage::directoryExists($filePath)) {
+        $disk = Storage::disk('upload');
+        if ($disk->directoryExists($filePath)) {
             Helpers::deleteFileTree($filePath);
         }
         else {
-            Storage::delete($filePath);
+            $disk->delete($filePath);
         }
     }
 }

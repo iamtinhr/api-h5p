@@ -201,8 +201,11 @@ class H5PRepository implements H5PFrameworkInterface
      */
     public function getLibraryFileUrl($libraryFolderName, $fileName)
     {
-        $path = 'h5p/libraries/' . $libraryFolderName . '/' . $fileName;
-        return file_exists(storage_path("app/$path")) ? url($path) : null;
+        $path = "h5p/libraries/{$libraryFolderName}/{$fileName}";
+
+        $fullPath = Storage::disk('upload')->path($path);
+
+        return file_exists($fullPath) ? Storage::disk('upload')->url($path) : null;
     }
 
     /**
@@ -213,10 +216,12 @@ class H5PRepository implements H5PFrameworkInterface
      */
     public function getUploadedH5pFolderPath()
     {
-        static $dir; // such a stupid way to have singleton ....
+        static $dir;
+
         if (is_null($dir)) {
-            $dir = storage_path('app/h5p/temp/temp/') . uniqid('h5p-');
-            @mkdir(dirname($dir), 0777, true);
+            $dir = Storage::disk('upload')->path('h5p/temp/temp/' . uniqid('h5p-'));
+
+            @mkdir($dir, 0777, true);
         }
 
         return $dir;
@@ -230,9 +235,11 @@ class H5PRepository implements H5PFrameworkInterface
      */
     public function getUploadedH5pPath()
     {
-        static $path; // such a stupid way to have singleton ....
+        static $path;
+
         if (is_null($path)) {
-            $path = storage_path('app/h5p/temp/temp/') . uniqid('h5p-') . '.h5p';
+            $path = Storage::disk('upload')->path('h5p/temp/temp/' . uniqid('h5p-') . '.h5p');
+
             @mkdir(dirname($path), 0777, true);
         }
 
@@ -967,7 +974,7 @@ class H5PRepository implements H5PFrameworkInterface
         $libraryObj = H5pLibrary::with(['dependencies', 'languages'])->findOrFail($library->id);
 
         // Remove main library from files
-        $libraryPath = storage_path('app/h5p/libraries/' . $library->name . '-' . $library->major_version . '.' . $library->minor_version);
+        $libraryPath = Storage::disk('upload')->path('h5p/libraries/' . $library->name . '-' . $library->major_version . '.' . $library->minor_version);
 
         $libraryObj->dependencies()->delete();
         $libraryObj->languages()->delete();
@@ -1138,7 +1145,7 @@ class H5PRepository implements H5PFrameworkInterface
      */
     public function clearFilteredParameters($library_ids)
     {
-         H5PContent::query()->whereIn('library_id', $library_ids)->update(['filtered' => null]);
+        H5PContent::query()->whereIn('library_id', $library_ids)->update(['filtered' => null]);
     }
 
     /**
@@ -1305,7 +1312,7 @@ class H5PRepository implements H5PFrameworkInterface
     {
         $data = [];
         foreach ($contentTypeCache->contentTypes as $ct) {
-           $data[] = [
+            $data[] = [
                 'machine_name' => $ct->id,
                 'major_version' => $ct->version->major,
                 'minor_version' => $ct->version->minor,
@@ -1405,7 +1412,7 @@ class H5PRepository implements H5PFrameworkInterface
         $semanticsFile = null;
         $storagePath = config('hh5p.h5p_storage_path');
         $libraryDirectory = $machineName . '-' . $majorVersion . '.' . $minorVersion;
-        $semanticsPath = storage_path($storagePath . '/libraries/' . $libraryDirectory . '/semantics.json');
+        $semanticsPath = Storage::disk('upload')->path($storagePath . '/libraries/' . $libraryDirectory . '/semantics.json');
 
         if (File::exists($semanticsPath)) {
             $semanticsFile = File::get($semanticsPath);

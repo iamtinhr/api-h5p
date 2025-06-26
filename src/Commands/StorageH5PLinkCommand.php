@@ -61,7 +61,6 @@ class StorageH5PLinkCommand extends Command
     protected function links()
     {
         return[
-            public_path('h5p') => storage_path('app/h5p'),
             public_path('h5p-core') => base_path().'/vendor/tinhr/h5p-core',
             public_path('h5p-editor') => base_path().'/vendor/tinhr/h5p-editor',
         ];

@@ -13,9 +13,10 @@ use ZipArchive;
 class H5PExportService extends H5PExport
 {
     public function createExportFile($content) {
+        $disk = Storage::disk('upload');
         // Get path to temporary folder, where export will be contained
         $tmpPath = $this->h5pC->fs->getTmpPath();
-        Storage::createDirectory($tmpPath);
+        $disk->createDirectory($tmpPath);
 
         try {
             // Create content folder and populate with files
@@ -29,7 +30,7 @@ class H5PExportService extends H5PExport
         }
 
         // Update content.json with content from database
-        Storage::put("{$tmpPath}/content/content.json", $content['filtered']);
+        $disk->put("{$tmpPath}/content/content.json", $content['filtered']);
 
         // Make embedType into an array
         $embedTypes = explode(', ', $content['embedType']);
@@ -104,7 +105,7 @@ class H5PExportService extends H5PExport
 
         // Save h5p.json
         $results = print_r(json_encode($h5pJson), true);
-        Storage::put("{$tmpPath}/h5p.json", $results);
+        $disk->put("{$tmpPath}/h5p.json", $results);
 
         // Get a complete file list from our tmp dir
         $files = array();
@@ -117,21 +118,21 @@ class H5PExportService extends H5PExport
         // Create new zip instance.
         $zip = new ZipArchive();
         $zipName = Str::afterLast($zipPath, '/') . '.zip';
-        $zipName = storage_path('app/h5p/temp/' . $zipName);
+        $zipName = $disk->disk('upload')->path('h5p/temp/' . $zipName);
         $zip->open($zipName, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
         // Add all the files from the tmp dir.
         foreach ($files as $file) {
             // Please note that the zip format has no concept of folders, we must
             // use forward slashes to separate our directories.
-            if (Storage::exists($file->absolutePath)) {
-                $zip->addFromString($file->relativePath, Storage::get($file->absolutePath));
+            if ($disk->exists($file->absolutePath)) {
+                $zip->addFromString($file->relativePath, $disk->get($file->absolutePath));
             }
         }
 
         // Close zip and remove tmp dir
         $zip->close();
-        Storage::putFileAs('h5p/temp', new File($zipName), Str::afterLast($tmpFile, '/'));
+        $disk->putFileAs('h5p/temp', new File($zipName), Str::afterLast($tmpFile, '/'));
         H5PCore::deleteFileTree($tmpPath);
         \Illuminate\Support\Facades\File::delete($zipName);
 
@@ -146,8 +147,8 @@ class H5PExportService extends H5PExport
             return false;
         }
 
-        Storage::delete($tmpFile);
-        Storage::deleteDirectory($tmpPath);
+        $disk->delete($tmpFile);
+        $disk->deleteDirectory($tmpPath);
         $this->h5pF->afterExportCreated($content, $filename);
 
         // @phpstan-ignore-next-line
@@ -156,7 +157,7 @@ class H5PExportService extends H5PExport
 
     private static function populateFileList($dir, &$files, $relative = '') {
         $strip = strlen($dir);
-        $contents = Storage::allFiles($dir);
+        $contents = Storage::disk('upload')->allFiles($dir);
         if (!empty($contents)) {
             foreach ($contents as $file) {
                 $rel = $relative . substr($file, $strip);

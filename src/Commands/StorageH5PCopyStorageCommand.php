@@ -30,10 +30,15 @@ class StorageH5PCopyStorageCommand extends Command
      */
     public function handle()
     {
-        $link = Storage::path('h5p');
-        $target = storage_path('app/h5p');
+        $disk = Storage::disk('upload');
 
-        app(H5PFileStorageRepository::class, ['path' => env('AWS_URL')])->copyVendorFiles($target, $link);
+        $link = $disk->path('h5p');
+        $target = $disk->path('h5p');
+
+        // Inject path gốc từ disk upload
+        app(H5PFileStorageRepository::class, ['path' => $disk->path('')])
+            ->copyVendorFiles($target, $link);
+
         Helpers::deleteFileTreeLocal($target);
 
         $this->info("The files [$target] have been copied to [$link].");

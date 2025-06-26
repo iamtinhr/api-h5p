@@ -107,7 +107,7 @@ class H5PEditorAjaxRepository implements H5PEditorAjaxInterface
 
         try {
             $parsedToken = $parser->parse($token);
-            $validator->assert($parsedToken, new SignedWith(new Sha256(), Key\InMemory::file(storage_path('oauth-public.key'))));
+            $validator->assert($parsedToken, new SignedWith(new Sha256(), Key\InMemory::file(Storage::disk('upload')->path('oauth-public.key'))));
 
             return !$parsedToken->isExpired(now());
         } catch (Exception $e) {

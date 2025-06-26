@@ -17,7 +17,7 @@ class ContentLibrarySeeder extends Seeder
         // eg https://h5p.org/sites/default/files/h5p/exports/interactive-video-2-618.h5p
         $url = "https://h5p.org/sites/default/files/h5p/exports/$lib";
 
-        $filename = storage_path("app/h5p/temp/$lib");
+        $filename = Storage::disk('upload')->path("h5p/temp/$lib");
 
         $dirname = dirname($filename);
 

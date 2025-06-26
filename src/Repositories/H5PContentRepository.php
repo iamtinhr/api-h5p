@@ -133,7 +133,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
 
     private function moveTmpFilesToContentFolders($nonce, $contentId): bool
     {
-        $storage_path = storage_path(config('hh5p.h5p_storage_path'));
+        $storage_path = Storage::disk('upload')->path(config('hh5p.h5p_storage_path'));
 
         $files = H5PTempFile::where(['nonce' => $nonce])->get();
 
