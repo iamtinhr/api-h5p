@@ -155,7 +155,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         if (!isset($this->config)) {
             $config = (array)config('hh5p');
-            $config['url'] = asset($config['url']);
+            $config['url'] = Storage::disk('upload')->url($config['url']);
             $config['ajaxPath'] = route($config['ajaxPath']) . '/';
             $config['libraryUrl'] = url($config['libraryUrl']) . '/';
             $config['get_laravelh5p_url'] = url($config['get_laravelh5p_url']);
@@ -176,7 +176,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     public function getLibraries(string $machineName = null, string $major_version = null, string $minor_version = null, int $library_id = null)
     {
         $lang = config('hh5p.language');
-        $libraries_url = url(config('hh5p.h5p_library_url'));
+        $libraries_url = Storage::disk('upload')->url(config('hh5p.h5p_library_url'));
 
         if ($library_id) {
             $library = H5PLibrary::findOrFail($library_id);

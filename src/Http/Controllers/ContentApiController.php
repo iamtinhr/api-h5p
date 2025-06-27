@@ -40,7 +40,6 @@ class ContentApiController extends BaseController implements ContentApiSwagger
             'hh5p_contents.uuid',
             'hh5p_contents.library_id',
             'hh5p_contents.user_id',
-            'hh5p_contents.author',
             'hh5p_contents.parameters',
         ];
         $list = $request->get('per_page') !== null && $request->get('per_page') == 0 ?

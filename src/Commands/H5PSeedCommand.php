@@ -4,6 +4,7 @@ namespace EscolaLms\HeadlessH5P\Commands;
 
 use Illuminate\Console\Command;
 use EscolaLms\HeadlessH5P\Services\Contracts\HeadlessH5PServiceContract;
+use Illuminate\Support\Facades\Storage;
 
 class H5PSeedCommand extends Command
 {

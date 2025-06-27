@@ -118,7 +118,7 @@ class H5PExportService extends H5PExport
         // Create new zip instance.
         $zip = new ZipArchive();
         $zipName = Str::afterLast($zipPath, '/') . '.zip';
-        $zipName = $disk->disk('upload')->path('h5p/temp/' . $zipName);
+        $zipName = $disk->path('h5p/temp/' . $zipName);
         $zip->open($zipName, ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
         // Add all the files from the tmp dir.
