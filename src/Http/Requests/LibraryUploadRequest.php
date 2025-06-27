@@ -18,7 +18,7 @@ class LibraryUploadRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => ['required'],
+//            'id' => ['required'],
             'contentId' => ['required'],
             'h5p' => ['required', 'max:100000']
         ];

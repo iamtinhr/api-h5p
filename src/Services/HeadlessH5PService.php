@@ -490,6 +490,9 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         $settings['contents']["cid-$id"] = [
             'library' => $uberName,
+            'metadata' => [
+                'title' => $content['title'],
+            ],
             'content' => $content,
             'jsonContent' => $safe_parameters,
             'fullScreen' => $content['library']['fullscreen'],
