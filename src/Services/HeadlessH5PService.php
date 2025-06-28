@@ -155,7 +155,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         if (!isset($this->config)) {
             $config = (array)config('hh5p');
-            $config['url'] = Storage::disk('upload')->url($config['url']);
+            $config['url'] = $config['url'];
             $config['ajaxPath'] = route($config['ajaxPath']) . '/';
             $config['libraryUrl'] = url($config['libraryUrl']) . '/';
             $config['get_laravelh5p_url'] = url($config['get_laravelh5p_url']);
@@ -163,7 +163,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             $config['get_h5pcore_url'] = url($config['get_h5pcore_url']);
             $config['getCopyrightSemantics'] = $this->getContentValidator()->getCopyrightSemantics();
             $config['getMetadataSemantics'] = $this->getContentValidator()->getMetadataSemantics();
-            $config['filesPath'] = url('h5p/editor'); // TODO: diffrernt name
+            $config['filesPath'] = Storage::disk('upload')->url('h5p/editor'); // TODO: diffrernt name
             $this->config = $config;
         }
 
@@ -275,7 +275,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/language/' . $lang . '.js';
 
         $settings['editor'] = [
-            'filesPath' => isset($content) ? url("h5p/content/$content") : url('h5p/editor'),
+            'filesPath' => isset($content) ? Storage::disk('upload')->url("h5p/content/$content") : Storage::disk('upload')->url('h5p/editor'),
             'fileIcon' => [
                 'path' => $config['fileIcon'],
                 'width' => 50,

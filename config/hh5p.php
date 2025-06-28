@@ -1,8 +1,8 @@
 <?php
 return [
-    'domain' => config('app.url'),
-    'url' => 'h5p',
-    'ajaxSetFinished' => config('app.url') . '/api/finish-activity-h5p',
+    'domain' => url('/'),
+    'url' => Storage::disk('upload')->url('h5p'),
+    'ajaxSetFinished' => url('/api/finish-activity-h5p'),
     'ajaxContentUserData' => 'contentUserData',
     'saveFreq' => 'saveFreq',
     'l10n' => 'l10n',
