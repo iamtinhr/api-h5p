@@ -10,7 +10,7 @@ class ContentUpdateRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        $h5pContent = H5PContent::findOrFail($this->route('id'));
+//        $h5pContent = H5PContent::findOrFail($this->route('id'));
 //        return Gate::allows('update', $h5pContent);
         return true;
     }

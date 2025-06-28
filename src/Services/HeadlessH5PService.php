@@ -175,7 +175,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
      */
     public function getLibraries(string $machineName = null, string $major_version = null, string $minor_version = null, int $library_id = null)
     {
-        $lang = config('hh5p.language');
+        $lang = config('app.locale');
         $libraries_url = Storage::disk('upload')->url(config('hh5p.h5p_library_url'));
 
         if ($library_id) {
@@ -236,7 +236,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
     public function getEditorSettings($content = null): array
     {
-        $lang = config('hh5p.language');
+        $lang = config('app.locale');
 
         $config = $this->getConfig();
 
@@ -408,7 +408,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         $courseType = $request->courseType;
         $activityId = $request->activityId;
 
-        $lang = config('hh5p.language');
+        $lang = config('app.locale');
 
         $user = profile();
 
@@ -690,7 +690,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
      */
     public function getUpdatedContentHubMetadataCache()
     {
-        $lang = config('hh5p.language');
+        $lang = config('app.locale');
         // @phpstan-ignore-next-line
         return $this->getCore()->getUpdatedContentHubMetadataCache($lang);
     }
@@ -829,7 +829,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
      */
     public function getTranslations(array $libraries, ?string $language = null): array
     {
-        $language = $language ?? config('hh5p.language');
+        $language = $language ?? config('app.locale');
 
         $libs = [];
         foreach ($libraries as $library) {

@@ -12,8 +12,6 @@ return [
     'libraryUrl' => 'h5p-editor',
     'get_laravelh5p_url' => 'editor',
     'get_h5peditor_url' => 'h5p-editor',
-    'get_language' => 'vi',
-    'language' => 'vi',
     'get_h5pcore_url' => 'h5p-core',
 
     // Content screen setting

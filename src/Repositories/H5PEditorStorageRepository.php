@@ -81,10 +81,10 @@ class H5PEditorStorageRepository implements H5peditorStorage
             ->where('minor_version', '=', $minorVersion)
             ->get()
             ->map(fn($item) => $item->languages->map(fn($lang) => $lang->language_code))
-            ->filter(fn($item) => $item !== config('hh5p.language'))
+            ->filter(fn($item) => $item !== config('app.locale'))
             ->flatten()
             ->unique()
-            ->prepend(config('hh5p.language'))
+            ->prepend(config('app.locale'))
             ->toArray();
     }
     /**
