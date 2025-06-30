@@ -1,0 +1,24 @@
+{
+  "semantics": [
+    {
+      "label": "Chiều rộng",
+      "description": "Chiều rộng của iFrame theo định dạng CSS. Giá trị mặc định: \"500px\""
+    },
+    {
+      "label": "Chiều rộng tối thiểu",
+      "description": "Chiều rộng tối thiểu của iFrame theo định dạng CSS. Giá trị mặc định: \"300px\""
+    },
+    {
+      "label": "Chiều cao",
+      "description": "Chiều cao của iFrame theo định dạng CSS. Giá trị mặc định: \"500px\""
+    },
+    {
+      "label": "Nguồn/URL",
+      "description": "URI/Đường dẫn tới tài liệu bên ngoài hoặc đường dẫn đến tài liệu trong nội dung H5P"
+    },
+    {
+      "label": "Cho phép thay đổi kích thước",
+      "description": "Nếu được bật, nút Toàn màn hình sẽ hiển thị và H5P sẽ được điều chỉnh để phù hợp với môi trường."
+    }
+  ]
+}

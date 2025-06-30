@@ -272,7 +272,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         }
         $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/scripts/h5peditor-editor.js';
         $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/scripts/h5peditor-init.js';
-        $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/language/' . $lang . '.js';
+//        $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/language/' . $lang . '.js';
 
         $settings['editor'] = [
             'filesPath' => isset($content) ? Storage::disk('upload')->url("h5p/content/$content") : Storage::disk('upload')->url('h5p/editor'),
@@ -343,7 +343,6 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             [$config['get_h5peditor_url'], $config['get_h5pcore_url']],
             [$h5pEditorDir, $h5pCoreDir]
         );*/
-
         $settings['editor']['assets']['js'] = $this->mergeFileList(
             $settings['editor']['assets']['js'],
             'js',
@@ -850,14 +849,12 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         $language_script = '/language/' . $lang . '.js';
 
-        if ($lang === 'vi') {
-            $resourceFile = __DIR__ . '/../../resources/lang/' . $lang . '/h5p.js';
+        $resourceFile = __DIR__ . '/../../resources/lang/' . $lang . '/h5p.js';
 
-            if (File::exists($resourceFile)) {
-                // Convert absolute path to relative path on disk
-                $relativePath = Str::after($h5pEditorDir, Storage::disk('upload')->path(''));
-                Storage::disk('upload')->put($relativePath . $language_script, File::get($resourceFile));
-            }
+        if (File::exists($resourceFile)) {
+            // Convert absolute path to relative path on disk
+            $relativePath = Str::after($h5pEditorDir, Storage::disk('upload')->path(''));
+            Storage::disk('upload')->put($relativePath . $language_script, File::get($resourceFile));
         }
 
         return $language_script;

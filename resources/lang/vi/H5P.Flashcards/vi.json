@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ"
+    },
+    {
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "label": "Thẻ",
+      "entity": "thẻ",
+      "field": {
+        "label": "Thẻ",
+        "fields": [
+          {
+            "label": "Câu hỏi",
+            "description": "Câu hỏi dạng văn bản tùy chọn cho thẻ. (Thẻ có thể chỉ dùng hình ảnh, chỉ dùng văn bản hoặc cả hai)"
+          },
+          {
+            "label": "Câu trả lời",
+            "description": "Câu trả lời (đáp án) cho thẻ. Sử dụng dấu gạch chéo / để phân tách các đáp án thay thế. Dùng \\/ nếu đáp án chứa dấu /."
+          },
+          {
+            "label": "Hình ảnh",
+            "description": "Hình ảnh tùy chọn cho thẻ. (Thẻ có thể chỉ dùng hình ảnh, chỉ dùng văn bản hoặc cả hai)"
+          },
+          {
+            "label": "Văn bản thay thế cho hình ảnh"
+          },
+          {
+            "label": "Gợi ý",
+            "fields": [
+              {
+                "label": "Văn bản gợi ý"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Văn bản tiến trình",
+      "default": "Thẻ @card trong @total",
+      "description": "Văn bản hiển thị tiến trình, có thể dùng biến: @card và @total. Ví dụ: 'Thẻ @card trong @total'"
+    },
+    {
+      "label": "Văn bản nút tiếp theo",
+      "default": "Tiếp theo"
+    },
+    {
+      "label": "Văn bản nút trước",
+      "default": "Trước"
+    },
+    {
+      "label": "Văn bản nút kiểm tra đáp án",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Yêu cầu người dùng nhập trước khi xem đáp án"
+    },
+    {
+      "label": "Văn bản cho ô nhập đáp án",
+      "default": "Câu trả lời của bạn"
+    },
+    {
+      "label": "Văn bản cho đáp án đúng",
+      "default": "Đúng"
+    },
+    {
+      "label": "Văn bản cho đáp án sai",
+      "default": "Sai"
+    },
+    {
+      "label": "Văn bản hiển thị đáp án",
+      "default": "Đáp án đúng"
+    },
+    {
+      "label": "Tiêu đề kết quả",
+      "default": "Kết quả"
+    },
+    {
+      "label": "Văn bản số câu đúng",
+      "default": "@score trong @total đúng",
+      "description": "Văn bản kết quả, có thể dùng biến: @score và @total. Ví dụ: '@score trong @total đúng'"
+    },
+    {
+      "label": "Văn bản hiển thị kết quả",
+      "default": "Xem kết quả"
+    },
+    {
+      "label": "Nhãn câu trả lời ngắn",
+      "default": "A:"
+    },
+    {
+      "label": "Văn bản nút làm lại",
+      "default": "Làm lại"
+    },
+    {
+      "label": "Phân biệt chữ hoa/thường",
+      "description": "Bắt buộc người dùng phải nhập chính xác giống với đáp án (cả chữ hoa và thường)."
+    },
+    {
+      "label": "Văn bản sai dành cho công nghệ hỗ trợ",
+      "default": "Câu trả lời sai. Đáp án đúng là @answer",
+      "description": "Văn bản sẽ được công nghệ hỗ trợ đọc. Sử dụng @answer làm biến."
+    },
+    {
+      "label": "Phản hồi đúng dành cho công nghệ hỗ trợ",
+      "default": "@answer là chính xác.",
+      "description": "Văn bản sẽ được công nghệ hỗ trợ đọc khi trả lời đúng. Sử dụng @answer làm biến."
+    },
+    {
+      "label": "Thông báo chuyển thẻ cho công nghệ hỗ trợ",
+      "default": "Trang @current trong @total",
+      "description": "Văn bản sẽ được công nghệ hỗ trợ đọc khi chuyển giữa các thẻ. Dùng @current và @total làm biến."
+    },
+    {
+      "label": "Ngẫu nhiên hóa thẻ",
+      "description": "Kích hoạt để ngẫu nhiên hóa thứ tự các thẻ được hiển thị."
+    }
+  ]
+}

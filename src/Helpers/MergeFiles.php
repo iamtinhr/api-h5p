@@ -17,7 +17,7 @@ class MergeFiles
     {
         $this->arrayFiles = $filesArray ?? [];
         $this->fileType = $fileType ?? 'txt';
-        $this->patch = $patch ?? storage_path();
+        $this->patch = $patch ?? Storage::disk('upload')->path('');
         $this->hash = $this->getHash();
     }
 
@@ -43,12 +43,7 @@ class MergeFiles
 
     public function getHash(): string
     {
-        $hash = [];
-        foreach ($this->arrayFiles as $file) {
-            $hash[] = hash('md5', Storage::get($this->getNameAfterPrefix($file)));
-        }
-
-        return md5(serialize($hash));
+        return md5(serialize($this->arrayFiles));
     }
 
     /**
@@ -95,11 +90,7 @@ class MergeFiles
                 fwrite($stream, $contents . PHP_EOL);
             }
             rewind($stream);
-            if (config('filesystems.default') === 's3') {
-                Storage::put($this->getNameAfterPrefix($fileName), $stream);
-            } else {
-                file_put_contents($fileName, $stream);
-            }
+            file_put_contents($fileName, $stream);
             fclose($stream);
 
             return true;
@@ -113,20 +104,10 @@ class MergeFiles
      */
     private function getContent(string $path): string
     {
-        $folderPath = $this->getNameAfterPrefix($path);
-        if (Storage::exists($folderPath)) {
-            return Storage::get($folderPath);
-        }
-
         if (file_exists($path)) {
             return file_get_contents($path);
         }
 
-        throw new Exception("File: '" . $path . "' do not exist");
-    }
-
-    private function getNameAfterPrefix(string $fileName): string
-    {
-        return env('AWS_URL', null) ? Str::after($fileName, env('AWS_URL')) : $fileName;
+        throw new Exception("File: '".$path."' do not exist");
     }
 }

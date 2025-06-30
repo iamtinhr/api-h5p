@@ -1,0 +1,66 @@
+{
+  "title": "Ghép cặp hình ảnh",
+  "description": "Tìm và ghép hai hình ảnh tương ứng.",
+  "semantics": [
+    {
+      "label": "Headline",
+      "default": "Tìm cặp hình",
+      "description": "Tiêu đề hiển thị phía trên hoạt động."
+    },
+    {
+      "label": "Trợ giúp cho người khiếm thị",
+      "default": "Chọn hai hình trùng nhau để ghép."
+    },
+    {
+      "label": "Phản hồi khi đúng",
+      "default": "Chính xác!",
+      "description": "Văn bản hiển thị khi người dùng ghép đúng cặp ảnh."
+    },
+    {
+      "label": "Phản hồi khi sai",
+      "default": "Sai rồi!",
+      "description": "Văn bản hiển thị khi người dùng ghép sai ảnh."
+    },
+    {
+      "label": "Nội dung trợ giúp",
+      "default": "Bắt đầu ghép hình",
+      "description": "Văn bản trợ giúp hiển thị khi bắt đầu hoạt động."
+    },
+    {
+      "label": "Thông báo hoàn thành",
+      "default": "Bạn đã ghép tất cả!",
+      "description": "Thông báo hiển thị khi đã ghép hết tất cả các cặp."
+    },
+    {
+      "label": "Nút làm lại",
+      "default": "Làm lại",
+      "description": "Văn bản cho nút để chơi lại từ đầu."
+    },
+    {
+      "label": "Nút xem đáp án",
+      "default": "Xem đáp án",
+      "description": "Văn bản cho nút bật/tắt chế độ hiển thị đáp án đúng."
+    },
+    {
+      "label": "Enable retry",
+      "description": "Cho phép người dùng làm lại hoạt động."
+    },
+    {
+      "label": "Enable solution button",
+      "description": "Cho phép hiển thị nút xem đáp án."
+    },
+    {
+      "label": "Enable check button",
+      "description": "Cho phép hiển thị nút kiểm tra."
+    }
+  ],
+  "localization": {
+    "checkAnswer": "Kiểm tra",
+    "tryAgain": "Làm lại",
+    "showSolution": "Hiển thị đáp án",
+    "correctFeedback": "Chính xác!",
+    "incorrectFeedback": "Sai rồi!",
+    "scoreBarLabel": "Bạn ghép đúng :num trên tổng số :total cặp",
+    "taskDescription": "Chọn hai hình để ghép cặp"
+  }
+}

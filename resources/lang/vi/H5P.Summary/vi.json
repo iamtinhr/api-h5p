@@ -1,0 +1,113 @@
+{
+  "semantics": [
+    {
+      "label": "Giới thiệu",
+      "default": "Chọn câu đúng.",
+      "description": "Văn bản hiển thị phía trên phần nhiệm vụ cuối cùng."
+    },
+    {
+      "widgets": [
+        {
+          "label": "Mặc định"
+        },
+        {
+          "label": "Dạng văn bản"
+        }
+      ],
+      "label": "Nhiệm vụ cuối cùng",
+      "entity": "câu",
+      "field": {
+        "label": "Bộ câu hỏi",
+        "fields": [
+          {
+            "label": "Danh sách các câu – câu đầu tiên là đúng.",
+            "entity": "câu",
+            "field": {
+              "label": "Câu hỏi"
+            }
+          },
+          {
+            "label": "Gợi ý",
+            "fields": [
+              {
+                "label": "Nội dung gợi ý"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Tùy chỉnh phản hồi theo khoảng điểm số",
+          "description": "Nhấn vào nút 'Thêm khoảng' để tạo bao nhiêu khoảng tùy ý. Ví dụ: 0–20% Kết quả chưa tốt, 21–91% Kết quả trung bình, 91–100% Rất tốt!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Thông báo cho khoảng điểm này",
+                "placeholder": "Nhập thông báo phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Văn bản hiển thị trước số bộ câu đã hoàn thành trong nhiệm vụ cuối cùng.",
+      "default": "Tiến độ:",
+      "description": "Sẽ hiển thị phía trên danh sách câu. Ví dụ: 'Tiến độ: 2/5'"
+    },
+    {
+      "label": "Văn bản hiển thị trước số bộ câu có câu trả lời sai.",
+      "default": "Lỗi:",
+      "description": "Sẽ hiển thị phía trên danh sách câu. Ví dụ: 'Lỗi: 4'"
+    },
+    {
+      "label": "Tiêu đề danh sách kết quả",
+      "default": "Kết quả của bạn",
+      "description": "Sẽ hiển thị phía trên bảng kết quả."
+    },
+    {
+      "label": "Thông báo đúng dành cho trình đọc màn hình",
+      "default": "Chính xác."
+    },
+    {
+      "label": "Thông báo sai dành cho trình đọc màn hình",
+      "default": "Sai! Vui lòng thử lại."
+    },
+    {
+      "label": "Nhãn cho câu trả lời sai (trình đọc màn hình)",
+      "default": "Sai"
+    },
+    {
+      "label": "Tiêu đề danh sách các câu trả lời đúng",
+      "default": "Câu trả lời đúng."
+    },
+    {
+      "label": "Nhãn nút gợi ý",
+      "default": "Gợi ý"
+    },
+    {
+      "label": "Mô tả danh sách kết quả cho trình đọc màn hình",
+      "description": ":num và :total là các biến sẽ được thay thế bằng giá trị tương ứng",
+      "default": "Bạn đạt :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Tiến độ dành cho trình đọc màn hình",
+      "description": ":num và :total là các biến sẽ được thay thế bằng giá trị tương ứng",
+      "default": "Tiến độ :num trên :total"
+    }
+  ]
+}

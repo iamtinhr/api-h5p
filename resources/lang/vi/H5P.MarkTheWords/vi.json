@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt tính năng phóng to hình ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả nhiệm vụ",
+      "description": "Mô tả cách người dùng cần thực hiện nhiệm vụ.",
+      "placeholder": "Nhấp vào tất cả các động từ trong đoạn văn sau."
+    },
+    {
+      "label": "Trường văn bản",
+      "placeholder": "Đây là câu trả lời: *cautraloi*.",
+      "important": {
+        "description": "<ul><li>Các từ được đánh dấu bằng dấu hoa thị (*).</li><li>Có thể thêm dấu hoa thị bên trong từ bằng cách thêm dấu hoa thị kép, ví dụ: *tudung*** =&gt; tudung*.</li></ul>",
+        "example": "Các từ đúng được đánh dấu như sau: *tudung*, dấu hoa thị được viết như thế này: *tudung***."
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Tùy chỉnh phản hồi cho từng khoảng điểm",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm bao nhiêu khoảng tùy ý. Ví dụ: 0–20% điểm kém, 21–91% điểm trung bình, 91–100% điểm tuyệt vời!",
+          "entity": "khoảng điểm",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã chọn",
+                "placeholder": "Nhập nội dung phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Văn bản cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Văn bản cho nút \"Gửi bài\"",
+      "default": "Gửi bài"
+    },
+    {
+      "label": "Văn bản cho nút \"Làm lại\"",
+      "default": "Làm lại"
+    },
+    {
+      "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án"
+    },
+    {
+      "label": "Cài đặt hành vi.",
+      "description": "Các tùy chọn này sẽ giúp bạn kiểm soát hành vi của nhiệm vụ.",
+      "fields": [
+        {
+          "label": "Bật nút \"Làm lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Bật nút \"Kiểm tra\""
+        },
+        {
+          "label": "Hiển thị điểm số",
+          "description": "Hiển thị số điểm đạt được cho mỗi câu trả lời."
+        }
+      ]
+    },
+    {
+      "label": "Văn bản cho câu trả lời đúng",
+      "default": "Chính xác!",
+      "description": "Văn bản dùng để thông báo câu trả lời đúng"
+    },
+    {
+      "label": "Văn bản cho câu trả lời sai",
+      "default": "Không chính xác!",
+      "description": "Văn bản dùng để thông báo câu trả lời sai"
+    },
+    {
+      "label": "Văn bản cho câu chưa chọn",
+      "default": "Chưa tìm thấy câu trả lời!",
+      "description": "Văn bản dùng để thông báo câu trả lời bị bỏ sót"
+    },
+    {
+      "label": "Mô tả khi hiển thị đáp án",
+      "default": "Nhiệm vụ đã được cập nhật để hiển thị đáp án.",
+      "description": "Văn bản này cho người dùng biết rằng nhiệm vụ đã được cập nhật với đáp án đúng."
+    },
+    {
+      "label": "Đại diện văn bản cho thanh điểm cho người dùng đọc bằng máy đọc",
+      "default": "Bạn đạt :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Nhãn cho văn bản đầy đủ dễ đọc bởi công nghệ hỗ trợ",
+      "default": "Văn bản đầy đủ dễ đọc"
+    },
+    {
+      "label": "Nhãn cho văn bản có thể đánh dấu từ cho công nghệ hỗ trợ",
+      "default": "Văn bản đầy đủ có thể đánh dấu từ"
+    },
+    {
+      "label": "Tiêu đề chế độ hiển thị đáp án cho công nghệ hỗ trợ",
+      "default": "Chế độ hiển thị đáp án"
+    },
+    {
+      "label": "Tiêu đề chế độ kiểm tra cho công nghệ hỗ trợ",
+      "default": "Chế độ kiểm tra"
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra các câu trả lời. Các đáp án sẽ được đánh dấu là đúng, sai hoặc chưa trả lời."
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án. Nhiệm vụ sẽ được đánh dấu với đáp án đúng."
+    },
+    {
+      "label": "Mô tả công nghệ hỗ trợ cho nút \"Làm lại\"",
+      "default": "Làm lại nhiệm vụ. Đặt lại tất cả câu trả lời và bắt đầu lại nhiệm vụ."
+    }
+  ]
+}

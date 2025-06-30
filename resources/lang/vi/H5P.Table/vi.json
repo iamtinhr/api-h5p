@@ -1,0 +1,8 @@
+{
+    "semantics": [
+        {
+            "label": "Bảng",
+            "default": "<table class=\"h5p-table\"><thead><tr><th scope=\"col\">Tiêu đề Cột 1</th><th scope=\"col\">Tiêu đề Cột 2</th></tr></thead><tbody><tr><td>Hàng 1 Cột 1</td><td>Hàng 1 Cột 2</td></tr><tr><td>Hàng 2 Cột 1</td><td>Hàng 2 Cột 2</td></tr></tbody></table>"
+        }
+    ]
+}

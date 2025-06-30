@@ -1,0 +1,18 @@
+{
+  "libraryStrings": {
+    "confirmReset": "Bạn có chắc chắn muốn thay đổi bố cục không? Điều này sẽ đặt lại bản xem trước.",
+    "sameAsSpacing": "Giống như khoảng cách",
+    "noFrame": "Không có khung",
+    "uploadError": "Không thể tải hình ảnh lên. Tệp có thể quá lớn.",
+    "zoomIn": "Phóng to",
+    "zoomOut": "Thu nhỏ",
+    "noMoreZoom": "Đã đạt mức tối đa",
+    "addImage": "Thêm hình ảnh",
+    "changeImage": "Thay đổi hình ảnh",
+    "imageSettings": "Cài đặt hình ảnh",
+    "close": "Đóng",
+    "imageAltLabel": "Văn bản thay thế",
+    "imageTitleLabel": "Tiêu đề hiển thị khi di chuột",
+    "pleaseConfirm": "Xác nhận"
+  }
+}

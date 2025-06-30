@@ -1,0 +1,512 @@
+{
+  "semantics": [
+    {
+      "label": "Văn bản giới thiệu",
+      "description": "Văn bản này có thể được hiển thị tùy chọn cùng với mã của bạn."
+    },
+    {
+      "label": "Loại mã",
+      "description": "Chọn loại mã bạn muốn tạo",
+      "options": [
+        {
+          "label": "Liên hệ"
+        },
+        {
+          "label": "Sự kiện"
+        },
+        {
+          "label": "Địa chỉ Email"
+        },
+        {
+          "label": "H5P"
+        },
+        {
+          "label": "Địa điểm"
+        },
+        {
+          "label": "Số điện thoại"
+        },
+        {
+          "label": "SMS"
+        },
+        {
+          "label": "Văn bản"
+        },
+        {
+          "label": "URL"
+        }
+      ]
+    },
+    {
+      "label": "Liên hệ",
+      "fields": [
+        {
+          "label": "Tên",
+          "placeholder": "Nguyễn Văn A"
+        },
+        {
+          "label": "Tổ chức",
+          "placeholder": "Câu lạc bộ người hâm mộ H5P"
+        },
+        {
+          "label": "Chức danh",
+          "placeholder": "Chuyên gia không chuyên"
+        },
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại (vui lòng sử dụng định dạng +12 345 67890)",
+          "placeholder": "+12 345 67890"
+        },
+        {
+          "label": "Địa chỉ Email",
+          "description": "Địa chỉ Email để gửi tin nhắn",
+          "placeholder": "nguyenvana@caulacboh5p.org"
+        },
+        {
+          "label": "Địa chỉ",
+          "fields": [
+            {
+              "label": "Địa chỉ đầy đủ",
+              "description": "Thông tin c/o, v.v.",
+              "placeholder": "C/o Câu lạc bộ người hâm mộ H5P"
+            },
+            {
+              "label": "Đường",
+              "description": "Tên đường và số nhà",
+              "placeholder": "Đường Daytona Tây #1308"
+            },
+            {
+              "label": "Địa phương",
+              "description": "Tên thành phố, v.v.",
+              "placeholder": "Hà Nội"
+            },
+            {
+              "label": "Khu vực",
+              "description": "Tỉnh, thành phố, v.v.",
+              "placeholder": "HN"
+            },
+            {
+              "label": "Mã bưu điện",
+              "description": "Mã bưu điện",
+              "placeholder": "100000"
+            },
+            {
+              "label": "Quốc gia",
+              "description": "Quốc gia",
+              "placeholder": "Việt Nam"
+            }
+          ]
+        },
+        {
+          "label": "Trang web",
+          "description": "Trang web để liên kết (phải bắt đầu bằng https:// hoặc http://)",
+          "placeholder": "https://caulacboh5p.org"
+        },
+        {
+          "label": "Ghi chú",
+          "description": "Ghi chú",
+          "placeholder": "Nguyễn Văn A rất thích H5P."
+        }
+      ]
+    },
+    {
+      "label": "Sự kiện",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "description": "Tiêu đề cho sự kiện trên lịch",
+          "placeholder": "Hội nghị H5P 2020"
+        },
+        {
+          "label": "Sự kiện cả ngày",
+          "description": "Kích hoạt nếu sự kiện diễn ra cả ngày"
+        },
+        {
+          "label": "Ngày bắt đầu",
+          "description": "Ngày bắt đầu sự kiện (vui lòng sử dụng định dạng yyyy/mm/dd)",
+          "placeholder": "18/05/2020"
+        },
+        {
+          "label": "Giờ bắt đầu",
+          "description": "Giờ bắt đầu sự kiện (vui lòng sử dụng định dạng hh:mm)",
+          "placeholder": "09:00"
+        },
+        {
+          "label": "Ngày kết thúc",
+          "description": "Ngày kết thúc sự kiện (vui lòng sử dụng định dạng yyyy/mm/dd)",
+          "placeholder": "20/05/2020"
+        },
+        {
+          "label": "Giờ kết thúc",
+          "description": "Giờ kết thúc sự kiện (vui lòng sử dụng định dạng hh:mm)",
+          "placeholder": "16:00"
+        },
+        {
+          "label": "Múi giờ",
+          "description": "Chọn múi giờ nơi sự kiện diễn ra",
+          "options": [
+            {
+              "label": "UTC-12:00"
+            },
+            {
+              "label": "UTC-11:00"
+            },
+            {
+              "label": "UTC-10:00"
+            },
+            {
+              "label": "UTC-9:30"
+            },
+            {
+              "label": "UTC-9:00"
+            },
+            {
+              "label": "UTC-8:00"
+            },
+            {
+              "label": "UTC-7:00"
+            },
+            {
+              "label": "UTC-6:00"
+            },
+            {
+              "label": "UTC-5:00"
+            },
+            {
+              "label": "UTC-4:00"
+            },
+            {
+              "label": "UTC-3:30"
+            },
+            {
+              "label": "UTC-3:00"
+            },
+            {
+              "label": "UTC-2:00"
+            },
+            {
+              "label": "UTC-1:00"
+            },
+            {
+              "label": "UTC"
+            },
+            {
+              "label": "UTC+1:00"
+            },
+            {
+              "label": "UTC+2:00"
+            },
+            {
+              "label": "UTC+3:00"
+            },
+            {
+              "label": "UTC+3:30"
+            },
+            {
+              "label": "UTC+4:00"
+            },
+            {
+              "label": "UTC+4:30"
+            },
+            {
+              "label": "UTC+5:00"
+            },
+            {
+              "label": "UTC+5:30"
+            },
+            {
+              "label": "UTC+5:45"
+            },
+            {
+              "label": "UTC+6:00"
+            },
+            {
+              "label": "UTC+6:30"
+            },
+            {
+              "label": "UTC+7:00"
+            },
+            {
+              "label": "UTC+8:00"
+            },
+            {
+              "label": "UTC+9:00"
+            },
+            {
+              "label": "UTC+9:30"
+            },
+            {
+              "label": "UTC+10:00"
+            },
+            {
+              "label": "UTC+10:30"
+            },
+            {
+              "label": "UTC+11:00"
+            },
+            {
+              "label": "UTC+12:00"
+            },
+            {
+              "label": "UTC+12:45"
+            },
+            {
+              "label": "UTC+13:00"
+            },
+            {
+              "label": "UTC+14:00"
+            }
+          ]
+        },
+        {
+          "label": "Giờ mùa hè",
+          "description": "Kích hoạt nếu sự kiện diễn ra trong thời gian áp dụng giờ mùa hè"
+        },
+        {
+          "label": "Địa điểm",
+          "description": "Nhập vị trí của địa điểm",
+          "placeholder": "Hà Nội, Việt Nam"
+        },
+        {
+          "label": "Mô tả",
+          "description": "Thêm mô tả cho sự kiện",
+          "placeholder": "Hội nghị H5P lần thứ 3"
+        }
+      ]
+    },
+    {
+      "label": "Địa chỉ Email",
+      "fields": [
+        {
+          "label": "Địa chỉ Email",
+          "description": "Địa chỉ Email để gửi tin nhắn",
+          "placeholder": "nguyenvana@caulacboh5p.org"
+        }
+      ]
+    },
+    {
+      "label": "Nội dung H5P",
+      "fields": [
+        {
+          "label": "Nội dung H5P",
+          "description": "Nội dung H5P để hiển thị"
+        }
+      ]
+    },
+    {
+      "label": "Địa điểm",
+      "fields": [
+        {
+          "label": "Vĩ độ",
+          "description": "Vĩ độ (vui lòng sử dụng định dạng 53.864462)",
+          "placeholder": "69.646007"
+        },
+        {
+          "label": "Kinh độ",
+          "description": "Kinh độ (vui lòng sử dụng định dạng 10.663792)",
+          "placeholder": "18.954036"
+        }
+      ]
+    },
+    {
+      "label": "Số điện thoại",
+      "fields": [
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại để gọi (vui lòng sử dụng định dạng +12 345 67890)",
+          "placeholder": "+12 345 67890"
+        }
+      ]
+    },
+    {
+      "label": "SMS",
+      "fields": [
+        {
+          "label": "Số điện thoại",
+          "description": "Số điện thoại để gửi tin nhắn (vui lòng sử dụng định dạng +12 345 67890)",
+          "placeholder": "+12 345 67890"
+        },
+        {
+          "label": "Tin nhắn",
+          "description": "Tin nhắn để gửi",
+          "placeholder": "Vui lòng mua bánh mì và sữa!"
+        }
+      ]
+    },
+    {
+      "label": "Văn bản",
+      "fields": [
+        {
+          "label": "Văn bản",
+          "description": "Văn bản để mã hóa",
+          "placeholder": "Vui lòng mua\n* sữa\n* bánh mì"
+        }
+      ]
+    },
+    {
+      "label": "URL",
+      "fields": [
+        {
+          "label": "URL",
+          "description": "URL để liên kết (phải bắt đầu bằng https:// hoặc http://)",
+          "placeholder": "https://caulacboh5p.org"
+        }
+      ]
+    },
+    {
+      "label": "Cấu hình hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+      "fields": [
+        {
+          "label": "Màu mã",
+          "default": "#000000"
+        },
+        {
+          "label": "Màu nền",
+          "default": "#ffffff"
+        },
+        {
+          "label": "Kích thước tối đa",
+          "description": "Kích thước tối đa cho mã được đưa ra trong ký hiệu CSS (mặc định là pixel nếu chỉ nhập số)"
+        },
+        {
+          "label": "Căn chỉnh ngang",
+          "description": "Thiết lập căn chỉnh ngang nếu kích thước tối đa được thiết lập",
+          "options": [
+            {
+              "label": "trái"
+            },
+            {
+              "label": "giữa"
+            },
+            {
+              "label": "phải"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Giao diện người dùng",
+      "fields": [
+        {
+          "label": "Địa chỉ",
+          "default": "Địa chỉ"
+        },
+        {
+          "label": "Liên hệ",
+          "default": "Liên hệ"
+        },
+        {
+          "label": "Quốc gia",
+          "default": "Quốc gia"
+        },
+        {
+          "label": "Ngày kết thúc",
+          "default": "Ngày kết thúc"
+        },
+        {
+          "label": "Ngày bắt đầu",
+          "default": "Ngày bắt đầu"
+        },
+        {
+          "label": "Mô tả",
+          "default": "Mô tả"
+        },
+        {
+          "label": "Email",
+          "default": "Email"
+        },
+        {
+          "label": "Sự kiện",
+          "default": "Sự kiện"
+        },
+        {
+          "label": "Địa chỉ đầy đủ",
+          "default": "Địa chỉ đầy đủ"
+        },
+        {
+          "label": "Vĩ độ",
+          "default": "Vĩ độ"
+        },
+        {
+          "label": "Địa phương",
+          "default": "Địa phương"
+        },
+        {
+          "label": "Địa điểm",
+          "default": "Địa điểm"
+        },
+        {
+          "label": "Kinh độ",
+          "default": "Kinh độ"
+        },
+        {
+          "label": "Tin nhắn",
+          "default": "Tin nhắn"
+        },
+        {
+          "label": "Tên",
+          "default": "Tên"
+        },
+        {
+          "label": "Ghi chú",
+          "default": "Ghi chú"
+        },
+        {
+          "label": "Tổ chức",
+          "default": "Tổ chức"
+        },
+        {
+          "label": "Điện thoại",
+          "default": "Điện thoại"
+        },
+        {
+          "label": "Khu vực",
+          "default": "Khu vực"
+        },
+        {
+          "label": "SMS",
+          "default": "SMS"
+        },
+        {
+          "label": "Đường",
+          "default": "Đường"
+        },
+        {
+          "label": "Văn bản",
+          "default": "Văn bản"
+        },
+        {
+          "label": "Tiêu đề",
+          "default": "Tiêu đề"
+        },
+        {
+          "label": "URL",
+          "default": "URL"
+        },
+        {
+          "label": "Mã bưu điện",
+          "default": "Mã bưu điện"
+        }
+      ]
+    },
+    {
+      "label": "Trình đọc màn hình",
+      "fields": [
+        {
+          "label": "Mã QR. Hiển thị thông tin (Văn bản cho trình đọc màn hình)",
+          "default": "Mã QR. Hiển thị thông tin."
+        },
+        {
+          "label": "Ẩn thông tin (Văn bản cho trình đọc màn hình)",
+          "default": "Ẩn thông tin."
+        },
+        {
+          "label": "Nội dung mã (Văn bản cho trình đọc giọng nói)",
+          "default": ". Nội dung mã"
+        }
+      ]
+    }
+  ]
+}

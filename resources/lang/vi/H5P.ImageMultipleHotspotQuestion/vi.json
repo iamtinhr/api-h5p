@@ -1,0 +1,91 @@
+{
+    "semantics": [
+        {
+            "label": "Trình biên tập câu hỏi nhiều điểm nóng (Image Multiple Hotspot Question)",
+            "fields": [
+                {
+                    "label": "Ảnh nền",
+                    "fields": [
+                        {
+                            "label": "Tiêu đề câu hỏi",
+                            "default": "Câu hỏi điểm nóng",
+                            "description": "Dùng trong phần tổng kết, thống kê, v.v."
+                        },
+                        {
+                            "label": "Ảnh nền",
+                            "description": "Chọn hình ảnh được sử dụng làm nền cho câu hỏi."
+                        }
+                    ]
+                },
+                {
+                    "label": "Điểm nóng (Hotspot)",
+                    "description": "Chọn biểu tượng thích hợp cho điểm nóng, cấu hình nó, rồi kéo và thả lên hình ảnh. Bạn có thể thay đổi kích thước và vị trí của nó.",
+                    "fields": [
+                        {
+                            "label": "Mô tả nhiệm vụ",
+                            "description": "Hướng dẫn dành cho người dùng."
+                        },
+                        {
+                            "label": "Tên điểm nóng",
+                            "description": "Nhập thông tin người dùng cần tìm, ví dụ: mối nguy hiểm, đối tượng, lỗi... (nội dung này sẽ hiển thị trong phản hồi)."
+                        },
+                        {
+                            "label": "Số điểm nóng đúng cần tìm để hoàn thành nhiệm vụ",
+                            "description": "Nếu bỏ trống, số điểm nóng được tạo ra sẽ được dùng làm mặc định."
+                        },
+                        {
+                            "label": "Điểm nóng",
+                            "entity": "Điểm nóng",
+                            "field": {
+                                "label": "Điểm nóng",
+                                "fields": [
+                                    {
+                                        "label": "Cài đặt người dùng",
+                                        "fields": [
+                                            {
+                                                "label": "Câu trả lời đúng",
+                                                "description": "Có thể có nhiều điểm nóng đúng. Tuy nhiên, người dùng sẽ nhận phản hồi sau lần nhấp đầu tiên. Phản hồi sẽ có dạng – (Văn bản bên dưới) (Số điểm đúng đã chọn) trong (Tổng số điểm cần chọn đúng) (Tên điểm nóng phía trên)."
+                                            },
+                                            {
+                                                "label": "Phản hồi",
+                                                "placeholder": "Bạn đã chọn đúng"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "label": "Cài đặt vị trí",
+                                        "fields": [
+                                            {
+                                                "label": "x"
+                                            },
+                                            {
+                                                "label": "y"
+                                            },
+                                            {
+                                                "label": "chiều rộng"
+                                            },
+                                            {
+                                                "label": "chiều cao"
+                                            },
+                                            {
+                                                "label": "hình dạng"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "label": "Phản hồi nếu người dùng chọn một vị trí không chứa điểm nóng:",
+                            "placeholder": "Bạn chưa chọn đúng điểm nào, hãy thử lại!"
+                        },
+                        {
+                            "label": "Phản hồi nếu người dùng chọn lại điểm nóng đã chọn rồi:",
+                            "placeholder": "Bạn đã chọn điểm này trước đó!"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "semantics": [
+        {
+            "label": "Danh sách câu hỏi",
+            "entity": "câu hỏi",
+            "widgets": [
+                {
+                    "label": "Mặc định"
+                },
+                {
+                    "label": "Văn bản"
+                }
+            ],
+            "field": {
+                "label": "Câu hỏi và đáp án",
+                "fields": [
+                    {
+                        "label": "Câu hỏi"
+                    },
+                    {
+                        "label": "Đáp án - đáp án đầu tiên là đúng.",
+                        "entity": "đáp án",
+                        "field": {
+                            "label": "Đáp án"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "label": "Phản hồi chung",
+            "fields": [
+                {
+                    "widgets": [
+                        {
+                            "label": "Mặc định"
+                        }
+                    ],
+                    "label": "Thiết lập phản hồi cho từng vùng điểm",
+                    "description": "Nhấn \"Thêm vùng\" để thêm vùng phù hợp. Ví dụ: 0-20% Kém, 21-91% Trung bình, 91-100% Xuất sắc!",
+                    "entity": "Vùng",
+                    "field": {
+                        "fields": [
+                            {
+                                "label": "Khoảng điểm"
+                            },
+                            {},
+                            {
+                                "label": "Phản hồi cho vùng điểm này",
+                                "placeholder": "Nhập phản hồi"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Cài đặt hành vi",
+            "fields": [
+                {
+                    "label": "Tự động tiếp tục",
+                    "description": "Tự động chuyển sang câu hỏi tiếp theo sau khi chọn đáp án"
+                },
+                {
+                    "label": "Giới hạn thời gian cho đáp án đúng",
+                    "description": "Giá trị tính bằng mili giây"
+                },
+                {
+                    "label": "Giới hạn thời gian cho đáp án sai",
+                    "description": "Giá trị tính bằng mili giây"
+                },
+                {
+                    "label": "Hiệu ứng âm thanh"
+                },
+                {
+                    "label": "Nút \"Làm lại\""
+                },
+                {
+                    "label": "Nút \"Hiển thị đáp án\""
+                },
+                {
+                    "label": "Tỷ lệ phần trăm đạt",
+                    "description": "Tỷ lệ phần trăm tổng điểm cần đạt để qua bài kiểm tra."
+                }
+            ]
+        },
+        {
+            "label": "Dịch - Bộ câu hỏi chọn một đáp án",
+            "fields": [
+                {
+                    "label": "Nhãn nút \"Tiếp theo\"",
+                    "default": "Câu hỏi tiếp theo"
+                },
+                {
+                    "label": "Nhãn nút \"Hiển thị đáp án\"",
+                    "default": "Hiển thị đáp án"
+                },
+                {
+                    "label": "Nhãn nút \"Làm lại\"",
+                    "default": "Làm lại"
+                },
+                {
+                    "label": "Tiêu đề ở chế độ xem đáp án",
+                    "default": "Danh sách đáp án"
+                },
+                {
+                    "label": "Âm thanh cho đáp án đúng",
+                    "default": "Tuyệt vời!"
+                },
+                {
+                    "label": "Âm thanh cho đáp án sai",
+                    "default": "Sai!"
+                },
+                {
+                    "label": "Nhãn nút \"Tắt tiếng\" để tắt âm thanh",
+                    "default": "Tắt âm thanh phản hồi"
+                },
+                {
+                    "label": "Nhãn nút \"Đóng\"",
+                    "default": "Đóng"
+                },
+                {
+                    "label": "Văn bản số trang",
+                    "description": "Hiển thị trang hiện tại và tổng số trang, biến là :num và :total",
+                    "default": "Trang :num trên :total"
+                },
+                {
+                    "label": "Văn bản thanh điểm cho người dùng công nghệ hỗ trợ",
+                    "default": "Bạn đạt :num trên :total điểm"
+                },
+                {
+                    "label": "Nhãn số câu hỏi trong danh sách đáp án",
+                    "description": "Hiển thị chỉ số câu hỏi hiện tại trong danh sách, biến là :num",
+                    "default": "Câu hỏi :num"
+                },
+                {
+                    "label": "Mô tả nút \"Hiển thị đáp án\" cho công nghệ hỗ trợ",
+                    "default": "Hiển thị đáp án. Bài sẽ được đánh dấu là hoàn thành đúng."
+                },
+                {
+                    "label": "Mô tả nút \"Làm lại\" cho công nghệ hỗ trợ",
+                    "default": "Làm lại bài. Đặt lại tất cả đáp án và bắt đầu lại."
+                }
+            ]
+        }
+    ]
+}

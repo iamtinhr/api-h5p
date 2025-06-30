@@ -1,0 +1,214 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt tính năng phóng to hình ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả nhiệm vụ",
+      "default": "Điền vào chỗ trống",
+      "description": "Hướng dẫn cho người dùng cách thực hiện bài tập này."
+    },
+    {
+      "label": "Khối văn bản",
+      "entity": "khối văn bản",
+      "field": {
+        "label": "Dòng văn bản",
+        "placeholder": "Oslo là thủ đô của *Na Uy*.",
+        "important": {
+          "description": "<ul><li>Chỗ trống được đánh dấu bằng dấu hoa thị (*) trước và sau từ/cụm từ đúng.</li><li>Các câu trả lời thay thế được phân tách bằng dấu gạch chéo (/).</li><li>Bạn có thể thêm gợi ý bằng cách sử dụng dấu hai chấm (:) trước phần gợi ý.</li></ul>",
+          "example": "Nội dung H5P có thể được chỉnh sửa bằng *trình duyệt/web-browser:Một thứ bạn dùng hàng ngày*."
+        }
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Định nghĩa phản hồi tùy chỉnh cho từng khoảng điểm",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm bao nhiêu khoảng điểm tùy ý. Ví dụ: 0-20% Kết quả kém, 21-91% Kết quả trung bình, 91-100% Kết quả tuyệt vời!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã định nghĩa",
+                "placeholder": "Nhập phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án"
+    },
+    {
+      "label": "Văn bản cho nút \"Làm lại\"",
+      "default": "Làm lại"
+    },
+    {
+      "label": "Văn bản cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Văn bản cho nút \"Nộp bài\"",
+      "default": "Nộp bài"
+    },
+    {
+      "label": "Văn bản cho thông báo \"Chưa điền đầy đủ\"",
+      "default": "Vui lòng điền tất cả chỗ trống để xem đáp án"
+    },
+    {
+      "label": "Văn bản cho thông báo \"':ans' là đúng\"",
+      "default": "':ans' là đúng"
+    },
+    {
+      "label": "Văn bản cho thông báo \"':ans' là sai\"",
+      "default": "':ans' là sai"
+    },
+    {
+      "label": "Văn bản cho thông báo \"Trả lời đúng\"",
+      "default": "Trả lời đúng"
+    },
+    {
+      "label": "Văn bản cho thông báo \"Trả lời sai\"",
+      "default": "Trả lời sai"
+    },
+    {
+      "label": "Nhãn hỗ trợ tiếp cận cho đáp án",
+      "default": "Đáp án đúng:"
+    },
+    {
+      "label": "Nhãn hỗ trợ tiếp cận cho ô nhập liệu",
+      "description": "Sử dụng @num và @total để thay thế số thứ tự và tổng số ô nhập",
+      "default": "Ô trống @num trong tổng số @total"
+    },
+    {
+      "label": "Nhãn hỗ trợ tiếp cận cho việc có gợi ý",
+      "default": "Có gợi ý"
+    },
+    {
+      "label": "Nhãn biểu tượng gợi ý",
+      "default": "Gợi ý"
+    },
+    {
+      "label": "Cài đặt hành vi.",
+      "description": "Các tùy chọn này giúp bạn kiểm soát hành vi của bài tập.",
+      "fields": [
+        {
+          "label": "Bật nút \"Làm lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Bật nút \"Kiểm tra\""
+        },
+        {
+          "label": "Tự động kiểm tra sau khi nhập"
+        },
+        {
+          "label": "Phân biệt chữ hoa/thường",
+          "description": "Đảm bảo câu trả lời phải khớp chính xác với đáp án."
+        },
+        {
+          "label": "Yêu cầu trả lời tất cả trước khi xem đáp án"
+        },
+        {
+          "label": "Hiển thị các ô trả lời trên các dòng riêng biệt"
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận khi nhấn \"Kiểm tra\"",
+          "description": "Không tương thích với tùy chọn \"Tự động kiểm tra sau khi nhập\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận khi nhấn \"Làm lại\""
+        },
+        {
+          "label": "Chấp nhận lỗi chính tả nhỏ",
+          "description": "Nếu bật, câu trả lời có lỗi chính tả nhỏ vẫn được tính là đúng (3-9 ký tự: cho phép 1 lỗi; trên 9 ký tự: cho phép 2 lỗi)"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận khi nhấn \"Kiểm tra\"",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "default": "Hoàn tất?"
+        },
+        {
+          "label": "Nội dung",
+          "default": "Bạn có chắc chắn muốn hoàn tất không?"
+        },
+        {
+          "label": "Nút hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nút xác nhận",
+          "default": "Hoàn tất"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận khi nhấn \"Làm lại\"",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "default": "Làm lại?"
+        },
+        {
+          "label": "Nội dung",
+          "default": "Bạn có chắc chắn muốn làm lại không?"
+        },
+        {
+          "label": "Nút hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nút xác nhận",
+          "default": "Xác nhận"
+        }
+      ]
+    },
+    {
+      "label": "Dạng văn bản thay thế của thanh điểm cho người khiếm thị",
+      "default": "Bạn đạt :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Mô tả hỗ trợ tiếp cận cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra đáp án. Các câu trả lời sẽ được đánh dấu là đúng, sai hoặc chưa trả lời."
+    },
+    {
+      "label": "Mô tả hỗ trợ tiếp cận cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án đúng. Bài tập sẽ được đánh dấu với các câu trả lời chính xác."
+    },
+    {
+      "label": "Mô tả hỗ trợ tiếp cận cho nút \"Làm lại\"",
+      "default": "Làm lại bài tập. Tất cả các câu trả lời sẽ được đặt lại và bắt đầu lại từ đầu."
+    },
+    {
+      "label": "Mô tả hỗ trợ tiếp cận khi bắt đầu bài tập",
+      "default": "Chế độ kiểm tra"
+    }
+  ]
+}

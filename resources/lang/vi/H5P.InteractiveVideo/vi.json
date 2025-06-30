@@ -1,0 +1,329 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa video tương tác",
+      "fields": [
+        {
+          "label": "Tải lên hoặc nhúng video",
+          "fields": [
+            {
+              "label": "Thêm video",
+              "description": "Nhấn nút bên dưới để thêm video mà bạn muốn chuyển thành phiên bản tương tác. Bạn có thể dán link hoặc tải file video từ ổ đĩa của mình. Có thể thêm nhiều phiên bản của cùng một video với chất lượng và độ phân giải khác nhau. Khuyến nghị định dạng MP4 và WEBM để tương thích với hầu hết trình duyệt."
+            },
+            {
+              "label": "Cài đặt màn hình khởi động (không áp dụng với YouTube)",
+              "fields": [
+                {
+                  "label": "Tiêu đề video tương tác",
+                  "default": "Video tương tác",
+                  "description": "Sử dụng trong phần tóm tắt, thống kê, v.v."
+                },
+                {
+                  "label": "Không hiển thị tiêu đề trên màn hình khởi động"
+                },
+                {
+                  "label": "Mô tả ngắn (tùy chọn)",
+                  "description": "Tùy chọn. Hiển thị mô tả ngắn trên màn hình khởi động. Không áp dụng với video YouTube."
+                },
+                {
+                  "label": "Hình bìa",
+                  "description": "Ảnh hiển thị trước khi bắt đầu phát video. Không áp dụng với video YouTube."
+                }
+              ]
+            },
+            {
+              "label": "Danh sách lời thoại (không áp dụng với YouTube)",
+              "fields": [
+                {
+                  "label": "Các đường dẫn lời thoại có sẵn",
+                  "entity": "Đường dẫn",
+                  "field": {
+                    "label": "Đường dẫn",
+                    "fields": [
+                      {
+                        "label": "Nhãn đường dẫn",
+                        "description": "Nhập nhãn nếu bạn thêm hơn một đường dẫn lời thoại để người xem chọn. Ví dụ: nhãn cho bản dịch tiếng Tây Ban Nha có thể là 'Phụ đề tiếng Tây Ban Nha'.",
+                        "default": "Phụ đề"
+                      },
+                      {
+                        "label": "Loại đường dẫn",
+                        "options": [
+                          { "label": "Bản dịch" },
+                          { "label": "Lời thoại gốc" },
+                          { "label": "Mô tả cho người khiếm thính" }
+                        ]
+                      },
+                      {
+                        "label": "Ngôn ngữ – bắt buộc với bản dịch",
+                        "default": "en",
+                        "description": "Nhập mã ngôn ngữ theo chuẩn BCP 47. Nếu đây là lời thoại dịch, phải chỉ định ngôn ngữ."
+                      },
+                      {
+                        "label": "File phụ đề (định dạng WebVTT)"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "label": "Đường dẫn lời thoại mặc định",
+                  "description": "Nếu để trống hoặc không khớp, đường dẫn đầu tiên trong danh sách sẽ được dùng."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Thêm tương tác",
+          "fields": [
+            {
+              "field": {
+                "fields": [
+                  { "label": "Thời điểm hiển thị" },
+                  { "label": "Tạm dừng video" },
+                  {
+                    "label": "Hiển thị dưới dạng",
+                    "description": "**Lời mời** là tương tác người xem phải nhấn để mở. **Trang** là tương tác tự mở trên nền video",
+                    "options": [
+                      { "label": "Lời mời" },
+                      { "label": "Trang" }
+                    ]
+                  },
+                  { "label": "Trên màn hình nhỏ hiển thị như lời mời" },
+                  { "label": "Nhãn", "description": "Văn bản hiển thị cạnh biểu tượng lời mời." },
+                  {},{},{},{},{},
+                  {
+                    "label": "Phản hồi",
+                    "fields": [
+                      {
+                        "label": "Phản hồi khi mọi câu trả lời đều đúng",
+                        "fields": [
+                          { "label": "Đi tới", "description": "Nhập mã thời gian theo dạng M:SS" },
+                          { "label": "Cho phép hủy chuyển tiếp và tiếp tục" },
+                          { "label": "Chú thích" },
+                          { "label": "Nhãn nút chuyển tiếp" }
+                        ]
+                      },
+                      {
+                        "label": "Phản hồi khi sai",
+                        "fields": [
+                          { "label": "Đi tới", "description": "Nhập mã thời gian theo dạng M:SS" },
+                          { "label": "Cho phép hủy chuyển tiếp và tiếp tục" },
+                          { "label": "Chú thích" },
+                          { "label": "Nhãn nút chuyển tiếp" }
+                        ]
+                      },
+                      {
+                        "label": "Yêu cầu hoàn thành đúng trước khi tiếp tục",
+                        "description": "Tốt nhất kết hợp với tùy chọn 'Ngăn người xem tua trước'."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Giao diện",
+                    "fields": [
+                      {
+                        "label": "Màu nền",
+                        "default": "rgb(255, 255, 255)"
+                      },
+                      {
+                        "label": "Bóng viền",
+                        "description": "Thêm bóng nhẹ quanh cửa sổ tương tác. Tắt nếu muốn trong suốt hoàn toàn."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Liên kết",
+                    "fields": [
+                      {
+                        "label": "Loại",
+                        "options": [
+                          { "label": "Mã thời gian" },
+                          { "label": "Đường dẫn URL" }
+                        ]
+                      },
+                      {
+                        "label": "Đi tới",
+                        "description": "Thời điểm trong video khi người xem nhấn lời mời. Nhập theo M:SS."
+                      },
+                      {
+                        "label": "URL",
+                        "fields": [
+                          {
+                            "label": "Giao thức",
+                            "options": [
+                              { "label": "http://" },
+                              { "label": "https://" },
+                              { "label": "(đường dẫn tương đối trên máy chủ)" },
+                              { "label": "Khác" }
+                            ]
+                          },
+                          { "label": "URL" }
+                        ]
+                      },
+                      {
+                        "label": "Làm nổi bật",
+                        "description": "Thêm biểu tượng và viền để nhấn mạnh đây là tương tác."
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "label": "Câu hỏi cuối",
+          "fields": [
+            {},
+            { "label": "Hiển thị trong", "description": "Số giây trước khi video kết thúc." }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Hành vi",
+      "fields": [
+        {
+          "label": "Thời gian bắt đầu",
+          "description": "Thời điểm bắt đầu phát (M:SS)."
+        },
+        {
+          "label": "Tự phát",
+          "description": "Tự động bắt đầu phát."
+        },
+        {
+          "label": "Lặp lại",
+          "description": "Phát lặp lại khi kết thúc."
+        },
+        {
+          "label": "Nút 'Hiển thị đáp án' (toàn cục)",
+          "description": "Chọn luôn hiển thị, luôn ẩn, hoặc tuỳ từng tương tác.",
+          "options": [
+            { "label": "Luôn hiển thị" },
+            { "label": "Luôn ẩn" }
+          ]
+        },
+        {
+          "label": "Nút 'Sửa lỗi' (toàn cục)",
+          "description": "Chọn luôn hiển thị, luôn ẩn, hoặc tuỳ từng tương tác.",
+          "options": [
+            { "label": "Luôn hiển thị" },
+            { "label": "Luôn ẩn" }
+          ]
+        },
+        {
+          "label": "Hiển thị tab khi khởi động",
+          "description": "Không hỗ trợ với YouTube trên iPad."
+        },
+        { "label": "Hiển thị nút tua ngược 10 giây" },
+        {
+          "label": "Ngăn tua trước",
+          "description": "Chặn thanh tiến độ để ngăn người xem tua trước."
+        },
+        {
+          "label": "Tắt âm thanh",
+          "description": "Tắt track âm thanh và không cho bật lại."
+        }
+      ]
+    },
+    {
+      "label": "Chú thích nút",
+      "fields": [
+        { "label": "Tiêu đề tương tác", "default": "Tương tác" },
+        { "label": "Nút phát", "default": "Phát" },
+        { "label": "Nút tạm dừng", "default": "Tạm dừng" },
+        { "label": "Nút tắt tiếng", "default": "Tắt tiếng, đang bật" },
+        { "label": "Nút bật tiếng", "default": "Bật tiếng, đang tắt" },
+        { "label": "Nút chọn chất lượng", "default": "Chất lượng video" },
+        { "label": "Nút lời thoại", "default": "Phụ đề" },
+        { "label": "Nút đóng", "default": "Đóng" },
+        { "label": "Nút toàn màn hình", "default": "Toàn màn hình" },
+        { "label": "Nút thoát toàn màn hình", "default": "Quay lại cửa sổ" },
+        { "label": "Tiêu đề tóm tắt", "default": "Tóm tắt" },
+        { "label": "Nút bookmark", "default": "Bookmark" },
+        { "label": "Nút gửi kết quả", "default": "Gửi kết quả" },
+        { "label": "Nút xác nhận chuyển tiếp", "default": "Chuyển tiếp" },
+        { "label": "Nút tiếp tục", "default": "Tiếp tục" },
+        { "label": "Nhãn tuỳ chọn khác", "default": "Thêm tuỳ chọn trình phát" },
+        { "label": "Nút điều chỉnh tốc độ", "default": "Tốc độ phát" },
+        { "label": "Nút tua ngược 10s", "default": "Tua lại 10 giây" },
+        { "label": "Thông báo thanh tiến độ bị tắt", "default": "Chức năng bị tắt" },
+        { "label": "Thông báo âm thanh bị tắt", "default": "Âm thanh đã tắt" },
+        { "label": "Thông báo yêu cầu hoàn thành", "default": "Trả lời tất cả câu hỏi để tiếp tục." }
+      ]
+    },
+    {
+      "label": "Tóm tắt kết quả",
+      "fields": [
+        {
+          "label": "Nút quay lại",
+          "default": "Quay lại"
+        },
+        {
+          "label": "Giờ",
+          "default": "giờ"
+        },
+        {
+          "label": "Phút",
+          "default": "phút"
+        },
+        {
+          "label": "Giây",
+          "default": "giây"
+        },
+        {
+          "label": "Thời gian hiện tại",
+          "default": "Thời gian hiện tại:"
+        },
+        {
+          "label": "Tổng thời gian",
+          "default": "Tổng thời gian:"
+        },
+        {
+          "label": "Đã xuất hiện 1 tương tác",
+          "default": "Đã xuất hiện 1 tương tác:"
+        },
+        {
+          "label": "Đã xuất hiện nhiều tương tác",
+          "default": "Đã xuất hiện nhiều tương tác."
+        },
+        {
+          "label": "Thông báo khi dừng video",
+          "default": "Phát đã dừng"
+        },
+        {
+          "label": "Nhãn nội dung",
+          "default": "Nội dung"
+        },
+        {
+          "label": "Thông báo kết quả (@answered sẽ thay thế số câu trả lời đúng)",
+          "default": "@answered câu trả lời đã đúng"
+        },
+        {
+          "label": "Tiêu đề bảng kết quả – câu trả lời",
+          "default": "@answered câu trả lời đúng"
+        },
+        {
+          "label": "Tiêu đề bảng kết quả – điểm",
+          "default": "Điểm"
+        },
+        {
+          "label": "Trạng thái nhiệm vụ",
+          "default": "hoàn thành"
+        },
+        {
+          "label": "Đọc tóm tắt kết quả có điểm (dành cho đọc màn hình)",
+          "default": "Bạn đạt @score trên @total điểm cho câu hỏi, xuất hiện sau @minutes phút và @seconds giây."
+        },
+        {
+          "label": "Đọc tóm tắt kết quả không có điểm (dành cho đọc màn hình)",
+          "default": "Bạn đã trả lời câu hỏi, xuất hiện sau @minutes phút và @seconds giây."
+        },
+        {
+          "label": "Thanh tiến độ video",
+          "default": "Tiến độ video"
+        }
+      ]
+    }
+  ]
+}

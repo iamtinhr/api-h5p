@@ -1,0 +1,43 @@
+{
+  "title": "Tìm từ",
+  "description": "Tìm tất cả các từ ẩn trong bảng chữ cái.",
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ",
+      "description": "Giới thiệu ngắn gọn về bài tập tìm từ."
+    },
+    {
+      "label": "Danh sách từ",
+      "description": "Danh sách các từ mà người học cần tìm."
+    },
+    {
+      "label": "Kích thước bảng",
+      "description": "Kích thước bảng chữ cái. Ví dụ: 10x10"
+    },
+    {
+      "label": "Cho phép xoay chéo",
+      "description": "Cho phép các từ xuất hiện theo đường chéo trong bảng."
+    },
+    {
+      "label": "Hiển thị gợi ý",
+      "description": "Hiển thị gợi ý cho mỗi từ trong danh sách."
+    }
+  ],
+  "localization": {
+    "startTask": "Bắt đầu",
+    "retry": "Làm lại",
+    "solution": "Hiển thị đáp án",
+    "scoreBarLabel": "Bạn đã tìm được :num trên tổng số :total từ",
+    "correctFeedback": "Tốt lắm! Bạn đã tìm đúng tất cả từ.",
+    "incorrectFeedback": "Hãy thử lại để tìm hết các từ.",
+    "taskDescription": "Tìm tất cả các từ được ẩn trong bảng chữ cái.",
+    "wordListHeader": "Danh sách từ",
+    "found": "Đã tìm thấy",
+    "notFound": "Chưa tìm thấy",
+    "checkButton": "Kiểm tra",
+    "showSolutionButton": "Hiển thị đáp án",
+    "tryAgainButton": "Thử lại",
+    "fullscreen": "Toàn màn hình",
+    "exitFullscreen": "Thoát toàn màn hình"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả",
+      "description": "Mô tả trang xuất tài liệu.",
+      "default": "Tại trang này bạn có thể xuất nội dung."
+    },
+    {
+      "label": "Nhãn nút tạo",
+      "description": "Văn bản hiển thị trên nút \"Tạo tài liệu\".",
+      "default": "Tạo tài liệu"
+    },
+    {
+      "label": "Nhãn nút gửi",
+      "description": "Văn bản hiển thị trên nút \"Gửi\".",
+      "default": "Gửi"
+    },
+    {
+      "label": "Nhãn gửi thành công",
+      "default": "Báo cáo của bạn đã được gửi thành công!"
+    },
+    {
+      "label": "Nhãn chọn tất cả",
+      "description": "Văn bản hiển thị trên nút \"Chọn tất cả\".",
+      "default": "Chọn tất cả"
+    },
+    {
+      "label": "Nhãn nút xuất",
+      "description": "Văn bản hiển thị trên nút \"Xuất\".",
+      "default": "Xuất"
+    },
+    {
+      "label": "Nhãn tab Trợ giúp",
+      "description": "Nhãn dùng để hiển thị thông tin hữu ích bổ sung cho người dùng.",
+      "default": "Thêm thông tin"
+    },
+    {
+      "label": "Nhập thông tin bổ sung cho tab Trợ giúp",
+      "description": "Bạn có thể nhập thông tin bổ sung hữu ích cho người dùng tại đây."
+    },
+    {
+      "label": "Văn bản lỗi cho trường bắt buộc",
+      "description": "Thông báo lỗi hiển thị nếu một hoặc nhiều trường bắt buộc chưa được điền. @pages sẽ được thay thế bằng tiêu đề các trang liên quan.",
+      "default": "Có các tr��ờng bắt buộc trên các trang sau cần được điền để lưu tài liệu này: @pages"
+    }
+  ]
+}

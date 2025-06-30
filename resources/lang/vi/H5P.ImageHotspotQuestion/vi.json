@@ -1,0 +1,80 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa Câu hỏi điểm nóng Hình ảnh",
+      "fields": [
+        {
+          "label": "Hình ảnh nền",
+          "fields": [
+            {
+              "label": "Hình ảnh nền",
+              "description": "Chọn hình ảnh sẽ được sử dụng làm nền cho câu hỏi."
+            }
+          ]
+        },
+        {
+          "label": "Điểm nóng",
+          "description": "Kéo và thả biểu tượng từ thanh công cụ để tạo điểm mới. Nhấp đúp để chỉnh sửa điểm đã có. Kéo điểm nóng để di chuyển. Kéo biểu tượng thay đổi kích thước ở góc dưới bên phải để thay đổi kích thước.",
+          "fields": [
+            {
+              "label": "Mô tả nhiệm vụ",
+              "description": "Hướng dẫn cho người dùng."
+            },
+            {
+              "label": "Điểm nóng",
+              "entity": "Hotspot",
+              "field": {
+                "label": "Điểm nóng",
+                "fields": [
+                  {
+                    "label": "Cài đặt người dùng",
+                    "fields": [
+                      {
+                        "label": "Đáp án đúng",
+                        "description": "Có thể có nhiều điểm nóng đúng. Tuy nhiên, người dùng chỉ nhận phản hồi đúng/sai sau lần nhấp đầu tiên."
+                      },
+                      {
+                        "label": "Phản hồi"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Cài đặt tính toán"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Phản hồi nếu người dùng chọn điểm nóng trống:",
+              "placeholder": "Bạn không tìm thấy điểm nóng nào, hãy thử lại!"
+            },
+            {
+              "label": "Hiển thị phản hồi trong tooltip"
+            },
+            {
+              "label": "Vị trí",
+              "fields": [
+                {
+                  "label": "Văn bản nút \"Thử lại\"",
+                  "default": "Thử lại"
+                },
+                {
+                  "label": "Văn bản nút \"Đóng\"",
+                  "default": "Đóng"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Văn bản kết quả cho công nghệ hỗ trợ người khiếm thị.",
+      "default": "Bạn đạt :num trên :total điểm"
+    },
+    {
+      "label": "Nhãn nút \"Thử lại\" cho công nghệ hỗ trợ người khiếm thị.",
+      "default": "Thử lại: Đặt lại tất cả câu trả lời và bắt đầu lại."
+    }
+  ]
+}

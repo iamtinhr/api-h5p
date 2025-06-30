@@ -1,0 +1,94 @@
+{
+  "semantics": [
+    {
+      "label": "Ảnh nền",
+      "description": "Hình ảnh sẽ được hiển thị ở nền."
+    },
+    {
+      "label": "Văn bản thay thế cho ảnh nền",
+      "description": "Khi trình duyệt không thể tải hình ảnh, văn bản này sẽ được hiển thị thay thế."
+    },
+    {
+      "label": "Biểu tượng đánh dấu",
+      "options": [
+        {
+          "label": "Biểu tượng có sẵn"
+        },
+        {
+          "label": "Ảnh tải lên"
+        }
+      ]
+    },
+    {
+      "label": "Biểu tượng có sẵn",
+      "description": "Chọn một trong các biểu tượng có sẵn cho điểm đánh dấu.",
+      "options": [
+        {
+          "label": "Dấu cộng"
+        },
+        {
+          "label": "Dấu trừ"
+        },
+        {
+          "label": "Thời gian"
+        },
+        {
+          "label": "Xác nhận"
+        },
+        {
+          "label": "Dấu hỏi"
+        },
+        {
+          "label": "Thông tin"
+        },
+        {
+          "label": "Dấu chấm than"
+        }
+      ]
+    },
+    {
+      "label": "Ảnh tải lên",
+      "description": "Dùng hình ảnh riêng làm biểu tượng cho điểm đánh dấu. <br /> Khuyến nghị sử dụng ảnh có độ phân giải 75x75 pixel."
+    },
+    {
+      "label": "Màu của điểm đánh dấu",
+      "description": "Chọn màu cho tất cả các điểm đánh dấu."
+    },
+    {
+      "entity": "điểm đánh dấu",
+      "label": "Các điểm đánh dấu",
+      "field": {
+        "label": "Điểm đánh dấu",
+        "fields": [
+          {
+            "label": "Vị trí điểm đánh dấu",
+            "description": "Nhấn vào ảnh để thêm điểm đánh dấu."
+          },
+          {
+            "label": "Phủ toàn bộ ảnh nền",
+            "description": "Khi người dùng nhấn vào điểm đánh dấu, popup sẽ phủ lên toàn bộ ảnh nền."
+          },
+          {
+            "label": "Tiêu đề popup",
+            "description": "Tiêu đề tùy chọn cho popup."
+          },
+          {
+            "label": "Nội dung popup",
+            "field": {
+              "label": "Nội dung"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Nhãn điểm đánh dấu cho công nghệ hỗ trợ người khiếm thị",
+      "default": "Điểm đánh dấu #num",
+      "description": "Giúp xác định người dùng đang ở điểm nào và popup nào đang được hiển thị."
+    },
+    {
+      "label": "Nhãn nút đóng cho công nghệ hỗ trợ người khiếm thị",
+      "default": "Đóng"
+    }
+  ]
+}
