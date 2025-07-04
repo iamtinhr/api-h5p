@@ -1,0 +1,114 @@
+{
+  "semantics": [
+    {
+      "label": "Tiêu đề",
+      "description": "Tiêu đề cho Tường Thông Tin"
+    },
+    {
+      "label": "Nội dung",
+      "entity": "nội dung",
+      "field": {
+        "fields": [
+          {
+            "label": "Tiêu đề nội dung",
+            "description": "Tiêu đề cho thẻ thông tin"
+          },
+          {
+            "label": "Hình ảnh/biểu tượng",
+            "description": "Hình ảnh/biểu tượng cho thẻ thông tin (tùy chọn)"
+          },
+          {
+            "label": "Văn bản",
+            "description": "Nội dung văn bản của thẻ thông tin"
+          },
+          {
+            "label": "Màu nền",
+            "description": "Xác định màu nền cho thẻ thông tin",
+            "default": "#ffffff"
+          },
+          {
+            "label": "Tệp đính kèm",
+            "description": "Thêm tệp đính kèm cho thẻ thông tin"
+          },
+          {
+            "label": "Liên kết",
+            "description": "Liên kết tùy chọn cho thẻ thông tin",
+            "fields": [
+              {
+                "label": "URL",
+                "description": "URL cho liên kết"
+              },
+              {
+                "label": "Văn bản liên kết",
+                "description": "Văn bản hiển thị cho liên kết"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các cài đặt này cho phép bạn điều chỉnh cách hoạt động.",
+      "fields": [
+        {
+          "label": "Sử dụng dự phòng cho hình ảnh thiếu",
+          "description": "Nếu được chọn, sẽ sử dụng hình ảnh dự phòng khi không tìm thấy hình ảnh"
+        },
+        {
+          "label": "Chiều rộng hình ảnh",
+          "description": "Chiều rộng hình ảnh tính bằng px."
+        },
+        {
+          "label": "Chiều cao hình ảnh",
+          "description": "Chiều cao hình ảnh tính bằng px."
+        },
+        {
+          "label": "Nền bảng xen kẽ",
+          "description": "Nếu được chọn, mỗi bảng thứ 2 sẽ có nền hơi tối hơn so với các bảng khác."
+        },
+        {
+          "label": "Cung cấp trường lọc",
+          "description": "Nếu được chọn, người dùng sẽ có thể lọc tường thông tin."
+        },
+        {
+          "label": "Chế độ cho trường lọc",
+          "description": "Chọn liệu bộ lọc nên thu hẹp hoặc mở rộng tìm kiếm với mỗi từ khóa mới.",
+          "options": [
+            {
+              "label": "Thu hẹp"
+            },
+            {
+              "label": "Mở rộng"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Ghi đề văn bản và bản dịch",
+      "fields": [
+        {
+          "label": "Văn bản tìm kiếm",
+          "default": "Tìm kiếm"
+        },
+        {
+          "label": "Văn bản tìm kiếm trên thiết bị di động",
+          "default": "Tìm..."
+        },
+        {
+          "label": "Không tìm thấy nội dung",
+          "default": "Không tìm thấy thẻ thông tin nào phù hợp với tìm kiếm của bạn."
+        },
+        {
+          "label": "Mở tệp đính kèm",
+          "default": "Mở tệp đính kèm"
+        },
+        {
+          "label": "Đóng hộp thoại",
+          "default": "Đóng"
+        }
+      ]
+    }
+  ]
+}

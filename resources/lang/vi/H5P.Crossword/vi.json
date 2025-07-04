@@ -1,0 +1,293 @@
+{
+  "semantics": [
+    {
+      "label": "Hướng dẫn cho người tham gia",
+      "description": "Mô tả cách giải quyết nhiệm vụ đã giao."
+    },
+    {
+      "label": "Các từ khóa",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "Từ khóa",
+      "field": {
+        "label": "Từ khóa",
+        "fields": [
+          {
+            "label": "Gợi ý",
+            "description": "Văn bản gợi ý dẫn đến câu trả lời."
+          },
+          {
+            "label": "Câu trả lời",
+            "description": "Văn bản trả lời cho gợi ý."
+          },
+          {
+            "label": "Gợi ý bổ sung"
+          },
+          {
+            "label": "Khóa từ khóa vào lưới",
+            "description": "Từ khóa sẽ được khóa vào một vị trí cụ thể trên lưới. Các từ có cùng hướng không được đặt chạm vào nhau."
+          },
+          {
+            "label": "Hàng",
+            "description": "Chỉ số hàng bắt đầu của từ khóa trên lưới."
+          },
+          {
+            "label": "Cột",
+            "description": "Chỉ số cột bắt đầu của từ khóa trên lưới."
+          },
+          {
+            "label": "Hướng",
+            "description": "Hướng của từ khóa trên lưới.",
+            "options": [
+              {
+                "label": "Ngang"
+              },
+              {
+                "label": "Dọc"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Từ khóa chung",
+      "description": "Từ khóa chung tùy chọn có thể được tạo ra từ các chữ cái của các từ khóa khác. Nó chỉ hiển thị bên dưới lưới nếu các chữ cái thực sự có sẵn."
+    },
+    {
+      "label": "Phản hồi chung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Xác định phản hồi riêng cho từng phạm vi kết quả",
+          "description": "Nhấp vào nút \"Thêm phạm vi\" để thêm nhiều phạm vi. Ví dụ: 0-20% Kết quả kém, 21-91% Kết quả trung bình, 91-100% Kết quả xuất sắc!",
+          "entity": "phạm vi",
+          "field": {
+            "fields": [
+              {
+                "label": "Phạm vi kết quả"
+              },
+              {},
+              {
+                "label": "Phản hồi cho phạm vi kết quả đã xác định",
+                "placeholder": "Nhập phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Hình ảnh hóa",
+      "fields": [
+        {
+          "label": "Hình nền",
+          "description": "Hình ảnh tùy chọn được hiển thị làm nền của lưới."
+        },
+        {
+          "label": "Màu nền",
+          "description": "Chọn bảng màu cho nền. Màu có thể thay thế hình nền hoặc các vùng trong suốt."
+        },
+        {
+          "label": "Màu lưới",
+          "description": "Chọn bảng màu cho đường viền lưới."
+        },
+        {
+          "label": "Màu nền ô",
+          "description": "Chọn bảng màu cho nền các ô trên lưới."
+        },
+        {
+          "label": "Màu chữ ô",
+          "description": "Chọn bảng màu cho chữ trong các ô."
+        },
+        {
+          "label": "Màu số gợi ý",
+          "description": "Chọn bảng màu cho số gợi ý trong các ô."
+        },
+        {
+          "label": "Màu nền ô được đánh dấu",
+          "description": "Chọn bảng màu nền cho các ô được đánh dấu trên lưới."
+        },
+        {
+          "label": "Màu chữ ô được đánh dấu",
+          "description": "Chọn bảng màu cho chữ trong các ô được đánh dấu."
+        },
+        {
+          "label": "Màu số gợi ý được đánh dấu",
+          "description": "Chọn bảng màu cho số gợi ý trong các ô được đánh dấu."
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt tương tác",
+      "description": "Các cài đặt này cho phép bạn kiểm soát tương tác của hoạt động cho người tham gia.",
+      "fields": [
+        {
+          "label": "Số lượng từ khóa để hiển thị",
+          "description": "Chỉ số lượng từ khóa đã chọn sẽ được hiển thị theo thứ tự ngẫu nhiên từ tổng số từ khóa. Trong mọi trường hợp, các từ khóa bị khóa trên lưới sẽ được hiển thị. Để trống hoặc 0 nghĩa là sử dụng tất cả các từ khóa."
+        },
+        {
+          "label": "Kiểm tra câu trả lời ngay lập tức"
+        },
+        {
+          "label": "Tính điểm từ khóa",
+          "description": "Tùy chọn này được bật có nghĩa là từ khóa được tính điểm như một tổng thể. Ngược lại, mỗi ký tự được tính điểm riêng."
+        },
+        {
+          "label": "Điểm phạt",
+          "description": "Mỗi câu trả lời sai sẽ bị trừ một điểm phạt."
+        },
+        {
+          "label": "Bật nút \"Thử lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị giải pháp\""
+        },
+        {
+          "label": "Giữ các câu trả lời đúng khi thử lại",
+          "description": "Nếu tùy chọn này được bật, các câu trả lời đúng sẽ được giữ lại khi người dùng thử lại nhiệm vụ trừ khi đạt được điểm tối đa."
+        }
+      ]
+    },
+    {
+      "label": "Giao diện người dùng",
+      "fields": [
+        {
+          "label": "Văn bản cho hướng ngang",
+          "default": "Ngang"
+        },
+        {
+          "label": "Văn bản cho hướng dọc",
+          "default": "Dọc"
+        },
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Nộp bài\"",
+          "default": "Nộp bài"
+        },
+        {
+          "label": "Văn bản cho nút \"Thử lại\"",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho nút \"Hiển thị giải pháp\"",
+          "default": "Hiển thị giải pháp"
+        },
+        {
+          "label": "Không thể tạo ô chữ",
+          "default": "Không thể tạo ô chữ với các từ khóa đã chỉ định. Hãy thử lại với ít từ khóa hơn hoặc các từ khóa có nhiều ký tự chung hơn."
+        },
+        {
+          "label": "Không thể tạo ô chữ (quá ít từ khóa)",
+          "default": "Không thể tạo ô chữ với các từ khóa đã chỉ định. Cần ít nhất hai từ khóa."
+        },
+        {
+          "label": "Từ khóa có vấn đề",
+          "description": "Chỉ định các từ khóa gây ra vấn đề khi tạo ô chữ. @words là một biến.",
+          "default": "Một số từ không thể được đặt. Nếu bạn sử dụng các từ khóa bị khóa, hãy đảm bảo vị trí của chúng không ngăn việc đặt các từ khóa khác. Các từ có cùng hướng không được đặt chạm vào nhau. Từ khóa có vấn đề: @words"
+        },
+        {
+          "label": "Văn bản cho gợi ý bổ sung",
+          "default": "Gợi ý bổ sung"
+        },
+        {
+          "label": "Đóng cửa sổ",
+          "default": "Đóng cửa sổ"
+        }
+      ]
+    },
+    {
+      "label": "Trình đọc màn hình",
+      "fields": [
+        {
+          "label": "Mô tả lưới ô chữ",
+          "default": "Lưới ô chữ. Sử dụng các phím mũi tên để di chuyển trên lưới và bàn phím để nhập ký tự. Sử dụng tab để di chuyển giữa các trường gợi ý."
+        },
+        {
+          "label": "Cột",
+          "default": "Cột"
+        },
+        {
+          "label": "Hàng",
+          "default": "Hàng"
+        },
+        {
+          "label": "Ngang",
+          "default": "Ngang"
+        },
+        {
+          "label": "Dọc",
+          "default": "Dọc"
+        },
+        {
+          "label": "Không có câu trả lời",
+          "default": "Không có câu trả lời"
+        },
+        {
+          "description": "Xem lại câu trả lời. @clue là một biến.",
+          "label": "Câu trả lời cho",
+          "default": "Câu trả lời cho: @clue"
+        },
+        {
+          "label": "Đúng",
+          "default": "Đúng"
+        },
+        {
+          "label": "Sai",
+          "default": "Sai"
+        },
+        {
+          "label": "Điểm",
+          "default": "Điểm"
+        },
+        {
+          "description": "Xem lại giải pháp. @clue và @solution là các biến.",
+          "label": "Giải pháp cho",
+          "default": "Giải pháp cho @clue: @solution"
+        },
+        {
+          "description": "Xem lại gợi ý bổ sung. @clue là một biến.",
+          "label": "Gợi ý bổ sung cho",
+          "default": "Mở gợi ý bổ sung cho @clue"
+        },
+        {
+          "description": "Xem lại vị trí hiện tại trong từ khóa. @position và @length là các biến.",
+          "label": "Ký tự",
+          "default": "Ký tự @position trên @length"
+        },
+        {
+          "description": "Xem lại độ dài từ khóa. @length là một biến.",
+          "label": "Độ dài từ khóa",
+          "default": "Độ dài từ khóa: @length"
+        },
+        {
+          "label": "Mô tả nút \"Kiểm tra\" cho trình đọc màn hình",
+          "default": "Kiểm tra độ chính xác của các ký tự đã nhập. Câu trả lời sẽ được đánh dấu là đúng, sai hoặc không có câu trả lời."
+        },
+        {
+          "label": "Mô tả nút \"Hiển thị giải pháp\" cho trình đọc màn hình",
+          "default": "Hiển thị giải pháp và điền ô chữ với các từ khóa chính xác."
+        },
+        {
+          "label": "Mô tả nút \"Thử lại\" cho trình đọc màn hình",
+          "default": "Cho phép thử lại. Đặt lại tất cả các phản hồi và bắt đầu lại nhiệm vụ."
+        },
+        {
+          "label": "Kết quả giải quyết",
+          "description": "@score và @total là các biến.",
+          "default": "Tổng điểm: @score trên @total."
+        }
+      ]
+    }
+  ]
+}

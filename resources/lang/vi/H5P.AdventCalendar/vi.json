@@ -1,0 +1,203 @@
+{
+  "semantics": [
+    {
+      "label": "Chế độ hiển thị hình ảnh cửa",
+      "description": "Chọn xem bạn muốn tự thiết lập từng hình ảnh cửa tùy chỉnh hoặc để H5P tự động dựa trên hình nền lịch được đặt trong cài đặt hành vi.",
+      "options": [
+        {
+          "label": "Tôi muốn tự thiết lập từng hình ảnh cửa"
+        },
+        {
+          "label": "H5P sẽ thiết lập hình ảnh cửa dựa trên hình nền"
+        }
+      ]
+    },
+    {
+      "label": "Các cửa",
+      "entity": "cửa",
+      "field": {
+        "fields": [
+          {
+            "label": "Loại nội dung",
+            "description": "Loại nội dung sẽ xuất hiện tùy chọn khi mở cửa.",
+            "options": [
+              {
+                "label": "Âm thanh"
+              },
+              {
+                "label": "Hình ảnh"
+              },
+              {
+                "label": "Liên kết"
+              },
+              {
+                "label": "Văn bản"
+              },
+              {
+                "label": "Video"
+              }
+            ]
+          },
+          {
+            "label": "Âm thanh"
+          },
+          {
+            "label": "Hình ảnh"
+          },
+          {
+            "label": "Liên kết"
+          },
+          {
+            "label": "Văn bản"
+          },
+          {
+            "label": "Video"
+          },
+          {
+            "label": "Tự động phát"
+          },
+          {
+            "label": "Hình ảnh cửa",
+            "description": "Hình ảnh sẽ được sử dụng cho cửa. Bạn cần tỷ lệ khung hình 1:1 nếu bạn muốn nửa bên trái khớp với nửa bên phải."
+          },
+          {
+            "label": "Hình nền",
+            "description": "Hình ảnh sẽ xuất hiện bên trong cửa. Mặc định sẽ là số của cửa."
+          }
+        ]
+      },
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hình ảnh",
+      "description": "Các tùy chọn này sẽ cho phép bạn cấu hình giao diện hình ảnh.",
+      "fields": [
+        {
+          "label": "Hình nền của lịch"
+        },
+        {
+          "label": "Mẫu cho hình ảnh cửa",
+          "description": "Nếu đặt hình ảnh này, nó sẽ được sử dụng cho mọi cửa trừ khi có hình ảnh cụ thể được đặt cho một cửa riêng lẻ."
+        },
+        {
+          "label": "Ẩn khung cửa"
+        },
+        {
+          "label": "Ẩn số cửa"
+        },
+        {
+          "label": "Ẩn núm cửa"
+        },
+        {
+          "label": "Ẩn viền cửa"
+        },
+        {
+          "label": "Hiệu ứng tuyết rơi",
+          "description": "Điều này sẽ thêm một chút tuyết rơi phía trước lịch. Ở Nam California không bao giờ mưa, trên IE11 không bao giờ có tuyết."
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt âm thanh",
+      "description": "Các tùy chọn này sẽ cho phép bạn cấu hình âm thanh.",
+      "fields": [
+        {
+          "label": "Nhạc nền"
+        },
+        {
+          "label": "Tự động phát nhạc nền",
+          "description": "Nếu được đặt, nhạc nền sẽ tự động phát ngay khi nội dung được mở. Lưu ý: chính sách phương tiện của một số trình duyệt có thể ngăn chặn tự động phát."
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Với các tùy chọn này, bạn có thể ghi đè các cài đặt hành vi.",
+      "fields": [
+        {
+          "label": "Chế độ sắp xếp cửa",
+          "description": "Chọn xem bạn muốn đặt số cột và hàng cố định cho các cửa hoặc nếu H5P nên quyết định động tùy thuộc vào không gian có sẵn. Lưu ý rằng phương pháp sau có thể gây trở ngại cho vị trí của hình nền và hình ảnh tùy chỉnh cho cửa mà nên ở một vị trí cụ thể.",
+          "options": [
+            {
+              "label": "Cố định"
+            },
+            {
+              "label": "Động"
+            }
+          ]
+        },
+        {
+          "label": "Tỷ lệ hàng-cột",
+          "description": "Chọn số cột và hàng mà lịch nên sử dụng.",
+          "options": [
+            {
+              "label": "6 × 4"
+            },
+            {
+              "label": "4 × 6"
+            }
+          ]
+        },
+        {
+          "label": "Thứ tự ngẫu nhiên",
+          "description": "Xáo trộn thứ tự của các cửa. Nếu tùy chọn \"lưu trạng thái nội dung\" được đặt trong cài đặt H5P, thứ tự đó sẽ giữ nguyên khi người dùng quay lại sau này."
+        },
+        {
+          "label": "Giữ thứ tự của hình ảnh",
+          "description": "Xáo trộn các cửa, nhưng giữ hình ảnh bìa cửa ở vị trí cố định của chúng, bắt đầu với 1 ở góc trên bên trái đến 24 ở góc dưới bên phải."
+        },
+        {
+          "label": "Chế độ thiết kế",
+          "description": "Trong chế độ thiết kế, tất cả các cửa có thể được mở. Nếu không, các cửa chỉ có thể được mở vào tháng 12 vào và sau ngày được chỉ định bởi số cửa."
+        }
+      ]
+    },
+    {
+      "label": "Bản địa hóa",
+      "fields": [
+        {
+          "label": "Không có gì để xem",
+          "default": "Không có gì để xem ở đây!\ud83c\udf84"
+        },
+        {
+          "label": "Mẫu",
+          "default": "Mẫu"
+        }
+      ]
+    },
+    {
+      "label": "Khả năng tiếp cận",
+      "fields": [
+        {
+          "label": "Cửa",
+          "default": "Cửa"
+        },
+        {
+          "label": "Đã đóng",
+          "default": "Đã đóng. Chưa đến lúc mở nó."
+        },
+        {
+          "description": "Thông báo nội dung. @door là một biến và sẽ được thay thế bằng mô tả cửa tương ứng.",
+          "label": "Nội dung của",
+          "default": "Nội dung của @door"
+        },
+        {
+          "label": "Tắt âm",
+          "default": "Tắt âm"
+        },
+        {
+          "label": "Bật âm",
+          "default": "Bật âm"
+        },
+        {
+          "label": "Đóng màn hình",
+          "default": "Đóng màn hình"
+        }
+      ]
+    }
+  ]
+}

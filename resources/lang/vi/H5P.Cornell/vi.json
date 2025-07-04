@@ -1,0 +1,123 @@
+{
+  "semantics": [
+    {
+      "label": "Hướng dẫn",
+      "description": "Học viên sẽ thấy những hướng dẫn này phía trên ghi chú."
+    },
+    {
+      "label": "Nội dung bài tập",
+      "description": "Học viên sẽ thấy những hướng dẫn này ở đầu ghi chú."
+    },
+    {
+      "label": "Các trường ghi chú"
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Cài đặt cho các trường ghi chú",
+      "fields": [
+        {
+          "label": "Hiển thị ghi chú khi khởi động",
+          "default": "Gợi ý",
+          "description": "Khi tùy chọn này bị tắt, ghi chú sẽ bị ẩn khi khởi động. Ghi chú tự động bị ẩn trên màn hình nhỏ."
+        },
+        {
+          "label": "Nội dung giữ chỗ cho trường gợi ý",
+          "default": "Nhập bình luận, câu hỏi, ý chính, v.v. mà bạn rút ra từ ghi chú của mình",
+          "description": "Phần giữ chỗ cho phần gợi ý để nhắc nhở học viên"
+        },
+        {
+          "label": "Tiêu đề trường ghi chú",
+          "default": "Ghi chú",
+          "description": "Tiêu đề cho phần ghi chú"
+        },
+        {
+          "label": "Nội dung giữ chỗ cho trường ghi chú",
+          "default": "Nhập ngày tháng, chi tiết, định nghĩa, công thức, ví dụ, v.v. từ tài liệu nguồn",
+          "description": "Phần giữ chỗ cho phần ghi chú để nhắc nhở học viên"
+        },
+        {
+          "label": "Tiêu đề trường tóm tắt",
+          "default": "Tóm tắt",
+          "description": "Tiêu đề cho phần tóm tắt"
+        },
+        {
+          "label": "Nội dung giữ chỗ cho trường tóm tắt",
+          "default": "Tóm tắt những gì bạn đã học được",
+          "description": "Phần giữ chỗ cho phần tóm tắt để nhắc nhở học viên"
+        }
+      ]
+    },
+    {
+      "label": "Bản địa hóa",
+      "fields": [
+        {
+          "label": "Ghi chú đã lưu",
+          "default": "Ghi chú đã lưu"
+        },
+        {
+          "label": "Lưu",
+          "default": "Lưu"
+        },
+        {
+          "label": "Không thể lưu ghi chú",
+          "default": "Nền tảng không hỗ trợ tính năng lưu trạng thái nội dung hoặc tính năng này không được kích hoạt trong cài đặt nền tảng hoặc bạn chưa đăng nhập. Ghi chú của bạn không thể được lưu!"
+        },
+        {
+          "label": "Gửi câu trả lời",
+          "default": "Gửi"
+        },
+        {
+          "label": "Văn bản cho nút \"Sao chép\"",
+          "default": "Sao chép"
+        },
+        {
+          "label": "Đã sao chép ghi chú vào bộ nhớ tạm",
+          "default": "Đã sao chép ghi chú vào bộ nhớ tạm"
+        }
+      ]
+    },
+    {
+      "label": "Trình đọc màn hình",
+      "fields": [
+        {
+          "label": "Tiêu đề nút toàn màn hình (vào)",
+          "default": "Vào chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề nút toàn màn hình (thoát)",
+          "default": "Thoát chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề nút chuyển đổi (khi ghi chú đóng)",
+          "default": "Mở ghi chú"
+        },
+        {
+          "label": "Tiêu đề nút chuyển đổi (khi ghi chú mở)",
+          "default": "Đóng ghi chú"
+        },
+        {
+          "label": "Ghi chú đã mở",
+          "default": "Chế độ xem đã chuyển sang ghi chú của bạn."
+        },
+        {
+          "label": "Ghi chú đã đóng",
+          "default": "Chế độ xem đã chuyển sang ghi chú của bạn."
+        },
+        {
+          "label": "Ghi chú đã lưu",
+          "default": "Ghi chú đã được lưu vào nền tảng."
+        },
+        {
+          "label": "Ẩn ghi chú",
+          "default": "Ẩn ghi chú @label",
+          "description": "@label là một biến và sẽ được thay thế bằng nhãn tương ứng của trường ghi chú."
+        },
+        {
+          "label": "Hiển thị ghi chú",
+          "default": "Hiển thị ghi chú @label",
+          "description": "@label là một biến và sẽ được thay thế bằng nhãn tương ứng của trường ghi chú."
+        }
+      ]
+    }
+  ]
+}

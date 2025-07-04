@@ -2,6 +2,7 @@
 
 namespace EscolaLms\HeadlessH5P\Http\Requests;
 
+use App\Models\Config;
 use EscolaLms\HeadlessH5P\Models\H5PLibrary;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Gate;
@@ -26,8 +27,10 @@ class FilesStoreRequest extends FormRequest
      */
     public function rules()
     {
+        $maxUploadFile = Config::whereName('maximum_capacity')->value('value');
+        $kb = $maxUploadFile === null ? 5242880 : convertToKB($maxUploadFile);
         return [
-            'file' => ['required', 'max:100000'],
+            'file' => ['required', "max:$kb"],
             'field' => ['required', 'string'],
             'contentId' => ['required', 'string'],
         ];
