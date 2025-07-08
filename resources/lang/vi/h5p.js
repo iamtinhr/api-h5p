@@ -293,4 +293,5 @@ H5PEditor.language.core = {
     a11yTitleShowLabel: 'Hiển thị nhãn cho AT',
     a11yTitleHideLabel: 'Ẩn nhãn cho AT',
     reuseSuccess: ':title đã được nhập thành công từ H5P Hub.',
+    additionalInformation: 'Thông tin bổ sung',
 };
