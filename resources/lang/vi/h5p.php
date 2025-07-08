@@ -247,6 +247,11 @@ tài nguyên của bạn',
         'emailAddressDescription' => 'Email sẽ được H5P sử dụng để liên hệ với nhà xuất bản nếu có vấn đề với tài nguyên hoặc khi cần khôi phục tài khoản. Email sẽ không được công khai hoặc chia sẻ với bên thứ ba.',
         'copyrightWarning' => 'Tài liệu có bản quyền không thể chia sẻ trên H5P Content Hub. Nếu tài nguyên được cấp phép OER như Creative Commons, vui lòng chọn giấy phép phù hợp. Nếu không, tài nguyên này không thể được chia sẻ.',
         'keywordsExits' => 'Từ khóa đã tồn tại!',
-        'someKeywordsExits' => 'Một số từ khóa đã tồn tại'
+        'someKeywordsExits' => 'Một số từ khóa đã tồn tại',
+        'download_h5p' => 'Tải xuống dưới dạng tệp .h5p',
+        'upload_info' => 'Các tệp .h5p có thể được tải lên bất kỳ trang web nào có thể tạo nội dung H5P.',
+        'copy_content' => 'Sao chép nội dung',
+        'copy_info' => 'Nội dung đã sao chép có thể được dán ở bất kỳ đâu mà loại nội dung này được hỗ trợ trên trang web này.',
+        'more_info' => 'Thông tin thêm',
     ],
 ];

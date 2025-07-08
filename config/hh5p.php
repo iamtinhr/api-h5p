@@ -16,8 +16,8 @@ return [
 
     // Content screen setting
     'h5p_show_display_option' => false,
-    'h5p_frame' => false,
-    'h5p_export' => false,
+    'h5p_frame' => true,
+    'h5p_export' => true,
     'h5p_embed' => false,
     'h5p_copyright' => false,
     'h5p_icon' => false,

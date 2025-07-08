@@ -21,9 +21,9 @@ Route::group(['middleware' => ['api'], 'prefix' => 'api'], function () {
         Route::post('content/{id}', [ContentApiController::class, 'update'])->name('hh5p.content.update');
         Route::delete('content/{id}', [ContentApiController::class, 'destroy'])->name('hh5p.content.destroy');
         Route::get('content', [ContentApiController::class, 'index'])->name('hh5p.content.index');
-        Route::get('content/{id}/export', [ContentApiController::class, 'download'])->name('hh5p.content.export')->middleware([QueryToken::class]);
+        Route::get('content/{id}/export', [ContentApiController::class, 'download'])->name('hh5p.content.export');
         Route::get('content/{id}', [ContentApiController::class, 'show'])->name('hh5p.content.admin.show');
-        Route::post('files', FilesApiController::class)->name('hh5p.files.upload')->middleware('signed');;
+        Route::post('files', FilesApiController::class)->name('hh5p.files.upload')->middleware('signed');
         Route::delete('unused', [ContentApiController::class, 'deleteUnused'])->name('hh5p.content.deleteUnused');
     });
 

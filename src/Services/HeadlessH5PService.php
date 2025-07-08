@@ -272,7 +272,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         }
         $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/scripts/h5peditor-editor.js';
         $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/scripts/h5peditor-init.js';
-//        $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/language/' . $lang . '.js';
+        $settings['core']['scripts'][] = $config['get_h5peditor_url'] . '/language/' . $lang . '.js';
 
         $settings['editor'] = [
             'filesPath' => isset($content) ? Storage::disk('upload')->url("h5p/content/$content") : Storage::disk('upload')->url('h5p/editor'),
@@ -564,19 +564,17 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         $content = $this->getCore()->loadContent($id);
         $content['metadata']['title'] = $content['title'];
 
+        $safe_parameters = $this->getCore()->filterParameters($content); // TODO: actually this is inserting stuff in Database, it shouldn'e instert anything since this is a GET
+
         $library = $content['library'];
 
         $uberName = $library['name'] . ' ' . $library['majorVersion'] . '.' . $library['minorVersion'];
-
-        $jsonContent = empty($content['filtered'])
-            ? JSONHelper::clearJson($this->getCore()->filterParameters($content))
-            : JSONHelper::clearJson($content['filtered']);
 
         $settings = [
             'library' => $uberName,
             'content' => $content,
             'jsonContent' => json_encode([
-                'params' => json_decode($jsonContent),
+                'params' => json_decode($safe_parameters),
                 'metadata' => $content['metadata'],
             ]),
             'fullScreen' => $content['library']['fullscreen'],
@@ -585,15 +583,15 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             //'resizeCode'      => '<script src="'.self::get_h5pcore_url('/js/h5p-resizer.js').'" charset="UTF-8"></script>',
             //'url'             => route('h5p.embed', ['id' => $content['id']]),
             'title' => $content['title'],
-            'displayOptions' => $this->getCore()->getDisplayOptionsForView(!config('hh5p.h5p_show_display_option'), $content['id']),
+            'displayOptions' => $this->getCore()->getDisplayOptionsForView(0, $content['id']),
             'contentUserData' => [
                 0 => [
                     'state' => '{}', // TODO get user actual state
                 ],
             ],
             'user' => [
-                "name" => "Escola123x! Wojczal",
-                "mail" => "mateusz@escolasoft.com"
+                "name" => "Nguyễn Tỉnh",
+                "mail" => "contact@tinhr.com"
             ],
             'nonce' => $content['nonce'],
         ];

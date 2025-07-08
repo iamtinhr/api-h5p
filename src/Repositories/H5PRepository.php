@@ -186,9 +186,28 @@ class H5PRepository implements H5PFrameworkInterface
                 $replacements[$key] = '<em>' . $replacement . '</em>';
             }
         }
-        $message = preg_replace('/(!|@|%)[a-z0-9]+/i', '%s', $message);
+//        $message = preg_replace('/(!|@|%)[a-z0-9]+/i', '%s', $message);
+        $key = $this->normalizeLangKey($message);
+        return vsprintf(__("h5p::app.$key"), $replacements);
+    }
 
-        return vsprintf(__($message), $replacements);
+    public function normalizeLangKey(string $text): string
+    {
+        // 1. Bỏ thẻ HTML
+        $text = strip_tags($text);
+
+        // 2. Bỏ ký tự đặc biệt giữ lại :placeholder
+        //    (hoặc bỏ dấu ':' luôn nếu không cần)
+        $text = str_replace(':', '', $text);
+
+        // 3. Loại bỏ mọi ký tự không phải chữ, số hoặc khoảng trắng
+        $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
+
+        // 4. Thay khoảng trắng bằng _
+        $text = preg_replace('/\s+/', '_', $text);
+
+        // 5. Chuyển về lowercase
+        return strtolower(trim($text, '_'));
     }
 
     /**
@@ -561,7 +580,6 @@ class H5PRepository implements H5PFrameworkInterface
             $lib = $this->loadLibrary($content['library']['machineName'], $content['library']['majorVersion'], $content['library']['minorVersion']);
             $content['embed_type'] = $lib['embed_types'];
         }
-
         // `parameters` is string, encode
         if (isset($content['parameters']) && is_string($content['parameters'])) {
             $parameters = json_decode($content['parameters']);
@@ -569,6 +587,7 @@ class H5PRepository implements H5PFrameworkInterface
             if (is_array($parameters) && isset($parameters['metadata'])) {
                 $metadata = $parameters['metadata'];
             }
+
             if (is_object($parameters) && isset($parameters->metadata)) {
                 $metadata = $parameters->metadata;
             }
