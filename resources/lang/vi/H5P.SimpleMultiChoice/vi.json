@@ -1,0 +1,43 @@
+{
+  "semantics": [
+    {
+      "label": "Câu hỏi"
+    },
+    {
+      "label": "Loại lựa chọn nhiều đáp án",
+      "options": [
+        {
+          "label": "Nhiều đáp án"
+        },
+        {
+          "label": "Một đáp án"
+        }
+      ]
+    },
+    {
+      "label": "Các lựa chọn trả lời",
+      "entity": "Phương án",
+      "field": {
+        "label": "Phương án",
+        "fields": [
+          {
+            "label": "Văn bản"
+          },
+          {
+            "label": "Phản hồi",
+            "fields": [
+              {
+                "label": "Thông báo hiển thị nếu lựa chọn được chọn",
+                "description": "Thông báo này sẽ xuất hiện dưới đáp án khi nhấn \"tiếp tục\" nếu lựa chọn này được chọn."
+              },
+              {
+                "label": "Thông báo hiển thị nếu lựa chọn không được chọn",
+                "description": "Thông báo này sẽ xuất hiện dưới đáp án khi nhấn \"tiếp tục\" nếu lựa chọn này không được chọn."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

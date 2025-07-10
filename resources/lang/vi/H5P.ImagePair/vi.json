@@ -1,0 +1,121 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ",
+      "name": "taskDescription",
+      "type": "text",
+      "default": "Kéo các hình ảnh từ bên trái để ghép với hình ảnh tương ứng bên phải",
+      "description": "Hướng dẫn người dùng cách hoàn thành nhiệm vụ này.",
+      "importance": "high"
+    },
+    {
+      "name": "cards",
+      "type": "list",
+      "widgets": [
+        {
+          "name": "VerticalTabs",
+          "label": "Mặc định"
+        }
+      ],
+      "label": "Thẻ",
+      "importance": "high",
+      "entity": "thẻ",
+      "min": 2,
+      "max": 100,
+      "field": {
+        "type": "group",
+        "name": "card",
+        "label": "Thẻ",
+        "importance": "high",
+        "fields": [
+          {
+            "name": "image",
+            "type": "image",
+            "label": "Hình ảnh",
+            "importance": "high",
+            "ratio": 1
+          },
+          {
+            "name": "imageAlt",
+            "type": "text",
+            "label": "Văn bản thay thế cho hình ảnh",
+            "importance": "high",
+            "description": "Mô tả nội dung trong ảnh. Văn bản này sẽ được đọc bởi các công cụ đọc màn hình dành cho người khiếm thị."
+          },
+          {
+            "name": "match",
+            "type": "image",
+            "label": "Hình ảnh ghép đôi",
+            "importance": "low",
+            "optional": true,
+            "description": "Ảnh tùy chọn để ghép thay vì sử dụng hai thẻ có cùng hình ảnh.",
+            "ratio": 1
+          },
+          {
+            "name": "matchAlt",
+            "type": "text",
+            "label": "Văn bản thay thế cho hình ảnh ghép đôi",
+            "importance": "low",
+            "optional": true,
+            "description": "Mô tả nội dung trong ảnh. Văn bản này sẽ được đọc bởi các công cụ đọc màn hình dành cho người khiếm thị."
+          }
+        ]
+      }
+    },
+    {
+      "name": "behaviour",
+      "type": "group",
+      "label": "Thiết lập hành vi",
+      "importance": "low",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách trò chơi hoạt động.",
+      "optional": true,
+      "fields": [
+        {
+          "name": "allowRetry",
+          "type": "boolean",
+          "label": "Thêm nút thử lại khi trò chơi kết thúc",
+          "importance": "low",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa",
+      "importance": "low",
+      "name": "l10n",
+      "type": "group",
+      "common": true,
+      "fields": [
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "importance": "low",
+          "name": "checkAnswer",
+          "type": "text",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Thử lại\"",
+          "importance": "low",
+          "name": "tryAgain",
+          "type": "text",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho nút \"Xem đáp án\"",
+          "importance": "low",
+          "name": "showSolution",
+          "type": "text",
+          "default": "Xem đáp án"
+        },
+        {
+          "label": "Văn bản phản hồi",
+          "importance": "low",
+          "name": "score",
+          "type": "text",
+          "default": "Bạn đạt @score trên tổng số @total điểm",
+          "description": "Văn bản phản hồi, biến có sẵn: @score và @total. Ví dụ: 'Bạn đạt @score trên tổng số @total điểm có thể đạt'"
+        }
+      ]
+    }
+  ]
+}

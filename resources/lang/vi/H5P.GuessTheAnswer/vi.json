@@ -1,0 +1,26 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả bài tập",
+      "description": "Mô tả cách người dùng nên giải quyết bài tập."
+    },
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Tuỳ chọn. Phương tiện hiển thị phía trên câu hỏi."
+        }
+      ]
+    },
+    {
+      "label": "Nhãn hiển thị đáp án",
+      "default": "Nhấp để xem đáp án.",
+      "description": "Vùng văn bản có thể chọn nơi hiển thị đáp án."
+    },
+    {
+      "label": "Văn bản đáp án",
+      "description": "Đáp án cho hình ảnh."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "semantics": [
+    {
+      "label": "Ảnh nền",
+      "description": "Ảnh hiển thị ở nền."
+    },
+    {
+      "label": "Văn bản thay thế cho ảnh nền",
+      "description": "Nếu trình duyệt không thể tải ảnh, văn bản này sẽ hiển thị thay thế. Cũng được dùng bởi công nghệ hỗ trợ."
+    },
+    {
+      "label": "Biểu tượng điểm then chốt",
+      "options": [
+        {
+          "label": "Biểu tượng mặc định"
+        },
+        {
+          "label": "Ảnh tải lên"
+        }
+      ]
+    },
+    {
+      "label": "Biểu tượng mặc định",
+      "description": "Sử dụng biểu tượng mặc định cho điểm then chốt.",
+      "options": [
+        {
+          "label": "Cộng"
+        },
+        {
+          "label": "Trừ"
+        },
+        {
+          "label": "Nhân"
+        },
+        {
+          "label": "Kiểm tra"
+        },
+        {
+          "label": "Câu hỏi"
+        },
+        {
+          "label": "Thông tin"
+        },
+        {
+          "label": "Cảnh báo"
+        }
+      ]
+    },
+    {
+      "label": "Ảnh tải lên",
+      "description": "Sử dụng ảnh của riêng bạn cho biểu tượng điểm then chốt.<br />Kích thước khuyến nghị là 75px x 75px."
+    },
+    {
+      "label": "Màu điểm then chốt",
+      "description": "Màu sắc của các điểm then chốt"
+    },
+    {
+      "entity": "điểm then chốt",
+      "label": "Các điểm then chốt",
+      "field": {
+        "label": "Điểm then chốt",
+        "fields": [
+          {
+            "label": "Vị trí điểm then chốt",
+            "description": "Nhấp lên hình thu nhỏ để đặt điểm then chốt"
+          },
+          {
+            "label": "Phủ toàn bộ ảnh nền",
+            "description": "Khi người dùng nhấp vào điểm then chốt, cửa sổ bật lên sẽ phủ toàn bộ ảnh nền"
+          },
+          {
+            "label": "Tiêu đề",
+            "description": "Tiêu đề tuỳ chọn cho popup. Sử dụng bởi công nghệ hỗ trợ."
+          },
+          {
+            "label": "Nội dung bật lên",
+            "field": {
+              "label": "Phần tử nội dung"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Nhãn điểm then chốt cho công nghệ hỗ trợ",
+      "default": "Điểm then chốt #num",
+      "description": "Sẽ giúp thông báo điểm then chốt đang được truy cập nếu không có tiêu đề. #num có thể được dùng để thay thế bằng số điểm then chốt."
+    },
+    {
+      "label": "Nhãn nút đóng cho công nghệ hỗ trợ",
+      "default": "Đóng"
+    },
+    {
+      "label": "Nhãn cho công nghệ hỗ trợ báo điểm nóng chứa Âm thanh/Hình ảnh",
+      "default": "Có chứa Âm thanh/Hình ảnh"
+    }
+  ]
+}

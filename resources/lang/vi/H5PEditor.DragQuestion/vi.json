@@ -1,0 +1,20 @@
+{
+  "libraryStrings": {
+    "insertElement": "Thêm :type",
+    "done": "Hoàn thành",
+    "remove": "Xóa",
+    "image": "Hình ảnh",
+    "text": "Văn bản",
+    "noTaskSize": "Vui lòng xác định kích thước nhiệm vụ trước.",
+    "confirmRemoval": "Bạn có chắc chắn muốn xóa phần tử này không?",
+    "backgroundOpacityOverridden": "Độ mờ nền đã bị ghi đè",
+    "advancedtext": "Văn bản",
+    "dropzone": "Khu vực thả",
+    "selectAll": "Chọn tất cả",
+    "deselectAll": "Bỏ chọn tất cả",
+    "deleteTaskTitle": "Đang xóa nhiệm vụ",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "ok": "Đồng ý"
+  }
+}

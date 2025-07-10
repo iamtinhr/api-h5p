@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "distributeButtonLabel": "Phân bố đều",
+    "distributeButtonWarning": "Giá trị sẽ bị thay đổi cho tất cả các khoảng. Bạn có muốn tiếp tục không?",
+    "rangeOutOfSequenceWarning": "Các khoảng điểm không theo thứ tự"
+  }
+}

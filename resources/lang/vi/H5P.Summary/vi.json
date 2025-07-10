@@ -1,0 +1,113 @@
+{
+  "semantics": [
+    {
+      "label": "Văn bản giới thiệu",
+      "default": "Chọn câu đúng.",
+      "description": "Sẽ hiển thị phía trên bài tập tóm tắt."
+    },
+    {
+      "widgets": [
+        {
+          "label": "Mặc định"
+        },
+        {
+          "label": "Dạng văn bản"
+        }
+      ],
+      "label": "Tóm tắt",
+      "entity": "câu",
+      "field": {
+        "label": "Tập hợp các câu",
+        "fields": [
+          {
+            "label": "Danh sách câu cho phần tóm tắt: câu đầu tiên là đúng.",
+            "entity": "câu",
+            "field": {
+              "label": "Câu"
+            }
+          },
+          {
+            "label": "Gợi ý",
+            "fields": [
+              {
+                "label": "Văn bản gợi ý"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi chung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Định nghĩa phản hồi tùy chỉnh cho bất kỳ khoảng điểm nào",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm xuất sắc!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã định nghĩa",
+                "placeholder": "Nhập phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Văn bản hiển thị trước số câu đã hoàn thành trong bài tóm tắt.",
+      "default": "Tiến độ:",
+      "description": "Sẽ hiển thị phía trên các câu. Ví dụ: 'Tiến độ: 2/5'"
+    },
+    {
+      "label": "Văn bản hiển thị trước các câu trả lời sai đã chọn trong bài tóm tắt.",
+      "default": "Câu trả lời sai:",
+      "description": "Sẽ hiển thị phía trên các câu. Ví dụ: 'Câu trả lời sai: 4'"
+    },
+    {
+      "label": "Tiêu đề phản hồi của phần tóm tắt",
+      "default": "Kết quả của bạn",
+      "description": "Sẽ hiển thị phía trên phần phản hồi của bài tóm tắt."
+    },
+    {
+      "label": "Văn bản cho trình đọc màn hình với đáp án đúng",
+      "default": "Chính xác."
+    },
+    {
+      "label": "Văn bản cho trình đọc màn hình với đáp án sai",
+      "default": "Sai! Vui lòng thử lại."
+    },
+    {
+      "label": "Văn bản cho trình đọc màn hình với đáp án sai",
+      "default": "Sai"
+    },
+    {
+      "label": "Danh sách nhãn đáp án đúng",
+      "default": "Các đáp án đúng."
+    },
+    {
+      "label": "Nhãn cho nút hiển thị gợi ý",
+      "default": "Hiển thị gợi ý"
+    },
+    {
+      "label": "Dạng văn bản của thanh điểm số khi dùng trình đọc màn hình",
+      "description": ":num và :total là các từ khóa đặc biệt được cập nhật tự động",
+      "default": "Bạn đạt :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Văn bản cho trình đọc màn hình để thông báo tiến độ",
+      "description": ":num và :total là các từ khóa đặc biệt được cập nhật tự động",
+      "default": "Tiến độ :num trên :total"
+    }
+  ]
+}

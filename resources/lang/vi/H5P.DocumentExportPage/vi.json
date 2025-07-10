@@ -1,0 +1,47 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả",
+      "description": "Mô tả cho trang xuất dữ liệu.",
+      "default": "Tại trang này, bạn có thể chọn xuất văn bản, mục tiêu và đánh giá mục tiêu của mình."
+    },
+    {
+      "label": "Nhãn nút Tạo tài liệu",
+      "description": "Văn bản sẽ hiển thị trên nút \"Tạo tài liệu\".",
+      "default": "Tạo tài liệu"
+    },
+    {
+      "label": "Nút văn bản Gửi",
+      "description": "Văn bản sẽ hiển thị trên nút \"Gửi\".",
+      "default": "Gửi"
+    },
+    {
+      "label": "Nhãn Gửi thành công",
+      "default": "Báo cáo của bạn đã được gửi thành công!"
+    },
+    {
+      "label": "Nhãn nút Chọn tất cả văn bản có thể xuất",
+      "description": "Văn bản sẽ hiển thị trên nút \"Chọn tất cả văn bản\".",
+      "default": "Chọn"
+    },
+    {
+      "label": "Nhãn nút Xuất văn bản",
+      "description": "Văn bản sẽ hiển thị trên nút \"Xuất văn bản\".",
+      "default": "Xuất"
+    },
+    {
+      "label": "Nhãn cho văn bản Trợ giúp",
+      "description": "Nhãn hiển thị thông tin hữu ích bổ sung cho người dùng.",
+      "default": "Thêm thông tin"
+    },
+    {
+      "label": "Nhập thông tin trợ giúp bổ sung",
+      "description": "Tại đây bạn có thể nhập thông tin bổ sung hữu ích cho người dùng."
+    },
+    {
+      "label": "Văn bản cho Thiếu thông tin bắt buộc",
+      "description": "Thông báo lỗi hiển thị nếu có trường bắt buộc chưa được điền. @pages sẽ được thay bằng tiêu đề các trang bị ảnh hưởng.",
+      "default": "Các trang sau chứa trường bắt buộc cần được điền để xem lại hoặc gửi tài liệu này: @pages"
+    }
+  ]
+}

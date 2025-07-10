@@ -1,0 +1,97 @@
+{
+  "semantics": [
+    {
+      "label": "Điểm đến",
+      "fields": [
+        {
+          "label": "Loại",
+          "options": [
+            {
+              "label": "Mã thời gian"
+            },
+            {
+              "label": "Trang khác (URL)"
+            }
+          ]
+        },
+        {
+          "label": "Đi tới",
+          "description": "Thời gian điểm đến mà người dùng sẽ được chuyển tới khi nhấn điểm nóng. Nhập mã thời gian theo định dạng M:SS."
+        },
+        {
+          "label": "URL",
+          "fields": [
+            {
+              "label": "Giao thức",
+              "options": [
+                {
+                  "label": "http://"
+                },
+                {
+                  "label": "https://"
+                },
+                {
+                  "label": "(tương đối với gốc)"
+                },
+                {
+                  "label": "khác"
+                }
+              ]
+            },
+            {
+              "label": "URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Hiệu ứng hình ảnh",
+      "fields": [
+        {
+          "label": "Hình dạng",
+          "options": [
+            {
+              "label": "Chữ nhật"
+            },
+            {
+              "label": "Tròn"
+            },
+            {
+              "label": "Chữ nhật bo góc"
+            }
+          ]
+        },
+        {
+          "label": "Màu nền cho điểm nóng"
+        },
+        {
+          "label": "Sử dụng con trỏ chuột"
+        },
+        {
+          "label": "Thêm hiệu ứng nhấp nháy",
+          "description": "Lưu ý: Hiệu ứng nhấp nháy luôn được bật trong trình chỉnh sửa để bạn có thể tìm các điểm nóng trong suốt"
+        }
+      ]
+    },
+    {
+      "label": "Văn bản",
+      "fields": [
+        {
+          "label": "Văn bản thay thế",
+          "description": "Mô tả chủ đề mà điểm nóng đề cập đến. Dùng cho trình đọc màn hình",
+          "placeholder": "Một quả táo trên bàn"
+        },
+        {
+          "label": "Nhãn điểm nóng"
+        },
+        {
+          "label": "Hiển thị nhãn"
+        },
+        {
+          "label": "Màu nhãn"
+        }
+      ]
+    }
+  ]
+}

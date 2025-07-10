@@ -1,0 +1,256 @@
+{
+  "semantics": [
+    {
+      "label": "Câu hỏi"
+    },
+    {
+      "label": "Văn bản giữ chỗ",
+      "default": "Nhập câu trả lời của bạn tại đây",
+      "description": "Văn bản sẽ hiển thị ban đầu trong ô nhập liệu. Tự động biến mất khi người dùng bắt đầu gõ."
+    },
+    {
+      "label": "Điểm tối đa",
+      "description": "Dùng để chấm điểm, học viên sẽ không nhìn thấy"
+    },
+    {
+      "label": "Bắt buộc",
+      "description": "Học viên phải trả lời mới được tiếp tục"
+    },
+    {
+      "label": "Tìm kiếm nút cho câu hỏi trả lời tự do",
+      "fields": [
+        {
+          "label": "Nhãn cho trường bắt buộc",
+          "description": "Văn bản thông báo học viên phải nhập để tiếp tục",
+          "default": "bắt buộc"
+        },
+        {
+          "label": "Thông báo bắt buộc",
+          "default": "Câu hỏi này yêu cầu một câu trả lời",
+          "description": "Hiển thị nếu trường chưa được điền và cần thiết cho đóng gói nội dung"
+        },
+        {
+          "label": "Nhãn nút Bỏ qua",
+          "default": "Bỏ qua câu hỏi"
+        },
+        {
+          "label": "Nhãn nút Tiếp tục",
+          "default": "Trả lời và tiếp tục"
+        },
+        {
+          "label": "Ngôn ngữ trình soạn thảo Wysiwyg",
+          "description": "Ngôn ngữ giao diện người dùng của Wysiwyg",
+          "options": [
+            {
+              "label": "Tiếng Afrikaans"
+            },
+            {
+              "label": "Tiếng Ả Rập"
+            },
+            {
+              "label": "Tiếng Azerbaijan"
+            },
+            {
+              "label": "Tiếng Bungari"
+            },
+            {
+              "label": "Tiếng Bengal"
+            },
+            {
+              "label": "Tiếng Bosnia"
+            },
+            {
+              "label": "Tiếng Catalan"
+            },
+            {
+              "label": "Tiếng Séc"
+            },
+            {
+              "label": "Tiếng Wales"
+            },
+            {
+              "label": "Tiếng Đan Mạch"
+            },
+            {
+              "label": "Tiếng Đức (Thụy Sĩ)"
+            },
+            {
+              "label": "Tiếng Đức"
+            },
+            {
+              "label": "Tiếng Hy Lạp"
+            },
+            {
+              "label": "Tiếng Anh (Úc)"
+            },
+            {
+              "label": "Tiếng Anh (Canada)"
+            },
+            {
+              "label": "Tiếng Anh (Anh)"
+            },
+            {
+              "label": "Tiếng Anh"
+            },
+            {
+              "label": "Tiếng Esperanto"
+            },
+            {
+              "label": "Tiếng Tây Ban Nha (Mexico)"
+            },
+            {
+              "label": "Tiếng Tây Ban Nha (Tây Ban Nha)"
+            },
+            {
+              "label": "Tiếng Estonia"
+            },
+            {
+              "label": "Tiếng Basque"
+            },
+            {
+              "label": "Tiếng Ba Tư"
+            },
+            {
+              "label": "Tiếng Phần Lan"
+            },
+            {
+              "label": "Tiếng Faroe"
+            },
+            {
+              "label": "Tiếng Pháp (Canada)"
+            },
+            {
+              "label": "Tiếng Pháp (Chuẩn)"
+            },
+            {
+              "label": "Tiếng Galicia"
+            },
+            {
+              "label": "Tiếng Gujarat"
+            },
+            {
+              "label": "Tiếng Do Thái (hiện đại)"
+            },
+            {
+              "label": "Tiếng Hindi"
+            },
+            {
+              "label": "Tiếng Croatia"
+            },
+            {
+              "label": "Tiếng Hungary"
+            },
+            {
+              "label": "Tiếng Indonesia"
+            },
+            {
+              "label": "Tiếng Iceland"
+            },
+            {
+              "label": "Tiếng Ý (Chuẩn)"
+            },
+            {
+              "label": "Tiếng Nhật"
+            },
+            {
+              "label": "Tiếng Gruzia"
+            },
+            {
+              "label": "Tiếng Khmer"
+            },
+            {
+              "label": "Tiếng Hàn"
+            },
+            {
+              "label": "Tiếng Kurd"
+            },
+            {
+              "label": "Tiếng Lithuania"
+            },
+            {
+              "label": "Tiếng Latvia"
+            },
+            {
+              "label": "Tiếng Macedonia"
+            },
+            {
+              "label": "Tiếng Mông Cổ"
+            },
+            {
+              "label": "Tiếng Malaysia"
+            },
+            {
+              "label": "Tiếng Na Uy"
+            },
+            {
+              "label": "Tiếng Hà Lan (Chuẩn)"
+            },
+            {
+              "label": "Tiếng Na Uy"
+            },
+            {
+              "label": "Tiếng Occitan"
+            },
+            {
+              "label": "Tiếng Ba Lan"
+            },
+            {
+              "label": "Tiếng Bồ Đào Nha (Brazil)"
+            },
+            {
+              "label": "Tiếng Bồ Đào Nha (Bồ Đào Nha)"
+            },
+            {
+              "label": "Tiếng Rumani"
+            },
+            {
+              "label": "Tiếng Nga"
+            },
+            {
+              "label": "Tiếng Sinhala"
+            },
+            {
+              "label": "Tiếng Slovak"
+            },
+            {
+              "label": "Tiếng Slovenia"
+            },
+            {
+              "label": "Tiếng Albania"
+            },
+            {
+              "label": "Tiếng Serbia (Latin)"
+            },
+            {
+              "label": "Tiếng Serbia"
+            },
+            {
+              "label": "Tiếng Thụy Điển"
+            },
+            {
+              "label": "Tiếng Thái"
+            },
+            {
+              "label": "Tiếng Thổ Nhĩ Kỳ"
+            },
+            {
+              "label": "Tiếng Tatar"
+            },
+            {
+              "label": "Tiếng Uyghur"
+            },
+            {
+              "label": "Tiếng Ukraina"
+            },
+            {
+              "label": "Tiếng Việt"
+            },
+            {
+              "label": "Tiếng Trung Quốc (PRC)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

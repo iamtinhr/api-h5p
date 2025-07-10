@@ -1,0 +1,370 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn được hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Vô hiệu hóa phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả nhiệm vụ",
+      "description": "Mô tả nhiệm vụ tại đây.",
+      "placeholder": "Vui lòng nghe kỹ và viết những gì bạn nghe được."
+    },
+    {
+      "label": "Câu",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "Câu",
+      "field": {
+        "label": "Câu",
+        "fields": [
+          {
+            "label": "Mô tả",
+            "description": "Bạn có thể thêm mô tả đơn giản phía trên trường nhập văn bản, hữu ích cho hội thoại, v.v."
+          },
+          {
+            "label": "Mẫu âm thanh",
+            "description": "Câu nói ở tốc độ bình thường"
+          },
+          {
+            "label": "Mẫu âm thanh chậm",
+            "description": "Câu nói ở tốc độ chậm"
+          },
+          {
+            "label": "Văn bản",
+            "description": "Văn bản cần được viết lại. Bạn có thể thêm các chính tả thay thế cho một từ bằng cách thêm một dấu gạch đứng (|) phía sau từ đó, sau đó là từ thay thế."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Thiết lập phản hồi tùy chỉnh cho bất kỳ khoảng điểm nào",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm Trung bình, 91-100% Tuyệt vời!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {
+                "label": "Phản hồi cho khoảng điểm đã chọn",
+                "placeholder": "Nhập phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách bài tập hoạt động.",
+      "fields": [
+        {
+          "label": "Số lần nghe tối đa",
+          "description": "Giới hạn số lần có thể nghe mẫu của mỗi câu."
+        },
+        {
+          "label": "Số lần nghe chậm tối đa",
+          "description": "Giới hạn số lần có thể nghe mẫu chậm của mỗi câu."
+        },
+        {
+          "label": "Tùy chọn tắt tạm dừng",
+          "description": "Nếu bật, không thể tạm dừng âm thanh khi phát."
+        },
+        {
+          "label": "Độ trễ nút Phát",
+          "description": "Tùy chọn thiết lập thời gian trễ tối đa ba giây trước khi phát sau khi nhấn nút. Hữu ích khi bạn muốn học viên nhập trước khi nghe."
+        },
+        {
+          "label": "Xáo trộn câu",
+          "description": "Chọn khi nào nên xáo trộn các câu.",
+          "options": [
+            {
+              "label": "Không bao giờ"
+            },
+            {
+              "label": "Một lần khi bắt đầu bài tập"
+            },
+            {
+              "label": "Mỗi lần thử"
+            }
+          ]
+        },
+        {
+          "label": "Chấm điểm",
+          "fields": [
+            {
+              "label": "Bỏ qua dấu câu",
+              "description": "Nếu bật, dấu câu sẽ không tính điểm trong bài tập."
+            },
+            {
+              "label": "Chế độ không lỗi",
+              "description": "Nếu bật, chỉ các đáp án đúng mới được tính điểm. Không bị trừ khi sai."
+            },
+            {
+              "label": "Giá trị lỗi chính tả",
+              "description": "Quy định mức độ lỗi chính tả (từ 3-9 ký tự: cho phép 1 lỗi, >9 ký tự: cho phép 2 lỗi) được tính vào điểm thực.",
+              "options": [
+                {
+                  "label": "100 %"
+                },
+                {
+                  "label": "50 %"
+                },
+                {
+                  "label": "0 %"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Văn bản",
+          "fields": [
+            {
+              "label": "Ký tự phân tách từ",
+              "description": "Chọn ký tự phân tách từ khác dấu cách để hỗ trợ đáp án thay thế với số lượng từ khác nhau."
+            },
+            {
+              "label": "Hướng viết",
+              "description": "Chọn hướng viết của ngôn ngữ các câu.",
+              "options": [
+                {
+                  "label": "Tự động phát hiện"
+                },
+                {
+                  "label": "Phải sang trái"
+                },
+                {
+                  "label": "Trái sang phải"
+                }
+              ]
+            },
+            {
+              "label": "Tách ký tự",
+              "description": "Quyết định xem một số ký tự nhất định (như ký tự Hán Trung Quốc) có nên tách ra tự động thành các từ riêng không."
+            }
+          ]
+        },
+        {
+          "label": "Cách hiển thị phản hồi",
+          "fields": [
+            {
+              "label": "Hiển thị lỗi chính tả đặc biệt",
+              "description": "Nếu bật, lỗi chính tả sẽ hiển thị với kiểu riêng, phân biệt với lỗi sai rõ ràng."
+            },
+            {
+              "label": "Hiển thị đáp án thay thế",
+              "description": "Chọn đáp án thay thế nào sẽ hiển thị cho các từ sai hoặc thiếu.",
+              "options": [
+                {
+                  "label": "Chỉ hiển thị đáp án thay thế đầu tiên"
+                },
+                {
+                  "label": "Hiển thị tất cả đáp án thay thế"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Bật \"Thử lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Hiển thị đáp án khi kiểm tra"
+        }
+      ]
+    },
+    {
+      "label": "Giao diện người dùng",
+      "fields": [
+        {
+          "label": "Phản hồi chung",
+          "description": "Bạn có thể sử dụng các biến sau sẽ được thay thế theo số thích hợp: @matches = số kết quả đúng, @total = tổng lỗi, @capped = tổng lỗi đã giới hạn, @wrong = từ sai, @added = từ thừa, @missing = từ thiếu, @typo = lỗi chính tả",
+          "default": "Bạn đã mắc @total lỗi."
+        },
+        {
+          "label": "Phản hồi chung (chế độ không lỗi)",
+          "description": "Bạn có thể sử dụng các biến sau sẽ được thay thế theo số thích hợp: @matches = số kết quả đúng, @total = tổng lỗi, @capped = tổng lỗi đã giới hạn, @wrong = từ sai, @added = từ thừa, @missing = từ thiếu, @typo = lỗi chính tả",
+          "default": "Bạn đã viết đúng @total từ và @typo từ có lỗi nhỏ."
+        },
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Gửi\"",
+          "default": "Gửi"
+        },
+        {
+          "label": "Văn bản cho nút \"Thử lại\"",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Thông báo Không hỗ trợ âm thanh",
+          "default": "Trình duyệt của bạn không hỗ trợ âm thanh này."
+        }
+      ]
+    },
+    {
+      "label": "Trình đọc màn hình",
+      "fields": [
+        {
+          "label": "Mô tả nút \"Kiểm tra\" cho công nghệ hỗ trợ",
+          "default": "Kiểm tra đáp án. Các đáp án sẽ được đánh dấu đúng, sai hoặc chưa trả lời."
+        },
+        {
+          "label": "Mô tả nút \"Hiển thị đáp án\" cho công nghệ hỗ trợ",
+          "default": "Hiển thị đáp án. Bài tập sẽ được điền đáp án đúng."
+        },
+        {
+          "label": "Mô tả nút \"Thử lại\" cho công nghệ hỗ trợ",
+          "default": "Thử lại bài tập. Xóa tất cả đáp án và bắt đầu lại."
+        },
+        {
+          "label": "Nút Phát",
+          "default": "Phát"
+        },
+        {
+          "label": "Nút Phát chậm",
+          "default": "Phát chậm"
+        },
+        {
+          "label": "Số lần thử còn lại (cho trình đọc màn hình hoặc hover)",
+          "description": "@number sẽ được thay bằng số lần còn lại.",
+          "default": "Số lần thử còn lại: @number"
+        },
+        {
+          "label": "Số lần thử còn lại (cho trình đọc màn hình hoặc hover)",
+          "default": "vô hạn"
+        },
+        {
+          "label": "Trường nhập văn bản",
+          "default": "Hãy viết những gì bạn nghe được."
+        },
+        {
+          "label": "Kết quả của bạn",
+          "description": "@score sẽ được thay bằng số điểm đạt được. @total là tổng điểm tối đa.",
+          "default": "Bạn đạt @score trên tổng @total điểm"
+        },
+        {
+          "label": "Đáp án",
+          "default": "Đáp án"
+        },
+        {
+          "label": "Câu",
+          "default": "Câu"
+        },
+        {
+          "label": "Thành phần",
+          "default": "Thành phần"
+        },
+        {
+          "label": "Đúng",
+          "default": "đúng"
+        },
+        {
+          "label": "Sai",
+          "default": "sai"
+        },
+        {
+          "label": "Lỗi nhỏ",
+          "default": "lỗi nhỏ"
+        },
+        {
+          "label": "Từ hoặc ký tự thiếu",
+          "default": "thiếu"
+        },
+        {
+          "label": "Từ hoặc ký tự thừa",
+          "default": "thừa"
+        },
+        {
+          "label": "Đáp án đúng",
+          "default": "Đáp án đúng là"
+        },
+        {
+          "label": "Hoặc",
+          "default": "hoặc"
+        },
+        {
+          "label": "Điểm",
+          "default": "điểm"
+        },
+        {
+          "label": "Điểm",
+          "default": "điểm"
+        },
+        {
+          "label": "Dấu chấm than",
+          "default": "dấu chấm than"
+        },
+        {
+          "label": "Dấu hỏi",
+          "default": "dấu hỏi"
+        },
+        {
+          "label": "Dấu phẩy",
+          "default": "dấu phẩy"
+        },
+        {
+          "label": "Dấu nháy đơn",
+          "default": "dấu nháy đơn"
+        },
+        {
+          "label": "Dấu ngoặc kép",
+          "default": "dấu ngoặc kép"
+        },
+        {
+          "label": "Dấu hai chấm",
+          "default": "dấu hai chấm"
+        },
+        {
+          "label": "Dấu chấm phẩy",
+          "default": "dấu chấm phẩy"
+        },
+        {
+          "label": "Dấu cộng",
+          "default": "dấu cộng"
+        },
+        {
+          "label": "Dấu trừ",
+          "default": "dấu trừ"
+        },
+        {
+          "label": "Dấu hoa thị",
+          "default": "dấu hoa thị"
+        },
+        {
+          "label": "Dấu gạch chéo (/)",
+          "default": "dấu gạch chéo (/)"
+        }
+      ]
+    }
+  ]
+}

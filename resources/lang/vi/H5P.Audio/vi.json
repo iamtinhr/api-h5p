@@ -1,0 +1,49 @@
+{
+  "semantics": [
+    {
+      "label": "Tệp nguồn"
+    },
+    {
+      "label": "Chế độ phát",
+      "description": "Chọn kiểu bố cục của trình phát.",
+      "options": [
+        {
+          "label": "Tối giản"
+        },
+        {
+          "label": "Đầy đủ"
+        },
+        {
+          "label": "Trong suốt"
+        }
+      ]
+    },
+    {
+      "label": "Căn chỉnh theo khung"
+    },
+    {
+      "label": "Bật điều khiển",
+      "description": "Các điều khiển cho phép người dùng, ví dụ, tạm dừng âm thanh"
+    },
+    {
+      "label": "Bật tự động phát",
+      "description": "Với tự động phát, âm thanh sẽ phát ngay lập tức. Lưu ý rằng không phải trình duyệt nào cũng cho phép điều này."
+    },
+    {
+      "label": "Phát âm thanh (Trình đọc màn hình)",
+      "default": "Phát âm thanh"
+    },
+    {
+      "label": "Tạm dừng âm thanh (Trình đọc màn hình)",
+      "default": "Tạm dừng âm thanh"
+    },
+    {
+      "label": "Tên nội dung âm thanh",
+      "default": "Âm thanh"
+    },
+    {
+      "label": "Thông báo âm thanh không được hỗ trợ",
+      "default": "Trình duyệt của bạn không thể phát âm thanh này"
+    }
+  ]
+}

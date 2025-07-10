@@ -1,0 +1,31 @@
+{
+  "semantics": [
+    {
+      "label": "Hình ảnh"
+    },
+    {
+      "label": "Chỉ để trang trí",
+      "description": "Bật tùy chọn này nếu hình ảnh chỉ mang tính trang trí và không bổ sung thông tin cho nội dung trang. Hình ảnh sẽ bị bỏ qua bởi trình đọc màn hình và không cần văn bản thay thế."
+    },
+    {
+      "label": "Văn bản thay thế",
+      "description": "Bắt buộc. Nếu trình duyệt không tải được hình ảnh, văn bản này sẽ hiển thị thay thế. Cũng được dùng bởi trình đọc màn hình."
+    },
+    {
+      "label": "Văn bản khi rê chuột",
+      "description": "Tùy chọn. Văn bản này hiển thị khi người dùng di chuột qua hình ảnh."
+    },
+    {
+      "label": "Tên nội dung hình ảnh",
+      "default": "Hình ảnh"
+    },
+    {
+      "label": "Mở rộng hình ảnh",
+      "default": "Mở rộng hình ảnh"
+    },
+    {
+      "label": "Thu nhỏ hình ảnh",
+      "default": "Thu nhỏ hình ảnh"
+    }
+  ]
+}

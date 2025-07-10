@@ -1,0 +1,256 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Các phương tiện tùy chọn được hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt tính năng phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Câu hỏi"
+    },
+    {
+      "label": "Các lựa chọn có sẵn",
+      "entity": "lựa chọn",
+      "field": {
+        "label": "Lựa chọn",
+        "fields": [
+          {
+            "label": "Phương tiện",
+            "description": "Phương tiện được hiển thị như một lựa chọn."
+          },
+          {
+            "label": "Ảnh poster"
+          },
+          {
+            "label": "Đúng"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Định nghĩa phản hồi tùy chỉnh cho bất kỳ khoảng điểm số nào",
+          "description": "Nhấp vào nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm thấp, 21-91% Điểm trung bình, 91-100% Điểm tuyệt vời!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm số"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm số đã định nghĩa",
+                "placeholder": "Nhập phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cấu hình hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách bài tập hoạt động.",
+      "fields": [
+        {
+          "label": "Bật nút \"Làm lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận cho \"Kiểm tra\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận cho \"Làm lại\""
+        },
+        {
+          "label": "Chấm điểm cho toàn bộ câu hỏi",
+          "description": "Chấm điểm cho câu hỏi nếu phần trăm điểm đạt lớn hơn phần trăm cần để qua"
+        },
+        {
+          "label": "Yêu cầu trả lời trước khi xem đáp án"
+        },
+        {
+          "label": "Loại câu hỏi",
+          "description": "Chọn giao diện và hành vi của câu hỏi.",
+          "options": [
+            {
+              "label": "Tự động"
+            },
+            {
+              "label": "Nhiều lựa chọn (Checkbox)"
+            },
+            {
+              "label": "Chọn một (Nút bấm)"
+            }
+          ]
+        },
+        {
+          "label": "Tỷ lệ khung hình",
+          "description": "Chọn tỷ lệ khung hình cho các lựa chọn",
+          "options": [
+            {
+              "label": "Tự động"
+            },
+            {
+              "label": "16:9"
+            },
+            {
+              "label": "4:3"
+            },
+            {
+              "label": "3:2"
+            },
+            {
+              "label": "1:1"
+            }
+          ]
+        },
+        {
+          "label": "Số lựa chọn tối đa trên mỗi hàng",
+          "description": "Cài đặt số lượng lựa chọn tối đa trên mỗi hàng để đảm bảo hiển thị đẹp.",
+          "options": [
+            {
+              "label": "1"
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "3"
+            },
+            {
+              "label": "4"
+            }
+          ]
+        },
+        {
+          "label": "Phần trăm để qua",
+          "description": "Thiết lập này có thể không có tác dụng. Đây là phần trăm tổng điểm cần đạt để được 1 điểm khi bật tùy chọn chấm điểm cho toàn bài, và để nhận được result.success trong các khai báo xAPI."
+        }
+      ]
+    },
+    {
+      "label": "Giao diện người dùng",
+      "fields": [
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Gửi\"",
+          "default": "Gửi"
+        },
+        {
+          "label": "Mô tả cho các công nghệ hỗ trợ của nút \"Kiểm tra\"",
+          "default": "Kiểm tra câu trả lời của bạn. Các đáp án sẽ được đánh dấu là đúng, sai hoặc chưa trả lời."
+        },
+        {
+          "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Mô tả cho các công nghệ hỗ trợ của nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án. Các lựa chọn đúng sẽ được đánh dấu."
+        },
+        {
+          "label": "Đáp án đúng (không hiển thị)",
+          "default": "Đáp án đúng"
+        },
+        {
+          "label": "Đáp án sai (không hiển thị)",
+          "default": "Đáp án sai"
+        },
+        {
+          "label": "Bạn nên đã chọn lựa chọn này",
+          "default": "Lẽ ra nên chọn"
+        },
+        {
+          "label": "Lựa chọn không nên được chọn",
+          "default": "Không nên chọn"
+        },
+        {
+          "label": "Văn bản cho thông báo \"Cần trả lời\"",
+          "default": "Vui lòng trả lời trước khi có thể xem đáp án"
+        },
+        {
+          "label": "Văn bản cho nút \"Làm lại\"",
+          "default": "Làm lại"
+        },
+        {
+          "label": "Mô tả cho các công nghệ hỗ trợ của nút \"Làm lại\"",
+          "default": "Thử lại bài tập. Xóa tất cả câu trả lời và bắt đầu lại."
+        },
+        {
+          "label": "Kết quả của bạn",
+          "description": ":num và :total là các biến sẽ được thay thế bằng giá trị tương ứng.",
+          "default": "Bạn đạt :num trên tổng số :total điểm"
+        },
+        {
+          "label": "Hộp thoại xác nhận cho Kiểm tra",
+          "fields": [
+            {
+              "label": "Tiêu đề",
+              "default": "Bạn đã hoàn thành chưa?"
+            },
+            {
+              "label": "Nội dung",
+              "default": "Bạn chắc chắn muốn kết thúc?"
+            },
+            {
+              "label": "Nhãn nút Hủy",
+              "default": "Hủy"
+            },
+            {
+              "label": "Nhãn nút Xác nhận",
+              "default": "Kết thúc"
+            }
+          ]
+        },
+        {
+          "label": "Hộp thoại xác nhận cho Làm lại",
+          "fields": [
+            {
+              "label": "Tiêu đề",
+              "default": "Làm lại?"
+            },
+            {
+              "label": "Nội dung",
+              "default": "Bạn chắc chắn muốn thử lại?"
+            },
+            {
+              "label": "Nhãn nút Hủy",
+              "default": "Hủy"
+            },
+            {
+              "label": "Nhãn nút Xác nhận",
+              "default": "Làm lại"
+            }
+          ]
+        },
+        {
+          "label": "Văn bản khi thiếu văn bản thay thế cho hình ảnh",
+          "default": "Thiếu văn bản thay thế"
+        },
+        {
+          "label": "Nhãn đóng nút modal",
+          "default": "Đóng"
+        }
+      ]
+    }
+  ]
+}

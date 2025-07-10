@@ -1,0 +1,81 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa câu hỏi nhiều điểm nóng trên ảnh",
+      "fields": [
+        {
+          "label": "Ảnh nền",
+          "fields": [
+            {
+              "label": "Tiêu đề câu hỏi",
+              "default": "Câu hỏi điểm nóng trên ảnh",
+              "description": "Dùng cho tóm tắt, thống kê, v.v."
+            },
+            {
+              "label": "Ảnh nền",
+              "description": "Chọn một ảnh để làm nền cho câu hỏi điểm nóng trên ảnh."
+            }
+          ]
+        },
+        {
+          "label": "Điểm nóng",
+          "description": "Chọn hình phù hợp cho điểm nóng, cấu hình và kéo thả vào vị trí mong muốn.",
+          "fields": [
+            {
+              "label": "Mô tả nhiệm vụ",
+              "description": "Hướng dẫn cho người dùng."
+            },
+            {
+              "label": "Tên điểm nóng",
+              "description": "Nhập nội dung mà người dùng cần tìm, ví dụ: rủi ro, đồ vật, lỗi (sẽ dùng trong phản hồi)."
+            },
+            {
+              "label": "Số lượng điểm nóng đúng cần tìm để hoàn thành câu hỏi",
+              "description": "Nếu bỏ trống, sẽ mặc định bằng số lượng điểm nóng đúng đã tạo."
+            },
+            {
+              "label": "Điểm nóng",
+              "entity": "Điểm nóng",
+              "field": {
+                "label": "Điểm nóng",
+                "fields": [
+                  {
+                    "label": "Thiết lập người dùng",
+                    "fields": [
+                      {
+                        "label": "Đúng",
+                        "description": "Có thể có nhiều điểm nóng đúng. Người dùng sẽ nhận được phản hồi đúng/sai ngay sau mỗi lần nhấp. Phản hồi hiển thị dưới dạng - (Văn bản nhập bên dưới) (Số điểm nóng đã tìm thấy) trên (Số điểm nóng đúng cần tìm) (Tên điểm nóng đã nhập phía trên)."
+                      },
+                      {
+                        "label": "Phản hồi",
+                        "placeholder": "Chính xác, bạn đã tìm thấy"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Thiết lập vị trí",
+                    "fields": [
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Phản hồi khi người dùng chọn một vị trí không có điểm nóng:",
+              "placeholder": "Bạn chưa chọn đúng điểm nào, hãy thử lại!"
+            },
+            {
+              "label": "Phản hồi khi người dùng chọn lại điểm nóng đã tìm thấy:",
+              "placeholder": "Bạn đã tìm thấy điểm này rồi!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "semantics": [
+    {
+      "label": "Câu hỏi hoặc mô tả"
+    },
+    {
+      "label": "Văn bản mặc định",
+      "default": "Bắt đầu nhập...",
+      "description": "Văn bản được hiển thị ban đầu trong trường nhập. Sẽ tự động xóa khi người dùng bắt đầu nhập."
+    },
+    {
+      "label": "Số dòng nhập",
+      "description": "Xác định chiều cao của trường nhập.",
+      "options": [
+        {
+          "label": "1 dòng"
+        },
+        {
+          "label": "2 dòng"
+        },
+        {
+          "label": "3 dòng"
+        },
+        {
+          "label": "10 dòng"
+        }
+      ]
+    }
+  ]
+}

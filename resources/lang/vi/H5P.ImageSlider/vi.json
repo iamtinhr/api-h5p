@@ -1,0 +1,63 @@
+{
+  "semantics": [
+    {
+      "label": "Hình ảnh",
+      "field": {
+        "label": "Trình chiếu",
+        "fields": [
+          {
+            "label": "Trình chiếu"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Tỷ lệ khung hình",
+      "description": "Tự động nghĩa là tỷ lệ khung hình được cố định tự động và dựa trên hình ảnh",
+      "options": [
+        {
+          "label": "Tự động"
+        },
+        {
+          "label": "Tùy chỉnh"
+        },
+        {
+          "label": "Không cố định"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt tỷ lệ khung hình",
+      "fields": [
+        {
+          "label": "Chiều rộng tỷ lệ khung hình",
+          "description": "Nếu bạn dùng 4 ở đây và 3 cho chiều cao, tỷ lệ khung hình sẽ là 4:3"
+        },
+        {
+          "label": "Chiều cao tỷ lệ khung hình",
+          "description": "Nếu bạn dùng 3 ở đây và 4 cho chiều rộng, tỷ lệ khung hình sẽ là 4:3"
+        }
+      ]
+    },
+    {
+      "label": "Khả năng tiếp cận của trình chiếu",
+      "fields": [
+        {
+          "label": "Nhãn cho nút Ảnh tiếp theo",
+          "default": "Ảnh tiếp theo",
+          "description": "Chỉ dùng cho trình đọc màn hình. Không hiển thị."
+        },
+        {
+          "label": "Nhãn cho nút Ảnh trước",
+          "default": "Ảnh trước",
+          "description": "Chỉ dùng cho trình đọc màn hình. Không hiển thị."
+        },
+        {
+          "label": "Nhãn cho nút chuyển ảnh",
+          "default": "Đi tới ảnh %slide",
+          "description": "Chỉ dùng cho trình đọc màn hình. Không hiển thị. %slide là biến sẽ được thay thế bằng số thứ tự ảnh."
+        }
+      ]
+    }
+  ]
+}

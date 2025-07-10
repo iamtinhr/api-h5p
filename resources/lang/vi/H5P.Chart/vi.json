@@ -1,0 +1,40 @@
+{
+  "semantics": [
+    {
+      "label": "Loại biểu đồ",
+      "options": [
+        {
+          "label": "Biểu đồ tròn"
+        },
+        {
+          "label": "Biểu đồ cột"
+        }
+      ]
+    },
+    {
+      "label": "Các phần tử dữ liệu",
+      "entity": "tùy chọn",
+      "field": {
+        "label": "Phần tử dữ liệu",
+        "fields": [
+          {
+            "label": "Tên"
+          },
+          {
+            "label": "Giá trị"
+          },
+          {
+            "label": "Màu"
+          },
+          {
+            "label": "Màu chữ"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Văn bản cho trình đọc màn hình xác định hình là biểu đồ.",
+      "default": "Biểu đồ"
+    }
+  ]
+}

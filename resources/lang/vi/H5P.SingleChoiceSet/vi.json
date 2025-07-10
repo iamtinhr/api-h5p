@@ -1,0 +1,155 @@
+{
+  "semantics": [
+    {
+      "label": "Danh sách câu hỏi",
+      "entity": "câu hỏi",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        },
+        {
+          "label": "Văn bản"
+        }
+      ],
+      "field": {
+        "label": "Câu hỏi và các lựa chọn",
+        "fields": [
+          {
+            "label": "Câu hỏi"
+          },
+          {
+            "label": "Các lựa chọn - lựa chọn đầu tiên là đúng.",
+            "entity": "đáp án",
+            "field": {
+              "label": "Lựa chọn"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Định nghĩa phản hồi tùy chỉnh cho từng dải điểm số",
+          "description": "Nhấn vào nút \"Thêm dải\" để thêm các dải điểm số bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm xuất sắc!",
+          "entity": "dải",
+          "field": {
+            "fields": [
+              {
+                "label": "Dải điểm số"
+              },
+              {},
+              {
+                "label": "Phản hồi cho dải điểm số đã chọn",
+                "placeholder": "Nhập phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cấu hình hành vi",
+      "fields": [
+        {
+          "label": "Tự động tiếp tục",
+          "description": "Tự động chuyển sang câu hỏi tiếp theo khi đã chọn đáp án. Tùy chọn này nên tắt để đảm bảo khả năng truy cập với trình đọc màn hình."
+        },
+        {
+          "label": "Thời gian chờ cho đáp án đúng",
+          "description": "Giá trị tính bằng mili giây"
+        },
+        {
+          "label": "Thời gian chờ cho đáp án sai",
+          "description": "Giá trị tính bằng mili giây"
+        },
+        {
+          "label": "Bật hiệu ứng âm thanh"
+        },
+        {
+          "label": "Bật nút \"Làm lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Phần trăm đạt yêu cầu",
+          "description": "Phần trăm tổng số điểm cần để vượt qua bài kiểm tra."
+        }
+      ]
+    },
+    {
+      "label": "Tùy chỉnh bộ câu hỏi chọn một đáp án",
+      "fields": [
+        {
+          "label": "Nhãn nút \"Tiếp theo\"",
+          "default": "Câu hỏi tiếp theo"
+        },
+        {
+          "label": "Nhãn nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Nhãn nút \"Làm lại\"",
+          "default": "Làm lại"
+        },
+        {
+          "label": "Tiêu đề cho trang hiển thị đáp án",
+          "default": "Danh sách đáp án"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình khi trả lời đúng",
+          "default": "Chính xác!"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình khi trả lời sai",
+          "default": "Sai!"
+        },
+        {
+          "label": "Đáp án nên được chọn",
+          "default": "Nên được chọn"
+        },
+        {
+          "label": "Đáp án KHÔNG nên được chọn",
+          "default": "KHÔNG nên được chọn"
+        },
+        {
+          "label": "Nhãn nút \"Tắt âm thanh\", để tắt âm phản hồi",
+          "default": "Tắt âm phản hồi"
+        },
+        {
+          "label": "Nhãn nút \"Đóng\"",
+          "default": "Đóng"
+        },
+        {
+          "label": "Văn bản số trang câu hỏi",
+          "description": "Thông báo số trang hiện tại và tổng số trang, biến là :num và :total",
+          "default": "Trang :num trên :total"
+        },
+        {
+          "label": "Văn bản thanh điểm cho trình đọc màn hình",
+          "default": "Bạn đạt :num trên tổng số :total điểm"
+        },
+        {
+          "label": "Nhãn số câu hỏi trong danh sách đáp án",
+          "description": "Thông báo thứ tự câu hỏi trong danh sách đáp án, biến là :num",
+          "default": "Câu hỏi :num"
+        },
+        {
+          "label": "Mô tả cho công nghệ hỗ trợ của nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án. Bài sẽ được chấm với đáp án đúng."
+        },
+        {
+          "label": "Mô tả cho công nghệ hỗ trợ của nút \"Làm lại\"",
+          "default": "Thử lại bài. Xóa tất cả câu trả lời và bắt đầu lại."
+        }
+      ]
+    }
+  ]
+}

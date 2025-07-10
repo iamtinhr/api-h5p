@@ -1,0 +1,39 @@
+{
+  "semantics": [
+    {
+      "label": "Tiêu đề",
+      "default": "Công cụ tài liệu",
+      "description": "Tiêu đề cho công cụ tài liệu."
+    },
+    {
+      "label": "Các phần tử",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "trang",
+      "field": {
+        "label": "Loại trang",
+        "description": "Thư viện cho trang trình chiếu này."
+      }
+    },
+    {
+      "label": "Dịch các nút của công cụ tài liệu",
+      "fields": [
+        {
+          "label": "Nhãn nút trước",
+          "default": "Bước tài liệu trước"
+        },
+        {
+          "label": "Nhãn nút tiếp theo",
+          "default": "Bước tài liệu tiếp theo"
+        },
+        {
+          "label": "Nhãn nút đóng",
+          "default": "Đóng"
+        }
+      ]
+    }
+  ]
+}

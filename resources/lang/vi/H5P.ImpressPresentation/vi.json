@@ -1,0 +1,91 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "label": "Tạo các khung nhìn",
+          "description": "Tại đây bạn có thể tạo các khung nhìn với hiệu ứng chuyển tiếp và văn bản khác nhau.",
+          "entity": "tùy chọn",
+          "field": {
+            "label": "Phiên bản khung nhìn",
+            "fields": [
+              {},
+              {
+                "fields": [
+                  {
+                    "label": "Căn giữa văn bản"
+                  },
+                  {
+                    "label": "Vị trí X"
+                  },
+                  {
+                    "label": "Vị trí Y"
+                  },
+                  {
+                    "label": "Vị trí Z",
+                    "description": "Giá trị âm sẽ xa máy quay hơn và giá trị dương sẽ gần hơn."
+                  },
+                  {
+                    "label": "Xoay trục X",
+                    "description": "Góc xoay mặc định là 0."
+                  },
+                  {
+                    "label": "Xoay trục Y",
+                    "description": "Góc xoay mặc định là 0."
+                  },
+                  {
+                    "label": "Xoay trục Z",
+                    "description": "Góc xoay mặc định là 0."
+                  }
+                ]
+              },
+              {
+                "fields": [
+                  {
+                    "label": "Nền trong suốt",
+                    "description": "Bỏ chọn để chọn màu nền hoặc hình nền"
+                  },
+                  {
+                    "spectrum": {},
+                    "label": "Màu nền",
+                    "description": "Tùy chọn, có thể đặt để có màu nền cho bước này",
+                    "default": "#fff"
+                  },
+                  {
+                    "label": "Hình nền"
+                  },
+                  {
+                    "label": "Chiều rộng nền"
+                  },
+                  {
+                    "label": "Chiều cao nền"
+                  }
+                ]
+              },
+              {
+                "label": "Sắp xếp thứ tự",
+                "fields": [
+                  {
+                    "label": "Bao gồm bước này trong đường đi"
+                  },
+                  {
+                    "label": "Chỉ số trong đường đi"
+                  },
+                  {
+                    "label": "Tên do người dùng đặt"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Tỷ lệ phối cảnh"
+        },
+        {
+          "label": "Lộ trình"
+        }
+      ]
+    }
+  ]
+}

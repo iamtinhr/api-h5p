@@ -1,0 +1,29 @@
+{
+  "semantics": [
+    {
+      "label": "Danh sách Nội dung Cột",
+      "entity": "nội dung",
+      "field": {
+        "fields": [
+          {
+            "label": "Nội dung"
+          },
+          {
+            "label": "Ngăn cách nội dung bằng một đường kẻ ngang",
+            "options": [
+              {
+                "label": "Tự động (mặc định)"
+              },
+              {
+                "label": "Không bao giờ dùng đường kẻ phía trên"
+              },
+              {
+                "label": "Luôn dùng đường kẻ phía trên"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

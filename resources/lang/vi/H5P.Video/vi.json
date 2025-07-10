@@ -1,0 +1,136 @@
+{
+  "semantics": [
+    {
+      "label": "Nguồn Video",
+      "description": "Để đảm bảo video hoạt động trên mọi trình duyệt, bạn nên thêm cả nguồn định dạng WebM và MP4."
+    },
+    {
+      "label": "Hiệu ứng hình ảnh",
+      "fields": [
+        {
+          "label": "Ảnh bìa"
+        },
+        {
+          "label": "Điều chỉnh trình phát video sử dụng toàn bộ không gian sẵn có",
+          "description": "Nếu không thiết lập, trình phát video sẽ giữ nguyên tỷ lệ khung hình của video."
+        },
+        {
+          "label": "Hiển thị điều khiển trình phát video",
+          "description": "Thêm điều khiển cho trình phát video. Điều này cho phép người dùng phát, tạm dừng, v.v."
+        }
+      ]
+    },
+    {
+      "label": "Phát lại",
+      "fields": [
+        {
+          "label": "Tự động phát video",
+          "description": "Tự động bắt đầu phát video. Có thể không hoạt động trên thiết bị di động."
+        },
+        {
+          "label": "Lặp lại video",
+          "description": "Tự động phát lại video khi kết thúc."
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa Video",
+      "fields": [
+        {
+          "label": "Tên",
+          "default": "Video",
+          "description": "Giúp xác định nội dung loại này."
+        },
+        {
+          "label": "Đang tải",
+          "default": "Đang tải trình phát video..."
+        },
+        {
+          "label": "Không tìm thấy trình phát",
+          "default": "Không tìm thấy trình phát video hỗ trợ định dạng video đã cho."
+        },
+        {
+          "label": "Không có nguồn video",
+          "default": "Thiếu nguồn video."
+        },
+        {
+          "label": "Đã hủy",
+          "default": "Trình phát phương tiện đã bị hủy."
+        },
+        {
+          "label": "Lỗi mạng",
+          "default": "Lỗi mạng."
+        },
+        {
+          "label": "Không thể giải mã nguồn video",
+          "default": "Không thể giải mã phương tiện."
+        },
+        {
+          "label": "Định dạng không được hỗ trợ",
+          "default": "Định dạng video không được hỗ trợ."
+        },
+        {
+          "label": "Phương tiện đã mã hóa",
+          "default": "Phương tiện đã mã hóa."
+        },
+        {
+          "label": "Lỗi không xác định",
+          "default": "Lỗi không xác định."
+        },
+        {
+          "label": "ID YouTube không hợp lệ",
+          "default": "ID YouTube không hợp lệ."
+        },
+        {
+          "label": "Không tìm thấy ID YouTube",
+          "default": "Không thể tìm thấy video với ID YouTube đã cho."
+        },
+        {
+          "label": "Video YouTube bị hạn chế",
+          "default": "Chủ sở hữu video này không cho phép nhúng."
+        }
+      ]
+    },
+    {
+      "label": "Khả năng truy cập",
+      "fields": [
+        {
+          "label": "Thêm bản nhạc âm thanh",
+          "entity": "Bản nhạc",
+          "field": {
+            "label": "Bản nhạc",
+            "fields": [
+              {
+                "label": "Nhãn bản nhạc"
+              },
+              {
+                "label": "Loại, xem <a target=\"_blank\" href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-track-element\">Tiêu chuẩn HTML sống</a>",
+                "options": [
+                  {
+                    "label": "Phụ đề"
+                  },
+                  {
+                    "label": "Chú thích"
+                  },
+                  {
+                    "label": "Mô tả"
+                  },
+                  {
+                    "label": "Chương"
+                  }
+                ]
+              },
+              {
+                "label": "Ngôn ngữ nguồn, bắt buộc cho phụ đề",
+                "description": "Phải là nhãn ngôn ngữ hợp lệ theo BCP 47. Nếu loại thuộc tính là phụ đề, thì phải xác định srclang."
+              },
+              {
+                "label": "Tệp bản nhạc (WebVTT)"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "libraryStrings": {
+    "title": "Ghi âm",
+    "recordAnswer": "Ghi âm",
+    "pause": "Tạm dừng",
+    "continue": "Tiếp tục",
+    "done": "Kết thúc",
+    "retry": "Ghi lại",
+    "microphoneNotSupported": "Không hỗ trợ micro. Hãy đảm bảo bạn đang sử dụng trình duyệt cho phép ghi âm micro.",
+    "microphoneInaccessible": "Micro không khả dụng. Hãy đảm bảo micro đã được bật trên trình duyệt.",
+    "insecureNotAllowed": "Trình duyệt của bạn không cho phép truy cập micro vì trang này không được phục vụ qua HTTPS. Vui lòng liên hệ tác giả để cung cấp trang qua HTTPS.",
+    "statusReadyToRecord": "Nhấn nút bên dưới để bắt đầu ghi âm.",
+    "statusRecording": "Đang ghi âm...",
+    "statusPaused": "Đã tạm dừng ghi âm.",
+    "statusFinishedRecording": "Nghe lại bản ghi bên dưới.",
+    "downloadRecording": "Nhấn nút \"Chèn\" để sử dụng bản ghi này.",
+    "retryDialogHeaderText": "Bạn có muốn ghi lại không?",
+    "retryDialogBodyText": "Nhấn \"Thử lại\" sẽ làm mất bản ghi hiện tại.",
+    "retryDialogConfirmText": "Thử lại",
+    "retryDialogCancelText": "Hủy",
+    "statusCantCreateTheAudioFile": "Không thể tạo tệp âm thanh."
+  }
+}

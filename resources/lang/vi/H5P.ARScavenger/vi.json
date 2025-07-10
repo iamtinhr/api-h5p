@@ -1,0 +1,300 @@
+{
+  "semantics": [
+    {
+      "label": "Hiển thị màn hình bắt đầu",
+      "description": "Nếu bật, nội dung sẽ hiển thị màn hình tiêu đề khi bắt đầu."
+    },
+    {
+      "label": "Màn hình bắt đầu",
+      "fields": [
+        {
+          "label": "Giới thiệu",
+          "placeholder": "Chào mừng đến với ..."
+        },
+        {
+          "label": "Ảnh màn hình tiêu đề"
+        }
+      ]
+    },
+    {
+      "label": "Các đánh dấu",
+      "fields": [
+        {
+          "label": "Đánh dấu",
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "entity": "đánh dấu",
+          "field": {
+            "label": "Đánh dấu",
+            "fields": [
+              {
+                "label": "Ảnh đánh dấu (gốc)",
+                "description": "Tải lên hình ảnh bạn muốn tạo đánh dấu. Nên là ảnh vuông, nếu không sẽ bị cắt. Lưu ý: bạn cần một ảnh đánh dấu duy nhất cho mỗi tương tác.",
+                "importantDescription": {
+                  "description": "Vui lòng lưu ý một số tiêu chí để tạo ảnh đánh dấu tốt:<ul><li>Độ tương phản màu cao, lý tưởng là trắng đen</li><li>Không đối xứng</li><li>Độ phân giải nội bộ của đánh dấu là 16x16 pixel, sử dụng ảnh lớn hơn có thể làm giảm khả năng nhận diện</li><li>Một ký tự hoặc từ ngắn thường cho kết quả tốt</li></ul>"
+                }
+              },
+              {
+                "label": "Ảnh đánh dấu (mẫu)",
+                "description": "Tải ảnh này để sử dụng làm đánh dấu hiển thị trên màn hình hoặc in ra giấy."
+              },
+              {
+                "label": "Loại hành động",
+                "description": "Hành động sẽ được thực hiện khi tìm thấy đánh dấu.",
+                "options": [
+                  {
+                    "label": "Tương tác H5P"
+                  },
+                  {
+                    "label": "Lớp phủ mô hình 3D"
+                  }
+                ]
+              },
+              {
+                "label": "Tương tác",
+                "fields": [
+                  {
+                    "label": "Tương tác"
+                  },
+                  {
+                    "label": "Mô hình giả lập"
+                  }
+                ]
+              },
+              {
+                "label": "Mô hình 3D",
+                "fields": [
+                  {
+                    "label": "Tệp mô hình 3D",
+                    "description": "Tải lên tệp glTF (.glb / .gltf). Định dạng ưu tiên là \"glTF 2.0 binary\" trong một tệp duy nhất."
+                  },
+                  {
+                    "label": "Hình học",
+                    "fields": [
+                      {
+                        "label": "Tỉ lệ",
+                        "description": "Tăng giảm kích thước mô hình cho phù hợp với kích thước đánh dấu.",
+                        "fields": [
+                          {
+                            "label": "Phần trăm"
+                          },
+                          {
+                            "label": "Mô hình giả lập"
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Vị trí",
+                        "description": "Thiết lập vị trí bù của mô hình so với đánh dấu.",
+                        "fields": [
+                          {
+                            "label": "Bù-X"
+                          },
+                          {
+                            "label": "Bù-Y"
+                          },
+                          {
+                            "label": "Bù-Z"
+                          }
+                        ]
+                      },
+                      {
+                        "label": "Xoay",
+                        "description": "Thiết lập xoay theo độ.",
+                        "fields": [
+                          {
+                            "label": "trục-X"
+                          },
+                          {
+                            "label": "trục-Y"
+                          },
+                          {
+                            "label": "trục-Z"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Hiển thị màn hình kết thúc",
+      "description": "Nếu được chọn, sẽ hiển thị màn hình kết thúc khi hoàn thành tất cả tương tác. Tuy nhiên, màn hình kết thúc sẽ không khả dụng nếu chỉ sử dụng mô hình 3D."
+    },
+    {
+      "label": "Màn hình kết thúc",
+      "fields": [
+        {
+          "label": "Ảnh màn hình kết thúc"
+        },
+        {
+          "label": "Văn bản màn hình bắt đầu",
+          "placeholder": "Bạn đã hoàn thành!"
+        },
+        {
+          "label": "Phản hồi tổng thể",
+          "fields": [
+            {
+              "widgets": [
+                {
+                  "label": "Mặc định"
+                }
+              ],
+              "label": "Thiết lập phản hồi tùy chỉnh cho bất kỳ khoảng điểm nào",
+              "description": "Nhấn nút \"Thêm khoảng\" để thêm các khoảng điểm cần thiết. Ví dụ: 0-20% Điểm thấp, 21-91% Điểm trung bình, 91-100% Điểm xuất sắc!",
+              "entity": "khoảng",
+              "field": {
+                "fields": [
+                  {
+                    "label": "Khoảng điểm"
+                  },
+                  {
+                    "placeholder": "Nhập phản hồi",
+                    "label": "Phản hồi cho khoảng điểm đã chọn"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "fields": [
+        {
+          "label": "Bật nút \"Thử lại\"",
+          "description": "Nếu bật, học viên có thể làm lại bài."
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\"",
+          "description": "Nếu bật, học viên có thể xem đáp án của tất cả tương tác."
+        },
+        {
+          "label": "Ẩn nút \"Hiển thị đáp án\"",
+          "description": "Tùy chọn này cho phép bật/tắt nút \"Hiển thị đáp án\" cho tất cả nội dung hoặc sử dụng cài đặt hành vi riêng.",
+          "options": [
+            {
+              "label": "Dùng cài đặt hành vi"
+            },
+            {
+              "label": "Luôn hiển thị nút"
+            },
+            {
+              "label": "Không bao giờ hiển thị nút"
+            }
+          ]
+        },
+        {
+          "label": "Ghi đè nút \"Thử lại\"",
+          "description": "Tùy chọn này cho phép bật/tắt nút \"Thử lại\" cho tất cả nội dung hoặc sử dụng cài đặt hành vi riêng.",
+          "options": [
+            {
+              "label": "Dùng cài đặt hành vi"
+            },
+            {
+              "label": "Luôn hiển thị nút"
+            },
+            {
+              "label": "Không bao giờ hiển thị nút"
+            }
+          ]
+        },
+        {
+          "label": "Chiều cao mặc định",
+          "description": "Thiết lập chiều cao mặc định (px) cho trường hợp gặp vấn đề về chia sẻ tài nguyên chéo (CORS)."
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa",
+      "fields": [
+        {
+          "label": "Nút Bắt đầu",
+          "default": "Bắt đầu"
+        },
+        {
+          "label": "Nút Thử lại",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Tìm đánh dấu để xem tương tác.",
+          "default": "Tìm đánh dấu để xem tương tác."
+        },
+        {
+          "label": "Lỗi: trình duyệt không hỗ trợ",
+          "default": "Có vẻ như trình duyệt của bạn không thể chạy loại nội dung này."
+        },
+        {
+          "label": "Lỗi: Không truy cập được camera",
+          "default": "Không thể truy cập camera."
+        },
+        {
+          "label": "Lỗi: Không hỗ trợ camera",
+          "default": "Trình duyệt của bạn dường như không hỗ trợ camera."
+        },
+        {
+          "label": "Lỗi: Không có đánh dấu",
+          "default": "Có ai đó quên thêm đánh dấu?"
+        },
+        {
+          "label": "Cảnh báo: Trình duyệt Brave",
+          "default": "Có vẻ bạn đang dùng trình duyệt Brave. Tuyệt! Nhưng các thiết lập bảo mật nghiêm ngặt của nó có thể ngăn không cho camera hoạt động."
+        },
+        {
+          "label": "Đang khởi tạo nội dung",
+          "default": "Đang khởi tạo nội dung. Vui lòng nhớ cho phép truy cập camera."
+        }
+      ]
+    },
+    {
+      "label": "Trình đọc màn hình",
+      "fields": [
+        {
+          "label": "Tiêu đề nút Toàn màn hình: vào",
+          "default": "Chuyển sang chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề nút Toàn màn hình: thoát",
+          "default": "Thoát chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề nút 'Chuyển đổi chế độ xem' (khi hành động đang đóng)",
+          "default": "Chuyển sang bài tập"
+        },
+        {
+          "label": "Tiêu đề nút 'Chuyển đổi chế độ xem' (khi hành động đang mở)",
+          "default": "Chuyển sang camera"
+        },
+        {
+          "label": "Thông báo 'Nút bị vô hiệu hóa' cho 'nút chuyển đổi chế độ xem'",
+          "default": "Bạn không thể chuyển đổi chế độ xem lúc này"
+        },
+        {
+          "label": "Tiêu đề nút 'Thoát'",
+          "default": "Thoát và xem kết quả"
+        },
+        {
+          "label": "Thông báo 'Nút bị vô hiệu hóa' cho 'nút thoát'",
+          "default": "Bạn chưa hoàn thành tất cả bài tập"
+        },
+        {
+          "label": "Hành động mở",
+          "default": "Đã chuyển sang chế độ bài tập."
+        },
+        {
+          "label": "Hành động đóng",
+          "default": "Đã chuyển sang chế độ camera."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa Ba Hình ảnh",
+      "fields": [
+        {
+          "label": "Các cảnh",
+          "entity": "Cảnh",
+          "field": {
+            "fields": [
+              {
+                "label": "Loại cảnh",
+                "options": [
+                  {
+                    "label": "Ảnh 360"
+                  },
+                  {
+                    "label": "Ảnh tĩnh"
+                  }
+                ]
+              },
+              {
+                "label": "Hiện nút \"Quay lại\"",
+                "description": "Hiển thị nút để quay lại cảnh trước"
+              },
+              {},
+              {
+                "label": "Tiêu đề cảnh",
+                "description": "Dùng để xác định cảnh"
+              },
+              {
+                "label": "Hình nền cảnh"
+              },
+              {
+                "label": "Mô tả cảnh",
+                "description": "Một đoạn văn bản mô tả cảnh cho người dùng cuối"
+              },
+              {},
+              {
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Nhãn",
+                      "description": "Nếu để trống sẽ không hiển thị nhãn và sẽ cố gắng sử dụng trường tiêu đề cho trình đọc màn hình"
+                    },
+                    {
+                      "label": "Cài đặt nhãn",
+                      "fields": [
+                        {
+                          "label": "Vị trí nhãn",
+                          "description": "Chọn vị trí hiển thị nhãn",
+                          "options": [
+                            {
+                              "label": "Dùng thiết lập hành vi"
+                            },
+                            {
+                              "label": "Căn phải"
+                            },
+                            {
+                              "label": "Căn trái"
+                            },
+                            {
+                              "label": "Căn trên"
+                            },
+                            {
+                              "label": "Căn dưới"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Hiển thị nhãn",
+                          "description": "Nếu bị ẩn, nhãn chỉ hiển thị khi di chuột qua",
+                          "options": [
+                            {
+                              "label": "Dùng thiết lập hành vi"
+                            },
+                            {
+                              "label": "Hiển thị"
+                            },
+                            {
+                              "label": "Ẩn"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {},
+                    {}
+                  ]
+                }
+              },
+              {
+                "label": "Kiểu nút",
+                "description": "Chọn kiểu nút chuyển tới cảnh này. Đối với cảnh tĩnh không chuyển sang cảnh mới, nên dùng nút \"Thêm thông tin\".",
+                "options": [
+                  {
+                    "label": "Cảnh mới (mũi tên)"
+                  },
+                  {
+                    "label": "Thêm thông tin (dấu cộng)"
+                  }
+                ]
+              },
+              {
+                "label": "Bản nhạc âm thanh",
+                "description": "Thêm bản nhạc âm thanh riêng cho cảnh này."
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Bản nhạc âm thanh"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách hoạt động của bài tập.",
+      "fields": [
+        {
+          "label": "Âm thanh tổng thể",
+          "description": "Thêm bản nhạc âm thanh mặc định cho tất cả các cảnh."
+        },
+        {
+          "label": "Chất lượng hiển thị cảnh",
+          "description": "Chọn số lượng phân đoạn chiều rộng và chiều cao dùng để hiển thị cảnh. Điều này ảnh hưởng trực tiếp tới chất lượng cảnh. Hãy tăng chất lượng nếu cảnh bị \"vỡ hình\" hoặc thấy \"gợn sóng\" trong các cảnh. Lưu ý, chất lượng cao sẽ làm thời gian tải lâu hơn.",
+          "options": [
+            {
+              "label": "Chất lượng cao (128x128)"
+            },
+            {
+              "label": "Chất lượng trung bình (64x64)"
+            },
+            {
+              "label": "Chất lượng thấp (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Cài đặt nhãn",
+          "fields": [
+            {
+              "label": "Vị trí nhãn",
+              "description": "Vị trí mặc định của nhãn. Vị trí này có thể ghi đè khi tương tác",
+              "options": [
+                {
+                  "label": "Căn phải"
+                },
+                {
+                  "label": "Căn trái"
+                },
+                {
+                  "label": "Căn trên"
+                },
+                {
+                  "label": "Căn dưới"
+                }
+              ]
+            },
+            {
+              "label": "Hiển thị nhãn",
+              "description": "Nếu không chọn, nhãn sẽ chỉ hiện khi di chuột qua"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Đa ngôn ngữ",
+      "fields": [
+        {
+          "label": "Nhãn Aria cho loại nội dung",
+          "default": "Chuyến tham quan ảo"
+        },
+        {
+          "label": "Nhãn phát âm thanh",
+          "default": "Phát bản nhạc âm thanh"
+        },
+        {
+          "label": "Nhãn tạm dừng âm thanh",
+          "default": "Tạm dừng bản nhạc âm thanh"
+        },
+        {
+          "label": "Tiêu đề hộp thoại mô tả cảnh",
+          "default": "Mô tả cảnh"
+        },
+        {
+          "label": "Nhãn cho nút thiết lập lại camera",
+          "default": "Thiết lập lại camera"
+        },
+        {
+          "label": "Nhãn cho nút hộp thoại gửi",
+          "default": "Hộp thoại gửi"
+        },
+        {
+          "label": "Nhãn cho nút đóng hộp thoại",
+          "default": "Hộp thoại đóng"
+        },
+        {
+          "label": "Nhãn Aria cho nút mở rộng nhãn",
+          "default": "Mở rộng nhãn trực quan"
+        },
+        {
+          "label": "Nhãn khi hình nền đang tải trong cảnh 360",
+          "default": "Đang tải hình nền..."
+        },
+        {
+          "label": "Nhãn khi không có nội dung",
+          "default": "Không có nội dung"
+        }
+      ]
+    }
+  ]
+}

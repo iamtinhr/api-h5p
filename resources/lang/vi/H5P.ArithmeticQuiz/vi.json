@@ -1,0 +1,135 @@
+{
+  "semantics": [
+    {
+      "label": "Giới thiệu",
+      "description": "Văn bản giới thiệu (tối đa 100 ký tự)"
+    },
+    {
+      "label": "Loại bài kiểm tra",
+      "options": [
+        {
+          "label": "Trắc nghiệm phép toán số học"
+        },
+        {
+          "label": "Trắc nghiệm phương trình tuyến tính"
+        }
+      ]
+    },
+    {
+      "label": "Loại phép toán",
+      "options": [
+        {
+          "label": "Cộng"
+        },
+        {
+          "label": "Trừ"
+        },
+        {
+          "label": "Nhân"
+        },
+        {
+          "label": "Chia"
+        }
+      ]
+    },
+    {
+      "label": "Loại phương trình",
+      "options": [
+        {
+          "label": "Cơ bản [ 3x = 12 ]"
+        },
+        {
+          "label": "Trung bình [ 4x - 3 = 13 ]"
+        },
+        {
+          "label": "Nâng cao [ 5x + 3 = 3x + 15 ]"
+        }
+      ]
+    },
+    {
+      "label": "Bật phân số",
+      "description": "Bật để cho phép phân số trong phương trình."
+    },
+    {
+      "label": "Số lượng câu hỏi tối đa"
+    },
+    {
+      "label": "Dịch giao diện người dùng",
+      "fields": [
+        {
+          "label": "Điểm số trong khi làm bài",
+          "default": "Điểm số:"
+        },
+        {
+          "label": "Thời gian",
+          "default": "Thời gian: @time"
+        },
+        {
+          "label": "Tiêu đề trang kết quả",
+          "default": "Hoàn thành!"
+        },
+        {
+          "label": "Nhãn Bắt đầu",
+          "default": "BẮT ĐẦU!"
+        },
+        {
+          "label": "Nhãn nút Bắt đầu",
+          "default": "Bắt đầu"
+        },
+        {
+          "label": "Nhãn nút Thử lại",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình khi trả lời đúng",
+          "default": "Chính xác"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình khi trả lời sai",
+          "default": "Sai. Đáp án đúng là :num"
+        },
+        {
+          "label": "Nhãn cho trình đọc màn hình về đồng hồ bấm giờ",
+          "default": "Thời lượng theo giờ, phút và giây."
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình về câu hỏi",
+          "default": "Bao nhiêu là :arithmetic ?"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình về câu hỏi phương trình",
+          "default": "Với phương trình :equation, bao nhiêu là :item ?"
+        },
+        {
+          "label": "Văn bản cho trình đọc màn hình về biến phương trình",
+          "default": "Bao nhiêu là :item ?"
+        },
+        {
+          "label": "Văn bản cho phép cộng",
+          "default": "cộng"
+        },
+        {
+          "label": "Văn bản cho phép trừ",
+          "default": "trừ"
+        },
+        {
+          "label": "Văn bản cho phép nhân",
+          "default": "nhân"
+        },
+        {
+          "label": "Văn bản cho phép chia",
+          "default": "chia"
+        },
+        {
+          "label": "Văn bản dấu bằng",
+          "default": "bằng"
+        },
+        {
+          "label": "Văn bản số trang",
+          "description": "Thông báo trang hiện tại và tổng số trang, biến là :num và :total",
+          "default": "Trang :num trên tổng :total"
+        }
+      ]
+    }
+  ]
+}

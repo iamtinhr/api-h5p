@@ -1,0 +1,14 @@
+{
+  "semantics": [
+    {
+      "label": "Tên người dùng Twitter",
+      "description": "Tên người dùng mà bạn muốn tìm kiếm tweet"
+    },
+    {
+      "label": "Hiển thị trả lời"
+    },
+    {
+      "label": "Số lượng tweet"
+    }
+  ]
+}

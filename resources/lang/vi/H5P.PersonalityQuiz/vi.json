@@ -1,0 +1,291 @@
+{
+  "semantics": [
+    {
+      "name": "titleScreen",
+      "type": "group",
+      "label": "Màn hình tiêu đề",
+      "expanded": true,
+      "fields": [
+        {
+          "name": "title",
+          "type": "group",
+          "label": "Tiêu đề",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "text",
+              "type": "text",
+              "label": "Tiêu đề"
+            },
+            {
+              "name": "display",
+              "type": "boolean",
+              "label": "Hiển thị tiêu đề",
+              "description": "Có hiển thị tiêu đề như một tiêu đề lớn ở đầu bài trắc nghiệm tính cách hay không.",
+              "default": true
+            }
+          ]
+        },
+        {
+          "name": "image",
+          "type": "group",
+          "label": "Tùy chọn: Hình ảnh",
+          "optional": true,
+          "fields": [
+            {
+              "name": "file",
+              "type": "image",
+              "label": "Tệp"
+            },
+            {
+              "name": "alt",
+              "type": "text",
+              "label": "Văn bản thay thế",
+              "description": "Văn bản thay thế nếu trình duyệt không tải được hình ảnh."
+            }
+          ]
+        },
+        {
+          "name": "skip",
+          "label": "Bỏ qua",
+          "type": "boolean",
+          "description": "Chọn nếu bạn muốn bài trắc nghiệm bắt đầu từ câu hỏi đầu tiên thay vì màn hình tiêu đề.",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "resultScreen",
+      "type": "group",
+      "label": "Màn hình kết quả",
+      "fields": [
+        {
+          "name": "animation",
+          "type": "select",
+          "label": "Hiệu ứng",
+          "description": "Hiệu ứng Vòng quay may mắn chỉ sử dụng các hình ảnh liên kết với tính cách nếu TẤT CẢ các tính cách đều có ảnh.",
+          "default": "none",
+          "options": [
+            {
+              "label": "Không",
+              "value": "none"
+            },
+            {
+              "label": "Mờ dần",
+              "value": "fade-in"
+            },
+            {
+              "label": "Vòng quay may mắn",
+              "value": "wheel"
+            }
+          ]
+        },
+        {
+          "name": "displayTitle",
+          "type": "boolean",
+          "label": "Hiển thị tiêu đề tính cách?",
+          "default": true
+        },
+        {
+          "name": "displayDescription",
+          "type": "boolean",
+          "label": "Hiển thị mô tả?",
+          "default": true
+        },
+        {
+          "name": "imagePosition",
+          "type": "select",
+          "label": "Vị trí hình ảnh tính cách",
+          "description": "Chọn cách hiển thị hình ảnh (nếu có) của kết quả tính cách. 'Nền' sẽ lấp đầy toàn bộ khung H5P và căn giữa hình. 'Nội tuyến' sẽ đặt hình ảnh giữa tên và mô tả tính cách.",
+          "default": "background",
+          "options": [
+            {
+              "value": "background",
+              "label": "Nền"
+            },
+            {
+              "value": "inline",
+              "label": "Nội tuyến"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "personalities",
+      "type": "list",
+      "label": "Tính cách",
+      "entity": "tính cách",
+      "min": 2,
+      "max": 10,
+      "field": {
+        "name": "personality",
+        "type": "group",
+        "label": "Tính cách",
+        "fields": [
+          {
+            "name": "name",
+            "type": "text",
+            "label": "Tên tính cách",
+            "description": "Tên tính cách sẽ dùng để liên kết các đáp án với tính cách tương ứng."
+          },
+          {
+            "name": "description",
+            "type": "text",
+            "label": "Mô tả",
+            "maxLength": 450,
+            "widget": "textarea"
+          },
+          {
+            "name": "image",
+            "type": "group",
+            "label": "Tùy chọn: Hình ảnh",
+            "optional": true,
+            "fields": [
+              {
+                "name": "file",
+                "type": "image",
+                "label": "Hình ảnh",
+                "description": "Hình ảnh sẽ hiển thị ở màn hình kết quả."
+              },
+              {
+                "name": "alt",
+                "type": "text",
+                "label": "Văn bản thay thế",
+                "description": "Văn bản thay thế nếu trình duyệt không tải được hình ảnh."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "questions",
+      "type": "list",
+      "label": "Câu hỏi",
+      "entity": "câu hỏi",
+      "field": {
+        "name": "question",
+        "type": "group",
+        "label": "Câu hỏi",
+        "fields": [
+          {
+            "name": "text",
+            "type": "text",
+            "label": "Câu hỏi"
+          },
+          {
+            "name": "image",
+            "type": "group",
+            "label": "Tùy chọn: Hình ảnh",
+            "description": "Hình ảnh hiển thị phía trên hoặc dưới văn bản câu hỏi.",
+            "optional": true,
+            "fields": [
+              {
+                "name": "file",
+                "type": "image",
+                "label": "Tệp"
+              },
+              {
+                "name": "alt",
+                "type": "text",
+                "label": "Văn bản thay thế",
+                "description": "Văn bản thay thế nếu trình duyệt không tải được hình ảnh."
+              }
+            ]
+          },
+          {
+            "name": "answers",
+            "type": "list",
+            "label": "Đáp án",
+            "entity": "đáp án",
+            "min": 2,
+            "max": 6,
+            "field": {
+              "name": "answer",
+              "type": "group",
+              "label": "Đáp án",
+              "fields": [
+                {
+                  "name": "text",
+                  "type": "text",
+                  "label": "Nội dung"
+                },
+                {
+                  "name": "personality",
+                  "type": "text",
+                  "label": "Tính cách",
+                  "description": "Danh sách tên tính cách liên kết với đáp án này, cách nhau bằng dấu phẩy."
+                },
+                {
+                  "name": "image",
+                  "type": "group",
+                  "description": "Hình ảnh liên kết với đáp án sẽ không hiển thị trừ khi tất cả đáp án của câu hỏi đều có hình.",
+                  "label": "Tùy chọn: Hình ảnh",
+                  "optional": true,
+                  "fields": [
+                    {
+                      "name": "file",
+                      "type": "image",
+                      "label": "Tệp"
+                    },
+                    {
+                      "name": "alt",
+                      "type": "text",
+                      "label": "Văn bản thay thế",
+                      "description": "Văn bản thay thế nếu trình duyệt không tải được hình ảnh."
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "label": "Bắt đầu",
+      "name": "startText",
+      "type": "text",
+      "default": "Bắt đầu",
+      "description": "Văn bản hiển thị trên nút bắt đầu bài trắc nghiệm ở màn hình tiêu đề."
+    },
+    {
+      "label": "Văn bản tiến trình",
+      "name": "progressText",
+      "type": "text",
+      "default": "@question trên @total",
+      "description": "Văn bản tiến trình, có biến @question và @total. Ví dụ: '@question trên @total'"
+    },
+    {
+      "name": "retakeText",
+      "label": "Làm lại",
+      "type": "text",
+      "default": "Làm lại bài trắc nghiệm",
+      "description": "Văn bản làm lại"
+    },
+    {
+      "name": "animation",
+      "type": "boolean",
+      "label": "Hiệu ứng",
+      "default": true,
+      "description": "Bỏ chọn để tắt toàn bộ hiệu ứng"
+    },
+    {
+      "name": "buttonColor",
+      "type": "text",
+      "label": "Màu nhấn nút",
+      "description": "Thay đổi màu viền nút và màu đổ hiệu ứng",
+      "default": "4D5DAA",
+      "widget": "colorSelector"
+    },
+    {
+      "name": "progressbarColor",
+      "type": "text",
+      "label": "Màu thanh tiến trình",
+      "description": "Xác định màu của thanh tiến trình",
+      "default": "38B755",
+      "widget": "colorSelector"
+    }
+  ]
+}

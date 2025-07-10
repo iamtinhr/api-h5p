@@ -1,0 +1,11 @@
+{
+  "libraryStrings": {
+    "noImage": "Bạn phải chọn hình nền trước khi thêm điểm tương tác.",
+    "noImageTitle": "Chưa có hình nền",
+    "done": "Hoàn thành",
+    "back": "Quay lại",
+    "remove": "Xóa điểm tương tác",
+    "rectangle": "Tạo hình chữ nhật",
+    "circle": "Tạo hình tròn"
+  }
+}

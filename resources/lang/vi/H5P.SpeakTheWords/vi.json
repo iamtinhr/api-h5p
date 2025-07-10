@@ -1,0 +1,210 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn để hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt chức năng phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả công việc",
+      "placeholder": "Làm thế nào để nói 'Yes' bằng tiếng Tây Ban Nha?"
+    },
+    {
+      "label": "Các câu trả lời được chấp nhận",
+      "field": {
+        "label": "Câu trả lời được chấp nhận"
+      }
+    },
+    {
+      "label": "Văn bản trả lời sai",
+      "default": "Câu trả lời sai"
+    },
+    {
+      "label": "Văn bản trả lời đúng",
+      "default": "Câu trả lời đúng"
+    },
+    {
+      "label": "Ngôn ngữ nhập bằng giọng nói",
+      "options": [
+        { "label": "Afrikáans" },
+        { "label": "Amhárico" },
+        { "label": "Ả Rập (Algeria)" },
+        { "label": "Ả Rập (Bahrain)" },
+        { "label": "Ả Rập (Ai Cập)" },
+        { "label": "Ả Rập (Iraq)" },
+        { "label": "Ả Rập (Jordan)" },
+        { "label": "Ả Rập (Kuwait)" },
+        { "label": "Ả Rập (Liban)" },
+        { "label": "Ả Rập (Libya)" },
+        { "label": "Ả Rập (Maroc)" },
+        { "label": "Ả Rập (Oman)" },
+        { "label": "Ả Rập (Qatar)" },
+        { "label": "Ả Rập (Ả Rập Xê Út)" },
+        { "label": "Ả Rập (Tunisia)" },
+        { "label": "Ả Rập (UAE)" },
+        { "label": "Ả Rập (Yemen)" },
+        { "label": "Armenia" },
+        { "label": "Azerbaijan" },
+        { "label": "Xứ Basque" },
+        { "label": "Bengali (Bangladesh)" },
+        { "label": "Bengali (Ấn Độ)" },
+        { "label": "Bungari" },
+        { "label": "Catalan" },
+        { "label": "Khmer Trung" },
+        { "label": "Trung Quốc, Quan Thoại (Phồn thể, Đài Loan)" },
+        { "label": "Trung Quốc, Quảng Đông (Phồn thể, Hong Kong)" },
+        { "label": "Trung Quốc, Quan Thoại (Giản thể, Trung Quốc)" },
+        { "label": "Trung Quốc, Quan Thoại (Giản thể, Hong Kong)" },
+        { "label": "Croatia" },
+        { "label": "Séc" },
+        { "label": "Đan Mạch" },
+        { "label": "Hà Lan" },
+        { "label": "Tiếng Anh (Úc)" },
+        { "label": "Tiếng Anh (Canada)" },
+        { "label": "Tiếng Anh (Ghana)" },
+        { "label": "Tiếng Anh (Ấn Độ)" },
+        { "label": "Tiếng Anh (Kenya)" },
+        { "label": "Tiếng Anh (New Zealand)" },
+        { "label": "Tiếng Anh (Nigeria)" },
+        { "label": "Tiếng Anh (Philippines)" },
+        { "label": "Tiếng Anh (Nam Phi)" },
+        { "label": "Tiếng Anh (Tanzania)" },
+        { "label": "Tiếng Anh (UK)" },
+        { "label": "Tiếng Anh (Mỹ)" },
+        { "label": "Tiếng Filipino" },
+        { "label": "Phần Lan" },
+        { "label": "Pháp" },
+        { "label": "Galician" },
+        { "label": "Georgia" },
+        { "label": "Đức" },
+        { "label": "Hy Lạp" },
+        { "label": "Gujarati" },
+        { "label": "Do Thái" },
+        { "label": "Hindi (Ấn Độ)" },
+        { "label": "Hungary" },
+        { "label": "Iceland" },
+        { "label": "Indonesia" },
+        { "label": "Ý" },
+        { "label": "Ý (Thụy Sĩ)" },
+        { "label": "Nhật Bản" },
+        { "label": "Java" },
+        { "label": "Kannada" },
+        { "label": "Hàn Quốc" },
+        { "label": "Lào" },
+        { "label": "Latin" },
+        { "label": "Latvia" },
+        { "label": "Lithuania" },
+        { "label": "Malayalam" },
+        { "label": "Malaysia" },
+        { "label": "Quan Thoại" },
+        { "label": "Marathi" },
+        { "label": "Nepal" },
+        { "label": "Na Uy" },
+        { "label": "Latin Pig" },
+        { "label": "Ba Lan" },
+        { "label": "Bồ Đào Nha" },
+        { "label": "Bồ Đào Nha (Brazil)" },
+        { "label": "Rumani" },
+        { "label": "Nga" },
+        { "label": "Serbia" },
+        { "label": "Sinhalese" },
+        { "label": "Slovakia" },
+        { "label": "Slovenia" },
+        { "label": "Tây Ban Nha (Argentina)" },
+        { "label": "Tây Ban Nha (Bolivia)" },
+        { "label": "Tây Ban Nha (Chile)" },
+        { "label": "Tây Ban Nha (Colombia)" },
+        { "label": "Tây Ban Nha (Costa Rica)" },
+        { "label": "Tây Ban Nha (Cộng hòa Dominica)" },
+        { "label": "Tây Ban Nha (Ecuador)" },
+        { "label": "Tây Ban Nha (El Salvador)" },
+        { "label": "Tây Ban Nha (Guatemala)" },
+        { "label": "Tây Ban Nha (Honduras)" },
+        { "label": "Tây Ban Nha (Mexico)" },
+        { "label": "Tây Ban Nha (Nicaragua)" },
+        { "label": "Tây Ban Nha (Panama)" },
+        { "label": "Tây Ban Nha (Paraguay)" },
+        { "label": "Tây Ban Nha (Peru)" },
+        { "label": "Tây Ban Nha (Puerto Rico)" },
+        { "label": "Tây Ban Nha (Tây Ban Nha)" },
+        { "label": "Tây Ban Nha (Mỹ)" },
+        { "label": "Tây Ban Nha (Uruguay)" },
+        { "label": "Tây Ban Nha (Venezuela)" },
+        { "label": "Sundanese" },
+        { "label": "Swahili (Kenya)" },
+        { "label": "Swahili (Tanzania)" },
+        { "label": "Thụy Điển" },
+        { "label": "Tamil (Ấn Độ)" },
+        { "label": "Tamil (Malaysia)" },
+        { "label": "Tamil (Singapore)" },
+        { "label": "Tamil (Sri Lanka)" },
+        { "label": "Telugu" },
+        { "label": "Thái Lan (Thái Lan)" },
+        { "label": "Đài Loan (Phồn thể)" },
+        { "label": "Thổ Nhĩ Kỳ" },
+        { "label": "Ukraina (Ukraina)" },
+        { "label": "Urdu (Ấn Độ)" },
+        { "label": "Urdu (Pakistan)" },
+        { "label": "Tiếng Việt" },
+        { "label": "Trung Quốc Yue (Phồn thể Hong Kong)" },
+        { "label": "Zulu" }
+      ]
+    },
+    {
+      "label": "Nhãn và văn bản cho phần Phát âm từ",
+      "fields": [
+        {
+          "label": "Nhãn nút \"Thử lại\"",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Nhãn nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Nhãn nút \"Nói\"",
+          "default": "Nhấn để nói"
+        },
+        {
+          "label": "Nhãn nút \"Nói\" khi đang nghe",
+          "default": "Đang nghe..."
+        },
+        {
+          "label": "Văn bản trước đáp án đúng khi hiện đáp án",
+          "default": "Đáp án đúng:"
+        },
+        {
+          "label": "Văn bản thông báo cho người dùng câu trả lời được hiểu là",
+          "default": "Câu trả lời của bạn được hiểu là:"
+        },
+        {
+          "label": "Văn bản hiển thị khi không ghi nhận được âm thanh nào từ người dùng",
+          "default": "Tôi không nghe thấy bạn, hãy chắc chắn rằng micro của bạn đã được bật"
+        },
+        {
+          "label": "Tiêu đề hiển thị nếu trình duyệt không hỗ trợ nhận diện giọng nói",
+          "default": "Trình duyệt của bạn dường như không hỗ trợ nhận diện giọng nói"
+        },
+        {
+          "label": "Văn bản hiển thị nếu trình duyệt không hỗ trợ nhận diện giọng nói",
+          "default": "Vui lòng thử lại bằng một trình duyệt khác như Chrome"
+        },
+        {
+          "label": "Mô tả trợ năng cho nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án. Bài làm sẽ được chấm với đáp án đúng."
+        },
+        {
+          "label": "Mô tả trợ năng cho nút \"Thử lại\"",
+          "default": "Thử lại bài làm. Đặt lại tất cả câu trả lời và bắt đầu lại bài làm."
+        }
+      ]
+    }
+  ]
+}

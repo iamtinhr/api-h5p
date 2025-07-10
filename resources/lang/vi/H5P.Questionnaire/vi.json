@@ -1,0 +1,103 @@
+{
+  "semantics": [
+    {
+      "label": "Các thành phần của bài kiểm tra",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "thành phần",
+      "field": {
+        "label": "Chọn thư viện",
+        "fields": [
+          {
+            "label": "Thư viện",
+            "description": "Chọn một thư viện"
+          },
+          {
+            "label": "Trường bắt buộc"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Tùy chọn màn hình hoàn thành",
+      "fields": [
+        {
+          "label": "Bật màn hình hoàn thành"
+        },
+        {
+          "label": "Thêm hình ảnh vào màn hình hoàn thành",
+          "fields": [
+            {
+              "label": "Thay thế biểu tượng hoàn thành bằng hình ảnh"
+            }
+          ]
+        },
+        {
+          "label": "Văn bản hiển thị khi gửi",
+          "default": "Bạn đã hoàn thành bài kiểm tra."
+        }
+      ]
+    },
+    {
+      "label": "Các thành phần giao diện người dùng",
+      "fields": [
+        {
+          "label": "Nhãn nút bấm",
+          "fields": [
+            {
+              "label": "Nhãn nút Trước",
+              "default": "Quay lại"
+            },
+            {
+              "label": "Nhãn nút Tiếp tục",
+              "default": "Tiếp tục"
+            },
+            {
+              "label": "Nhãn nút Tiếp theo",
+              "default": "Tiếp theo"
+            },
+            {
+              "label": "Nhãn nút Gửi",
+              "default": "Gửi"
+            }
+          ]
+        },
+        {
+          "label": "Trợ năng",
+          "fields": [
+            {
+              "label": "Nhãn nút đóng thông báo bắt buộc",
+              "default": "Đóng thông báo lỗi"
+            },
+            {
+              "label": "Văn bản Thanh tiến trình",
+              "default": "Câu hỏi %current trên %max",
+              "description": "Dùng để thông báo cho công nghệ hỗ trợ biết câu hỏi hiện tại là gì. Biến: [ %current, %max ]"
+            }
+          ]
+        },
+        {
+          "label": "Thông báo bắt buộc",
+          "default": "Câu hỏi này yêu cầu phải trả lời",
+          "description": "Sẽ hiển thị nếu trường này chưa được trả lời và là trường bắt buộc bởi loại nội dung bọc"
+        },
+        {
+          "label": "Văn bản ký hiệu bắt buộc",
+          "default": "bắt buộc",
+          "description": "Văn bản đi kèm dấu hoa thị để chỉ một câu hỏi là bắt buộc"
+        },
+        {
+          "label": "Tiêu đề cho màn hình gửi bài",
+          "default": "Bạn đã trả lời tất cả các câu hỏi"
+        },
+        {
+          "label": "Phụ đề cho màn hình gửi bài",
+          "default": "Nhấn vào bên dưới để gửi câu trả lời của bạn"
+        }
+      ]
+    }
+  ]
+}

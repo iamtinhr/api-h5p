@@ -1,0 +1,189 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ",
+      "name": "taskDescription",
+      "type": "text",
+      "description": "Mô tả về trò chơi",
+      "default": "Tìm các từ trong lưới",
+      "importance": "high"
+    },
+    {
+      "name": "wordList",
+      "type": "text",
+      "label": "Danh sách từ",
+      "description": "Danh sách các từ, phân tách bằng dấu phẩy. Không cho phép ký tự đặc biệt, khoảng trắng hoặc số",
+      "default": "một,hai,ba",
+      "regexp": {
+        "pattern": "^(?!(?:.*[\"!#$%&./:;<=>?@\\[\\]^_`\\{|}~'()\\-*+\\d]|^[,])).*$"
+      },
+      "importance": "high"
+    },
+    {
+      "name": "behaviour",
+      "type": "group",
+      "label": "Thiết lập hành vi",
+      "importance": "low",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách trò chơi hoạt động.",
+      "optional": true,
+      "fields": [
+        {
+          "name": "orientations",
+          "type": "group",
+          "label": "Các hướng",
+          "description": "Một mảng chứa tên các hướng của từ sẽ sử dụng khi tạo câu đố",
+          "fields": [
+            {
+              "name": "horizontal",
+              "type": "boolean",
+              "label": "Ngang - trái sang phải",
+              "default": true
+            },
+            {
+              "name": "horizontalBack",
+              "type": "boolean",
+              "label": "Ngang - phải sang trái",
+              "default": true
+            },
+            {
+              "name": "vertical",
+              "type": "boolean",
+              "label": "Dọc xuống dưới",
+              "default": true
+            },
+            {
+              "name": "verticalUp",
+              "type": "boolean",
+              "label": "Dọc lên trên",
+              "default": true
+            },
+            {
+              "name": "diagonal",
+              "type": "boolean",
+              "label": "Chéo xuống - trái sang phải",
+              "default": true
+            },
+            {
+              "name": "diagonalBack",
+              "type": "boolean",
+              "label": "Chéo xuống - phải sang trái",
+              "default": true
+            },
+            {
+              "name": "diagonalUp",
+              "type": "boolean",
+              "label": "Chéo lên - trái sang phải",
+              "default": true
+            },
+            {
+              "name": "diagonalUpBack",
+              "type": "boolean",
+              "label": "Chéo lên - phải sang trái",
+              "default": true
+            }
+          ]
+        },
+        {
+          "name": "fillPool",
+          "type": "text",
+          "label": "Dọc xuống dưới",
+          "description": "Kho chữ cái dùng để điền vào các ô trống",
+          "default": "abcdefghijklmnopqrstuvwxyz",
+          "regexp": {
+            "pattern": "^[^\t\n .<>?;:\"'`!@#$%^&*()\\[\\]{}_+=|\\-]*$"
+          }
+        },
+        {
+          "name": "preferOverlap",
+          "type": "boolean",
+          "label": "Ưu tiên chồng ký tự",
+          "description": "Xác định cách wordfind quyết định đặt từ trong câu đố. Nếu bật, sẽ ưu tiên các vị trí có nhiều ký tự trùng nhau để tạo câu đố gọn hơn. Nếu tắt, sẽ chọn ngẫu nhiên tất cả các vị trí hợp lệ tạo câu đố thưa hơn.",
+          "default": true
+        },
+        {
+          "name": "showVocabulary",
+          "type": "boolean",
+          "label": "Hiển thị từ vựng",
+          "description": "Xác định có hiển thị từ vựng cho người chơi không",
+          "default": true
+        },
+        {
+          "name": "enableShowSolution",
+          "type": "boolean",
+          "label": "Bật nút xem đáp án",
+          "description": "Thêm nút xem đáp án cho trò chơi",
+          "default": true
+        },
+        {
+          "name": "enableRetry",
+          "type": "boolean",
+          "label": "Bật nút thử lại",
+          "description": "Thêm nút thử lại cho trò chơi",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa",
+      "importance": "low",
+      "name": "l10n",
+      "type": "group",
+      "common": true,
+      "fields": [
+        {
+          "label": "Văn bản nút \"Kiểm tra\"",
+          "importance": "low",
+          "name": "check",
+          "type": "text",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản nút \"Thử lại\"",
+          "importance": "low",
+          "name": "tryAgain",
+          "type": "text",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản nút \"Xem đáp án\"",
+          "importance": "low",
+          "name": "showSolution",
+          "type": "text",
+          "default": "Xem đáp án"
+        },
+        {
+          "label": "Văn bản bộ đếm",
+          "importance": "low",
+          "name": "found",
+          "type": "text",
+          "default": "@found trên tổng số @totalWords đã tìm thấy",
+          "description": "Văn bản phản hồi, biến có sẵn: @found và @totalWords. Ví dụ: '@found trên tổng số @totalWords đã tìm thấy'"
+        },
+        {
+          "label": "Văn bản thời gian đã chơi",
+          "importance": "low",
+          "name": "timeSpent",
+          "type": "text",
+          "default": "Thời gian đã chơi",
+          "description": "Nhãn để hiển thị thời gian đã chơi trò chơi"
+        },
+        {
+          "label": "Văn bản phản hồi",
+          "importance": "low",
+          "name": "score",
+          "type": "text",
+          "default": "Bạn đạt @score trên tổng số @total điểm",
+          "description": "Văn bản phản hồi, biến có sẵn: @score và @total. Ví dụ: 'Bạn đạt @score trên tổng số @total điểm có thể đạt'"
+        },
+        {
+          "label": "Tiêu đề danh sách từ",
+          "importance": "low",
+          "name": "wordListHeader",
+          "type": "text",
+          "default": "Tìm các từ",
+          "maxLength": 20
+        }
+      ]
+    }
+  ]
+}

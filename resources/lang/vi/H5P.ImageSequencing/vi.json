@@ -1,0 +1,186 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ",
+      "name": "taskDescription",
+      "type": "text",
+      "default": "Kéo để sắp xếp các hình ảnh theo đúng thứ tự",
+      "description": "Hướng dẫn người dùng cách hoàn thành nhiệm vụ này.",
+      "importance": "high"
+    },
+    {
+      "label": "Mô tả nhiệm vụ thay thế",
+      "name": "altTaskDescription",
+      "type": "text",
+      "default": "Sắp xếp danh sách sau cho đúng thứ tự. Sử dụng phím mũi tên để di chuyển qua các mục, nhấn phím cách để kích hoạt hoặc hủy kích hoạt một mục và dùng các phím mũi tên để di chuyển mục đó",
+      "description": "Hướng dẫn dành cho người khiếm thị về cách thực hiện nhiệm vụ này.",
+      "importance": "high"
+    },
+    {
+      "name": "sequenceImages",
+      "type": "list",
+      "widgets": [
+        {
+          "name": "VerticalTabs",
+          "label": "Mặc định"
+        }
+      ],
+      "label": "Hình ảnh",
+      "importance": "high",
+      "entity": "hình ảnh",
+      "min": 3,
+      "field": {
+        "type": "group",
+        "name": "imageElement",
+        "label": "Phần tử hình ảnh",
+        "importance": "high",
+        "fields": [
+          {
+            "name": "image",
+            "type": "image",
+            "label": "Hình ảnh",
+            "importance": "high"
+          },
+          {
+            "name": "imageDescription",
+            "type": "text",
+            "label": "Mô tả hình ảnh",
+            "importance": "low",
+            "description": "Mô tả hình ảnh cho người dùng không nhìn thấy được ảnh"
+          },
+          {
+            "name": "audio",
+            "description": "Tệp âm thanh tùy chọn để phát cho thẻ",
+            "type": "audio",
+            "label": "Tệp âm thanh",
+            "importance": "low",
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "behaviour",
+      "type": "group",
+      "label": "Thiết lập hành vi",
+      "importance": "low",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách trò chơi hoạt động.",
+      "optional": true,
+      "fields": [
+        {
+          "name": "enableSolution",
+          "type": "boolean",
+          "label": "Thêm nút xem đáp án cho trò chơi",
+          "importance": "low",
+          "default": true
+        },
+        {
+          "name": "enableRetry",
+          "type": "boolean",
+          "label": "Thêm nút thử lại khi trò chơi kết thúc",
+          "importance": "low",
+          "default": true
+        },
+        {
+          "name": "enableResume",
+          "type": "boolean",
+          "label": "Thêm nút tiếp tục từ trạng thái hiện tại",
+          "importance": "low",
+          "default": true
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa",
+      "importance": "low",
+      "name": "l10n",
+      "type": "group",
+      "common": true,
+      "fields": [
+        {
+          "label": "Văn bản tổng số lượt di chuyển",
+          "importance": "low",
+          "name": "totalMoves",
+          "type": "text",
+          "default": "Tổng số lượt di chuyển"
+        },
+        {
+          "label": "Văn bản thời gian đã chơi",
+          "importance": "low",
+          "name": "timeSpent",
+          "type": "text",
+          "default": "Thời gian đã chơi"
+        },
+        {
+          "label": "Văn bản phản hồi",
+          "importance": "low",
+          "name": "score",
+          "type": "text",
+          "default": "Bạn đạt @score trên tổng số @total điểm",
+          "description": "Văn bản phản hồi, biến có sẵn: @score và @total. Ví dụ: 'Bạn đạt @score trên tổng số @total điểm có thể đạt'"
+        },
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "importance": "low",
+          "name": "checkAnswer",
+          "type": "text",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Thử lại\"",
+          "importance": "low",
+          "name": "tryAgain",
+          "type": "text",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho nút \"Xem đáp án\"",
+          "importance": "low",
+          "name": "showSolution",
+          "type": "text",
+          "default": "Xem đáp án"
+        },
+        {
+          "label": "Văn bản cho nút \"Tiếp tục\"",
+          "importance": "low",
+          "name": "resume",
+          "type": "text",
+          "default": "Tiếp tục"
+        },
+        {
+          "name": "audioNotSupported",
+          "type": "text",
+          "label": "Thông báo không hỗ trợ âm thanh",
+          "importance": "low",
+          "common": true,
+          "default": "Lỗi âm thanh"
+        },
+        {
+          "name": "ariaPlay",
+          "type": "text",
+          "label": "Nút phát (văn bản cho trình đọc màn hình)",
+          "importance": "low",
+          "common": true,
+          "default": "Phát âm thanh tương ứng"
+        },
+        {
+          "name": "ariaMoveDescription",
+          "type": "text",
+          "label": "Mô tả di chuyển thẻ (văn bản cho trình đọc màn hình)",
+          "description": "@posSrc : vị trí ban đầu của thẻ, @posDes : vị trí cuối cùng của thẻ",
+          "importance": "low",
+          "common": true,
+          "default": "Đã chuyển @cardDesc từ @posSrc đến @posDes"
+        },
+        {
+          "name": "ariaCardDesc",
+          "type": "text",
+          "label": "Mô tả mặc định của thẻ (văn bản cho trình đọc màn hình)",
+          "importance": "low",
+          "common": true,
+          "default": "mục sắp xếp thứ tự"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Vô hiệu hóa phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả bài tập",
+      "description": "Mô tả bài tập tại đây. Mô tả sẽ xuất hiện phía trên vùng nhập văn bản.",
+      "placeholder": "Tóm tắt cuốn sách trong 500 ký tự ..."
+    },
+    {
+      "label": "Văn bản trợ giúp",
+      "description": "Văn bản này sẽ giúp người dùng bắt đầu.",
+      "placeholder": "Cuốn sách này nói về ..."
+    },
+    {
+      "label": "Đáp án mẫu",
+      "description": "Bạn có thể tùy chọn thêm đáp án mẫu đơn giản để hiển thị sau khi sinh viên đã viết xong. Gọi là đáp án mẫu vì có thể không phải là đáp án duy nhất.",
+      "fields": [
+        {
+          "label": "Giới thiệu",
+          "description": "Bạn có thể tùy chọn giải thích cho ví dụ của mình. Phần giải thích chỉ hiển thị nếu bạn cung cấp ví dụ.",
+          "placeholder": "Xin lưu ý đây chỉ là ví dụ tốt, không yêu cầu đáp án giống hệt."
+        },
+        {
+          "label": "Văn bản đáp án mẫu",
+          "description": "Sinh viên sẽ thấy nút \"Hiển thị đáp án\" sau khi gửi nếu bạn nhập nội dung tại đây."
+        }
+      ]
+    },
+    {
+      "label": "Từ khóa",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "Từ khóa",
+      "field": {
+        "label": "Từ khóa",
+        "fields": [
+          {
+            "label": "Từ khóa",
+            "description": "Từ khóa hoặc cụm từ cần tìm. Dùng dấu hoa thị '*' làm ký tự đại diện. Dùng dấu gạch chéo '/' ở đầu và cuối để sử dụng biểu thức chính quy."
+          },
+          {
+            "label": "Biến thể",
+            "description": "Thêm các biến thể tùy chọn cho từ khóa này. Ví dụ: cho 'thành phố' có thể thêm các từ thay thế như 'thị trấn', 'đô thị' v.v. Người dùng nhập bất kỳ từ thay thế nào cũng được tính điểm.",
+            "entity": "biến thể",
+            "field": {
+              "label": "Biến thể từ khóa"
+            }
+          },
+          {
+            "label": "Điểm, Tùy chọn & Phản hồi",
+            "fields": [
+              {
+                "label": "Điểm",
+                "description": "Điểm người dùng nhận được nếu nhập đúng từ khóa hoặc biến thể."
+              },
+              {
+                "label": "Số lần xuất hiện",
+                "description": "Quy định số lần xuất hiện của từ khóa hoặc biến thể được tính điểm."
+              },
+              {
+                "label": "Phân biệt HOA/thường",
+                "description": "Yêu cầu nhập đúng chính xác HOA/thường như đáp án mới được tính."
+              },
+              {
+                "label": "Bỏ qua lỗi nhỏ",
+                "description": "Chấp nhận lỗi chính tả nhỏ (3-9 ký tự: cho phép 1 lỗi, >9 ký tự: cho phép 2 lỗi)."
+              },
+              {
+                "label": "Phản hồi nếu có từ khóa",
+                "description": "Phản hồi sẽ hiển thị nếu người dùng nhập đúng từ khóa hoặc biến thể."
+              },
+              {
+                "label": "Phản hồi nếu thiếu từ khóa",
+                "description": "Phản hồi sẽ hiển thị nếu người dùng không nhập từ khóa hoặc biến thể."
+              },
+              {
+                "label": "Từ hiển thị trước phản hồi khi có từ khóa",
+                "description": "Chọn từ nào sẽ hiển thị trước phản hồi khi có từ khóa.",
+                "options": [
+                  {
+                    "label": "từ khóa"
+                  },
+                  {
+                    "label": "biến thể tìm thấy"
+                  },
+                  {
+                    "label": "đáp án đã nhập"
+                  },
+                  {
+                    "label": "không"
+                  }
+                ]
+              },
+              {
+                "label": "Từ hiển thị trước phản hồi khi thiếu từ khóa",
+                "description": "Chọn từ nào sẽ hiển thị trước phản hồi khi thiếu từ khóa.",
+                "options": [
+                  {
+                    "label": "từ khóa"
+                  },
+                  {
+                    "label": "không"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Thiết lập phản hồi tùy chỉnh cho từng khoảng điểm",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm thấp, 21-91% Điểm trung bình, 91-100% Tuyệt vời!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã chọn",
+                "placeholder": "Nhập phản hồi"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách bài tập hoạt động.",
+      "fields": [
+        {
+          "label": "Số ký tự tối thiểu",
+          "description": "Chỉ định số ký tự tối thiểu người dùng phải nhập."
+        },
+        {
+          "label": "Số ký tự tối đa",
+          "description": "Chỉ định số ký tự tối đa người dùng được nhập."
+        },
+        {
+          "label": "Kích thước trường nhập",
+          "description": "Kích thước trường nhập tính theo số dòng hiển thị.",
+          "options": [
+            {
+              "label": "1 dòng"
+            },
+            {
+              "label": "3 dòng"
+            },
+            {
+              "label": "10 dòng"
+            }
+          ]
+        },
+        {
+          "label": "Bật \"Làm lại\"",
+          "description": "Nếu bật, học viên có thể làm lại bài."
+        },
+        {
+          "label": "Bỏ qua điểm số",
+          "description": "Nếu bật, học viên chỉ xem phản hồi với từ khóa, không có điểm số."
+        },
+        {
+          "label": "Điểm trong môi trường máy chủ",
+          "description": "Dùng để cộng điểm trong môi trường máy chủ chỉ cần trả lời (không hiển thị cho học viên)."
+        },
+        {
+          "label": "Tỷ lệ đạt",
+          "description": "Tỷ lệ phần trăm cần để vượt qua."
+        },
+        {
+          "label": "Tỷ lệ thành thạo",
+          "description": "Tỷ lệ phần trăm cần để đạt thành thạo. Cài dưới 100% sẽ giảm điểm tối đa. Dùng để nới điểm cho học viên, không phải để chấp nhận đáp án không đủ ý."
+        },
+        {
+          "label": "Ghi đè phân biệt HOA/thường",
+          "description": "Tùy chọn này quyết định có bật phân biệt HOA/thường cho tất cả từ khóa hay không.",
+          "options": [
+            {
+              "label": "Bật"
+            },
+            {
+              "label": "Tắt"
+            }
+          ]
+        },
+        {
+          "label": "Ghi đè bỏ qua lỗi",
+          "description": "Tùy chọn này quyết định có bật bỏ qua lỗi cho tất cả từ khóa hay không.",
+          "options": [
+            {
+              "label": "Bật"
+            },
+            {
+              "label": "Tắt"
+            }
+          ]
+        },
+        {
+          "label": "Thay thế cho xuống dòng",
+          "description": "Mặc định, xuống dòng sẽ thay bằng dấu cách. Nếu muốn kiểm tra xuống dòng (ví dụ dùng regex), có thể chọn thay thế khác.",
+          "options": [
+            {
+              "label": "dấu cách"
+            },
+            {
+              "label": "xuống dòng (\\n)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Văn bản cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Văn bản cho nút \"Gửi\"",
+      "default": "Gửi"
+    },
+    {
+      "label": "Văn bản cho nút \"Làm lại\"",
+      "default": "Làm lại"
+    },
+    {
+      "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án"
+    },
+    {
+      "label": "Tiêu đề cho bảng phản hồi từ khóa có/thiếu",
+      "default": "Phản hồi"
+    },
+    {
+      "label": "Nhãn cho đáp án mẫu",
+      "default": "Đáp án mẫu"
+    },
+    {
+      "label": "Ký tự còn lại",
+      "default": "Còn lại: @chars ký tự",
+      "description": "Thông báo số ký tự còn lại. Có thể dùng @chars để thay bằng số tương ứng."
+    },
+    {
+      "label": "Không đủ ký tự",
+      "default": "Bạn phải nhập ít nhất @chars ký tự!",
+      "description": "Thông báo nếu nhập chưa đủ ký tự tối thiểu. Có thể dùng @chars để thay bằng số tương ứng."
+    },
+    {
+      "label": "Thông báo đã lưu",
+      "description": "Thông báo cho biết văn bản đã được lưu.",
+      "default": "đã lưu"
+    },
+    {
+      "label": "Kết quả của bạn (không hiển thị)",
+      "description": "Văn bản cho trình đọc màn hình. @score sẽ thay bằng điểm đạt được, @total là tổng điểm tối đa.",
+      "default": "Bạn đạt @score trên tổng @total điểm"
+    },
+    {
+      "label": "Thông báo chuyển hướng (không hiển thị)",
+      "description": "Văn bản cho trình đọc màn hình.",
+      "default": "Đã chuyển đến đáp án mẫu sau vùng nhập văn bản."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ của nút \"Kiểm tra\"",
+      "default": "Kiểm tra đáp án."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ của nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án. Bạn sẽ xem được đáp án mẫu."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ của nút \"Làm lại\"",
+      "default": "Làm lại bài tập. Nếu tác giả cho phép, bạn có thể cải thiện đáp án trước."
+    }
+  ]
+}

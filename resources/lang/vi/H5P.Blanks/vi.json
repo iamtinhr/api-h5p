@@ -1,0 +1,214 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt chức năng phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Mô tả nhiệm vụ",
+      "default": "Điền từ còn thiếu",
+      "description": "Hướng dẫn cho người dùng cách thực hiện nhiệm vụ này."
+    },
+    {
+      "label": "Khối văn bản",
+      "entity": "khối văn bản",
+      "field": {
+        "label": "Dòng văn bản",
+        "placeholder": "Oslo là thủ đô của *Na Uy*.",
+        "important": {
+          "description": "<ul><li>Thêm ô trống bằng dấu hoa thị (*) ở đầu và cuối từ/cụm từ đúng.</li> <li>Các đáp án thay thế phân tách bằng dấu gạch chéo (/).</li> <li>Bạn có thể thêm gợi ý bằng cách đặt dấu hai chấm (:) trước văn bản gợi ý.</li></ul>",
+          "example": "Nội dung H5P có thể được chỉnh sửa bằng một *trình duyệt/trình duyệt web:Cái bạn dùng mỗi ngày*."
+        }
+      }
+    },
+    {
+      "label": "Phản hồi tổng thể",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Thiết lập phản hồi tùy chỉnh cho bất kỳ khoảng điểm nào",
+          "description": "Nhấn nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm thấp, 21-91% Điểm trung bình, 91-100% Điểm xuất sắc!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã chọn",
+                "placeholder": "Nhập phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án"
+    },
+    {
+      "label": "Văn bản cho nút \"Thử lại\"",
+      "default": "Thử lại"
+    },
+    {
+      "label": "Văn bản cho nút \"Kiểm tra\"",
+      "default": "Kiểm tra"
+    },
+    {
+      "label": "Văn bản cho nút \"Gửi\"",
+      "default": "Gửi"
+    },
+    {
+      "label": "Tin nhắn \"Chưa trả lời\"",
+      "default": "Vui lòng điền tất cả các ô trước khi xem đáp án"
+    },
+    {
+      "label": "Tin nhắn \"':ans' đúng\"",
+      "default": "':ans' chính xác"
+    },
+    {
+      "label": "Tin nhắn \"':ans' sai\"",
+      "default": "':ans' không chính xác"
+    },
+    {
+      "label": "Tin nhắn \"Trả lời đúng\"",
+      "default": "Trả lời đúng"
+    },
+    {
+      "label": "Tin nhắn \"Trả lời sai\"",
+      "default": "Trả lời sai"
+    },
+    {
+      "label": "Nhãn cho công nghệ hỗ trợ về đáp án đúng",
+      "default": "Đáp án đúng:"
+    },
+    {
+      "label": "Nhãn cho công nghệ hỗ trợ về trường nhập liệu",
+      "description": "Dùng @num và @total để hiển thị số thứ tự ô hiện tại và tổng số ô",
+      "default": "Ô @num trên @total"
+    },
+    {
+      "label": "Nhãn cho công nghệ hỗ trợ khi có gợi ý",
+      "default": "Có gợi ý"
+    },
+    {
+      "label": "Nhãn cho biểu tượng gợi ý",
+      "default": "Gợi ý"
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách hoạt động của nhiệm vụ.",
+      "fields": [
+        {
+          "label": "Bật \"Thử lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Bật nút \"Kiểm tra\""
+        },
+        {
+          "label": "Tự động kiểm tra câu trả lời khi nhập"
+        },
+        {
+          "label": "Phân biệt chữ hoa/thường",
+          "description": "Đảm bảo câu trả lời giống hệt đáp án."
+        },
+        {
+          "label": "Bắt buộc điền tất cả ô trước khi xem đáp án"
+        },
+        {
+          "label": "Đặt các trường nhập trên dòng riêng"
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận cho \"Kiểm tra\"",
+          "description": "Tùy chọn này không hỗ trợ với \"Tự động kiểm tra câu trả lời khi nhập\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận cho \"Thử lại\""
+        },
+        {
+          "label": "Chấp nhận lỗi chính tả nhỏ",
+          "description": "Nếu bật, câu trả lời cũng được tính đúng nếu chỉ có lỗi chính tả nhỏ (3-9 ký tự: 1 lỗi, trên 9 ký tự: 2 lỗi)"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận cho Kiểm tra",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "default": "Kết thúc?"
+        },
+        {
+          "label": "Nội dung",
+          "default": "Bạn có chắc muốn kết thúc không?"
+        },
+        {
+          "label": "Nhãn nút Hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nhãn nút Xác nhận",
+          "default": "Kết thúc"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận cho Thử lại",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "default": "Thử lại?"
+        },
+        {
+          "label": "Nội dung",
+          "default": "Bạn chắc chắn muốn thử lại chứ?"
+        },
+        {
+          "label": "Nhãn nút Hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nhãn nút Xác nhận",
+          "default": "Xác nhận"
+        }
+      ]
+    },
+    {
+      "label": "Diễn giải thanh điểm số cho người dùng trình đọc màn hình",
+      "default": "Bạn đạt :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ về nút \"Kiểm tra\"",
+      "default": "Kiểm tra câu trả lời. Các câu sẽ được chấm đúng, sai hoặc chưa trả lời."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ về nút \"Hiển thị đáp án\"",
+      "default": "Hiển thị đáp án. Nhiệm vụ sẽ được đánh dấu cùng đáp án đúng."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ về nút \"Thử lại\"",
+      "default": "Thử làm lại nhiệm vụ. Xóa tất cả câu trả lời và bắt đầu lại."
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ về việc bắt đầu nhiệm vụ",
+      "default": "Chế độ kiểm tra"
+    }
+  ]
+}

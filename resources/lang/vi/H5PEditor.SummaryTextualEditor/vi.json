@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "helpText": "Viết mỗi phát biểu trên một dòng riêng.\nSử dụng một dòng trống để phân tách các nhóm phát biểu.\nPhát biểu đầu tiên luôn là đúng.\nNếu có mẹo, hãy viết trên dòng đầu tiên với tiền tố \":\"",
+    "example": "2 + 2 = 4\n0 * 4 = 4\n\n:Thành phố Bắc Âu\nOslo là thủ đô của Na Uy\nOslo là thủ đô của Thụy Điển\nOslo là thủ đô của Iceland",
+    "warning": "Cảnh báo! Nếu bạn thay đổi các bài tập trong trình soạn thảo văn bản, tất cả định dạng văn bản phong phú (bao gồm cả xuống dòng) sẽ bị xóa."
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "description": "Các phương tiện tùy chọn được hiển thị phía trên câu hỏi.",
+          "label": "Loại"
+        },
+        {
+          "label": "Tắt chức năng phóng to ảnh"
+        }
+      ],
+      "label": "Phương tiện"
+    },
+    {
+      "description": "Giải thích cho học sinh biết họ cần làm gì.",
+      "label": "Mô tả nhiệm vụ"
+    },
+    {
+      "entity": "phần",
+      "field": {
+        "fields": [
+          {
+            "label": "Tiêu đề"
+          },
+          {
+            "description": "Tùy chọn, thêm gợi ý hoặc hướng dẫn riêng cho phần này.",
+            "label": "Gợi ý"
+          },
+          {
+            "description": "Xác định độ dài mong muốn cho mỗi phần so với các phần khác. Ví dụ: Phần 1 = 1; Phần 2 = 3 (dài gấp ba lần phần 1); Phần 3 = 1 (bằng phần 1).",
+            "label": "Trọng số"
+          },
+          {
+            "label": "Màu nền"
+          },
+          {
+            "label": "Màu chữ"
+          }
+        ],
+        "label": "Tham số phần"
+      },
+      "label": "Các phần",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ]
+    },
+    {
+      "description": "Các tùy chọn này giúp bạn kiểm soát cách bài tập hoạt động.",
+      "fields": [
+        {
+          "label": "Bật \"Làm lại\""
+        },
+        {
+          "label": "Bật \"Đáp án\""
+        },
+        {
+          "description": "Độ linh hoạt là sự linh động tích hợp cho một phần, tính theo phần trăm.",
+          "label": "Độ linh hoạt"
+        },
+        {
+          "description": "Xác định tổng độ dài tối thiểu tuyệt đối cho văn bản. Lưu ý, trọng số giữa các phần là yếu tố chính ảnh hưởng tới thông báo phản hồi, không phải giá trị tối thiểu này.",
+          "label": "Độ dài tối thiểu văn bản"
+        },
+        {
+          "description": "Xác định tổng độ dài tối đa tuyệt đối cho văn bản. Lưu ý, trọng số giữa các phần là yếu tố chính ảnh hưởng tới thông báo phản hồi, không phải giá trị tối đa này.",
+          "label": "Độ dài tối đa văn bản"
+        },
+        {
+          "description": "Quyết định bạn muốn hiển thị phản hồi khi học sinh viết hay chỉ khi học sinh yêu cầu.",
+          "label": "Chế độ phản hồi",
+          "options": [
+            {
+              "label": "Khi được yêu cầu"
+            },
+            {
+              "label": "Khi đang viết"
+            }
+          ]
+        }
+      ],
+      "label": "Cài đặt hành vi"
+    },
+    {
+      "fields": [
+        {
+          "default": "Sao chép",
+          "label": "Văn bản cho nút \"Sao chép\""
+        },
+        {
+          "default": "Kiểm tra",
+          "label": "Văn bản cho nút \"Kiểm tra\""
+        },
+        {
+          "default": "Làm lại",
+          "label": "Văn bản cho nút \"Làm lại\""
+        },
+        {
+          "default": "Hiển thị đáp án",
+          "label": "Văn bản cho nút \"Hiển thị đáp án\""
+        },
+        {
+          "default": "Độ dài các phần của bạn đều hợp lý.",
+          "description": "Văn bản phản hồi khi tất cả các phần đều có độ dài phù hợp.",
+          "label": "Tất cả phần hợp lý"
+        },
+        {
+          "default": "Phần \"@title\" của bạn quá ngắn. Cần thêm @chars ký tự.",
+          "description": "Văn bản phản hồi khi phần quá ngắn (@title sẽ được thay bằng tiêu đề phần, @chars là số ký tự thiếu).",
+          "label": "Phần quá ngắn"
+        },
+        {
+          "default": "Phần \"@title\" của bạn quá dài. Hãy bớt đi ít nhất @chars ký tự.",
+          "description": "Văn bản phản hồi khi phần quá dài (@title sẽ được thay bằng tiêu đề phần, @chars là số ký tự cần bớt).",
+          "label": "Phần quá dài"
+        },
+        {
+          "default": "thiếu @chars ký tự",
+          "description": "Trạng thái khi đang viết với phần quá ngắn (@chars là số ký tự thiếu).",
+          "label": "Phần quá ngắn (khi viết)"
+        },
+        {
+          "default": "thừa @chars ký tự",
+          "description": "Trạng thái khi đang viết với phần quá dài (@chars là số ký tự cần bớt).",
+          "label": "Phần quá dài (khi viết)"
+        },
+        {
+          "default": "Văn bản của bạn đã được sao chép vào bộ nhớ tạm",
+          "label": "Đã sao chép vào bộ nhớ tạm"
+        },
+        {
+          "default": "Không thể sao chép văn bản vào bộ nhớ tạm",
+          "label": "Không thể sao chép vào bộ nhớ tạm"
+        },
+        {
+          "default": "Phần",
+          "label": "Phần"
+        },
+        {
+          "default": "Không có phần nào được cung cấp cho dải cấu trúc này.",
+          "label": "Văn bản cho thông báo \"Không có phần\""
+        }
+      ],
+      "label": "Giao diện người dùng"
+    },
+    {
+      "fields": [
+        {
+          "default": "Phản hồi",
+          "label": "Phản hồi (văn bản cho trình đọc màn hình)"
+        },
+        {
+          "default": "Sao chép văn bản vào bộ nhớ tạm",
+          "label": "Sao chép văn bản của bạn vào bộ nhớ tạm (văn bản cho trình đọc màn hình)"
+        },
+        {
+          "default": "Đóng cửa sổ",
+          "label": "Đóng cửa sổ (văn bản cho trình đọc màn hình)"
+        },
+        {
+          "default": "Hiển thị gợi ý",
+          "label": "Hiển thị gợi ý (văn bản cho trình đọc màn hình)"
+        }
+      ],
+      "label": "Trình đọc màn hình"
+    }
+  ]
+}

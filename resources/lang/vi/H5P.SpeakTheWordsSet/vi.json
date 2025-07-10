@@ -1,0 +1,110 @@
+{
+  "semantics": [
+    {
+      "label": "Giới thiệu",
+      "fields": [
+        {
+          "label": "Hiển thị phần giới thiệu"
+        },
+        {
+          "label": "Hình ảnh giới thiệu"
+        },
+        {
+          "label": "Văn bản thay thế cho hình ảnh giới thiệu"
+        },
+        {
+          "label": "Tiêu đề"
+        },
+        {
+          "label": "Văn bản giới thiệu",
+          "description": "Tiêu đề này sẽ được hiển thị phía trên văn bản giới thiệu."
+        }
+      ]
+    },
+    {
+      "label": "Câu hỏi",
+      "widgets": [
+        {
+          "label": "Mặc định"
+        }
+      ],
+      "entity": "Câu hỏi",
+      "field": {
+        "label": "Câu hỏi"
+      }
+    },
+    {
+      "label": "Phản hồi chung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Mặc định"
+            }
+          ],
+          "label": "Định nghĩa phản hồi tùy chỉnh cho bất kỳ khoảng điểm nào",
+          "description": "Nhấp vào nút \"Thêm khoảng\" để thêm các khoảng bạn cần. Ví dụ: 0-20% Điểm kém, 21-91% Điểm trung bình, 91-100% Điểm xuất sắc!",
+          "entity": "khoảng",
+          "field": {
+            "fields": [
+              {
+                "label": "Khoảng điểm số"
+              },
+              {},
+              {
+                "label": "Phản hồi cho khoảng điểm đã định nghĩa",
+                "placeholder": "Viết phản hồi của bạn"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Nhãn và văn bản cho bộ Nói Từ",
+      "fields": [
+        {
+          "label": "Nhãn nút Giới thiệu",
+          "default": "Bắt đầu khóa học!"
+        },
+        {
+          "label": "Nhãn kết quả ở màn hình đáp án",
+          "default": "Kết quả của bạn:"
+        },
+        {
+          "label": "Nhãn nút Hiển thị kết quả",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Nhãn nút Thử lại",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Nhãn nút Kết thúc",
+          "default": "Kết thúc"
+        },
+        {
+          "label": "Nhãn hỗ trợ tiếp cận cho câu hỏi tiếp theo",
+          "default": "Câu hỏi tiếp theo"
+        },
+        {
+          "label": "Nhãn hỗ trợ tiếp cận cho câu hỏi trước",
+          "default": "Câu hỏi trước"
+        },
+        {
+          "label": "Tiêu đề thanh điều hướng",
+          "description": "Tiêu đề cho các câu hỏi trên thanh điều hướng. \":num\" sẽ được thay bằng số thứ tự trang hiện tại.",
+          "default": "Trang :num"
+        },
+        {
+          "label": "Nhãn hỗ trợ tiếp cận cho trang đã trả lời",
+          "default": "Đã trả lời"
+        },
+        {
+          "label": "Nhãn hỗ trợ tiếp cận cho trang đang hoạt động",
+          "default": "Đang được chọn"
+        }
+      ]
+    }
+  ]
+}

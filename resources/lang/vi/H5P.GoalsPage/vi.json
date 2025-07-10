@@ -1,0 +1,67 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả",
+      "description": "Mô tả trang mục tiêu.",
+      "default": "Hãy viết các mục tiêu mà bạn đã chọn để làm việc."
+    },
+    {
+      "label": "Văn bản nút tạo mục tiêu",
+      "description": "Văn bản hiển thị trên nút tạo mục tiêu mới.",
+      "default": "Tạo mục tiêu mới"
+    },
+    {
+      "label": "Nhãn cho mục tiêu do người dùng tạo",
+      "description": "Nhãn hiển thị cho mục tiêu được tạo bởi người dùng.",
+      "default": "Mục tiêu do người dùng tạo"
+    },
+    {
+      "label": "Văn bản mặc định cho mục tiêu mới",
+      "description": "Văn bản mặc định khi tạo mục tiêu mới.",
+      "default": "Nhập tại đây..."
+    },
+    {
+      "label": "Văn bản hiển thị số mục tiêu đã thêm",
+      "default": "Mục tiêu đã thêm:",
+      "description": "Văn bản hiển thị trước số mục tiêu đã tạo, ví dụ: 'Mục tiêu đã thêm: 5' với 'Mục tiêu đã thêm:' là chuỗi này."
+    },
+    {
+      "label": "Văn bản cho nút \"Chỉ định mục tiêu\"",
+      "default": "Chỉ định"
+    },
+    {
+      "label": "Văn bản cho nút \"Xóa mục tiêu\"",
+      "default": "Xóa"
+    },
+    {
+      "label": "Nhãn cho văn bản trợ giúp",
+      "description": "Nhãn để hiển thị thông tin hữu ích bổ sung cho người dùng.",
+      "default": "Thêm thông tin"
+    },
+    {
+      "label": "Nhập thông tin hữu ích bổ sung",
+      "description": "Tại đây bạn có thể nhập thông tin hữu ích bổ sung cho người dùng."
+    },
+    {
+      "label": "Xác nhận xóa mục tiêu",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "default": "Xác nhận xóa"
+        },
+        {
+          "label": "Thông báo",
+          "default": "Bạn có chắc chắn muốn xóa mục tiêu này không?"
+        },
+        {
+          "label": "Nhãn nút Hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nhãn nút Xác nhận",
+          "default": "Xác nhận"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả trường nhập",
+      "description": "Mô tả về những gì người dùng nên nhập."
+    },
+    {
+      "label": "Văn bản mặc định",
+      "description": "Một văn bản mặc định cho người dùng."
+    },
+    {
+      "label": "Độ dài tối đa của văn bản",
+      "description": "Số ký tự tối đa cho văn bản."
+    },
+    {
+      "label": "Kích thước trường nhập",
+      "description": "Kích thước trường nhập tính theo số dòng sẽ hiển thị.",
+      "options": [
+        {
+          "label": "1 dòng"
+        },
+        {
+          "label": "3 dòng"
+        },
+        {
+          "label": "10 dòng"
+        }
+      ]
+    },
+    {
+      "label": "Trường bắt buộc",
+      "description": "Chọn để bắt buộc trường này; người dùng phải trả lời tất cả các trường bắt buộc để có thể xuất tài liệu."
+    },
+    {
+      "label": "Ký tự còn lại",
+      "default": "Ký tự còn lại: @chars",
+      "description": "Thông báo số ký tự còn lại. Bạn có thể dùng @chars, sẽ được thay bằng số tương ứng."
+    }
+  ]
+}

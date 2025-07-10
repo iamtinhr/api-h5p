@@ -1,0 +1,163 @@
+{
+  "semantics": [
+    {
+      "label": "Phương tiện",
+      "fields": [
+        {
+          "label": "Loại",
+          "description": "Phương tiện tùy chọn được hiển thị phía trên câu hỏi."
+        },
+        {
+          "label": "Tắt chức năng phóng to ảnh"
+        }
+      ]
+    },
+    {
+      "label": "Câu hỏi"
+    },
+    {
+      "label": "Đáp án đúng",
+      "options": [
+        {
+          "label": "Đúng"
+        },
+        {
+          "label": "Sai"
+        }
+      ]
+    },
+    {
+      "label": "Dịch giao diện người dùng cho câu hỏi Đúng/Sai",
+      "fields": [
+        {
+          "label": "Văn bản cho nút Đúng",
+          "default": "Đúng"
+        },
+        {
+          "label": "Văn bản cho nút Sai",
+          "default": "Sai"
+        },
+        {
+          "label": "Văn bản phản hồi",
+          "default": "Bạn đạt được @score trên tổng số @total điểm",
+          "description": "Văn bản phản hồi, các biến có sẵn: @score và @total. Ví dụ: 'Bạn đạt @score trên @total điểm tối đa'"
+        },
+        {
+          "label": "Văn bản cho nút \"Kiểm tra\"",
+          "default": "Kiểm tra"
+        },
+        {
+          "label": "Văn bản cho nút \"Gửi\"",
+          "default": "Gửi"
+        },
+        {
+          "label": "Văn bản cho nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Văn bản cho nút \"Làm lại\"",
+          "default": "Làm lại"
+        },
+        {
+          "label": "Câu trả lời sai",
+          "default": "Câu trả lời sai"
+        },
+        {
+          "label": "Câu trả lời đúng",
+          "default": "Câu trả lời đúng"
+        },
+        {
+          "label": "Dạng văn bản của thanh điểm số khi dùng trình đọc màn hình",
+          "default": "Bạn đạt được :num trên tổng số :total điểm"
+        },
+        {
+          "label": "Mô tả cho công nghệ hỗ trợ của nút \"Kiểm tra\"",
+          "default": "Kiểm tra các đáp án. Các đáp án sẽ được đánh dấu là đúng, sai hoặc chưa trả lời."
+        },
+        {
+          "label": "Mô tả cho công nghệ hỗ trợ của nút \"Hiển thị đáp án\"",
+          "default": "Hiển thị đáp án. Bài tập sẽ được chấm với đáp án đúng."
+        },
+        {
+          "label": "Mô tả cho công nghệ hỗ trợ của nút \"Làm lại\"",
+          "default": "Làm lại bài tập. Xóa tất cả đáp án của bạn và bắt đầu lại."
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn kiểm soát cách bài tập hoạt động.",
+      "fields": [
+        {
+          "label": "Bật nút \"Làm lại\""
+        },
+        {
+          "label": "Bật nút \"Hiển thị đáp án\""
+        },
+        {
+          "label": "Bật nút \"Kiểm tra\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận khi \"Kiểm tra\""
+        },
+        {
+          "label": "Hiển thị hộp thoại xác nhận khi \"Làm lại\""
+        },
+        {
+          "label": "Tự động kiểm tra đáp án",
+          "description": "Lưu ý: Nếu bật, khả năng truy cập sẽ bị ảnh hưởng"
+        },
+        {
+          "label": "Phản hồi cho đáp án đúng",
+          "description": "Điều này sẽ ghi đè văn bản phản hồi mặc định. Biến có sẵn: @score và @total"
+        },
+        {
+          "label": "Phản hồi cho đáp án sai",
+          "description": "Điều này sẽ ghi đè văn bản phản hồi mặc định. Biến có sẵn: @score và @total"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận khi Kiểm tra",
+      "fields": [
+        {
+          "label": "Tiêu đề hộp thoại",
+          "default": "Kết thúc?"
+        },
+        {
+          "label": "Nội dung hộp thoại",
+          "default": "Bạn có chắc chắn muốn kết thúc không?"
+        },
+        {
+          "label": "Nút Hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nút Kết thúc",
+          "default": "Kết thúc"
+        }
+      ]
+    },
+    {
+      "label": "Hộp thoại xác nhận khi Làm lại",
+      "fields": [
+        {
+          "label": "Tiêu đề hộp thoại",
+          "default": "Làm lại?"
+        },
+        {
+          "label": "Nội dung hộp thoại",
+          "default": "Bạn có chắc chắn muốn làm lại không?"
+        },
+        {
+          "label": "Nút Hủy",
+          "default": "Hủy"
+        },
+        {
+          "label": "Nút Xác nhận",
+          "default": "Xác nhận"
+        }
+      ]
+    }
+  ]
+}

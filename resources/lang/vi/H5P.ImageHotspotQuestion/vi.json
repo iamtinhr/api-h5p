@@ -1,0 +1,80 @@
+{
+  "semantics": [
+    {
+      "label": "Trình chỉnh sửa hình ảnh cho câu hỏi điểm then chốt",
+      "fields": [
+        {
+          "label": "Ảnh nền",
+          "fields": [
+            {
+              "label": "Ảnh nền",
+              "description": "Chọn một ảnh để dùng làm nền cho câu hỏi điểm then chốt trên hình ảnh."
+            }
+          ]
+        },
+        {
+          "label": "Điểm then chốt",
+          "description": "Kéo thả hình mong muốn từ thanh công cụ để tạo điểm then chốt mới. Nhấp đúp để chỉnh sửa một điểm đã có. Kéo điểm để di chuyển. Kéo tay cầm ở góc dưới bên phải để thay đổi kích thước.",
+          "fields": [
+            {
+              "label": "Mô tả nhiệm vụ",
+              "description": "Hướng dẫn cho người dùng."
+            },
+            {
+              "label": "Điểm then chốt",
+              "entity": "Điểm then chốt",
+              "field": {
+                "label": "Điểm then chốt",
+                "fields": [
+                  {
+                    "label": "Thiết lập cho người dùng",
+                    "fields": [
+                      {
+                        "label": "Đúng",
+                        "description": "Có thể có nhiều điểm then chốt đúng. Tuy nhiên, người dùng sẽ nhận được phản hồi đúng/sai ngay sau lần nhấp đầu tiên."
+                      },
+                      {
+                        "label": "Phản hồi"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Thiết lập tính toán"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Phản hồi nếu người dùng chọn chỗ trống:",
+              "placeholder": "Bạn chưa tìm được điểm then chốt nào, hãy thử lại!"
+            },
+            {
+              "label": "Hiển thị phản hồi trong cửa sổ bật lên"
+            },
+            {
+              "label": "Địa phương hóa",
+              "fields": [
+                {
+                  "label": "Văn bản nút Thử lại",
+                  "default": "Thử lại"
+                },
+                {
+                  "label": "Văn bản nút Đóng",
+                  "default": "Đóng"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Mô tả thanh điểm khi dùng trình đọc màn hình",
+      "default": "Bạn đã đạt được :num trên tổng số :total điểm"
+    },
+    {
+      "label": "Mô tả cho công nghệ hỗ trợ của nút \"Thử lại\"",
+      "default": "Hãy thử lại nhiệm vụ. Xóa tất cả câu trả lời của bạn và bắt đầu lại từ đầu."
+    }
+  ]
+}

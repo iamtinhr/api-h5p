@@ -1,0 +1,7 @@
+{
+  "libraryStrings": {
+    "exceedsMin": "\":property\" vượt quá giá trị tối thiểu :min.",
+    "fromBiggerThanTo": "\"Từ\" phải nhỏ hơn \"Đến\".",
+    "invalidTime": "\":property\" chứa định dạng thời gian không hợp lệ."
+  }
+}

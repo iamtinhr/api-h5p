@@ -1,0 +1,31 @@
+{
+  "semantics": [
+    {
+      "label": "Tiêu đề"
+    },
+    {
+      "fields": [
+        {
+          "label": "Giao thức",
+          "options": [
+            {
+              "label": "http://"
+            },
+            {
+              "label": "https://"
+            },
+            {
+              "label": "(tương đối với gốc)"
+            },
+            {
+              "label": "khác"
+            }
+          ]
+        },
+        {
+          "label": "URL"
+        }
+      ]
+    }
+  ]
+}

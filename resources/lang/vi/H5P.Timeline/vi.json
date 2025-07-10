@@ -1,0 +1,295 @@
+{
+  "semantics": [
+    {
+      "label": "Dòng thời gian",
+      "fields": [
+        {
+          "label": "Tiêu đề",
+          "description": "Tiêu đề chính của dòng thời gian (trang đầu tiên)"
+        },
+        {
+          "label": "Văn bản nội dung",
+          "description": "Nội dung chính của dòng thời gian (trang đầu tiên)."
+        },
+        {
+          "label": "Mức thu phóng mặc định",
+          "description": "Điều chỉnh mức thu phóng mặc định. Tương đương với việc nhấn nút phóng to hoặc thu nhỏ số lần chỉ định. Số âm sẽ thu nhỏ. Giá trị mặc định là 0"
+        },
+        {
+          "label": "Ảnh nền",
+          "description": "Một hình ảnh để hiển thị làm nền."
+        },
+        {
+          "label": "Chiều cao",
+          "description": "Chiều cao tính bằng pixel"
+        },
+        {
+          "label": "Tài nguyên",
+          "description": "Bạn có thể thêm một tài nguyên vào \"trang bìa\" của dòng thời gian",
+          "fields": [
+            {
+              "label": "Phương tiện",
+              "description": "URL phương tiện (Hỗ trợ: Twitter, YouTube, Flickr, Vimeo, Google Maps và SoundCloud)"
+            },
+            {
+              "label": "Tín dụng",
+              "description": "Tín dụng của phương tiện"
+            },
+            {
+              "label": "Chú thích",
+              "description": "Mô tả chú thích tại đây"
+            }
+          ]
+        },
+        {
+          "label": "Ngày tháng",
+          "description": "Thêm một số ngày tháng cho dòng thời gian của bạn!",
+          "field": {
+            "label": "Ngày",
+            "description": "Ngày",
+            "fields": [
+              {
+                "label": "Ngày bắt đầu",
+                "description": "YYYY,MM,DD (Tối thiểu cần YYYY)"
+              },
+              {
+                "label": "Ngày kết thúc",
+                "description": "YYYY,MM,DD (Tối thiểu cần YYYY)"
+              },
+              {
+                "label": "Tiêu đề",
+                "description": "Tiêu đề cho mục ngày"
+              },
+              {
+                "label": "Văn bản nội dung",
+                "description": "Nội dung cho mục ngày"
+              },
+              {
+                "label": "Nhãn",
+                "description": "Nhập các nhãn (thể loại)"
+              },
+              {
+                "label": "Tài nguyên",
+                "fields": [
+                  {
+                    "label": "Phương tiện",
+                    "description": "URL phương tiện (Hỗ trợ: Twitter, YouTube, Flickr, Vimeo, Wikipedia, Google Maps và SoundCloud)."
+                  },
+                  {
+                    "label": "Ảnh thu nhỏ",
+                    "description": "Thêm ảnh thu nhỏ nếu cần, kích thước 32x32"
+                  },
+                  {
+                    "label": "Tín dụng",
+                    "description": "Tín dụng phương tiện"
+                  },
+                  {
+                    "label": "Chú thích",
+                    "description": "Văn bản chú thích"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Thời kỳ",
+          "description": "Thêm một thời kỳ vào dòng thời gian của bạn",
+          "field": {
+            "label": "Thời kỳ",
+            "fields": [
+              {
+                "label": "Ngày bắt đầu",
+                "description": "YYYY,MM,DD (Yêu cầu tối thiểu YYYY)"
+              },
+              {
+                "label": "Ngày kết thúc",
+                "description": "YYYY,MM,DD (Yêu cầu tối thiểu YYYY)"
+              },
+              {
+                "label": "Tiêu đề",
+                "description": "Tiêu đề của thời kỳ"
+              },
+              {
+                "label": "Văn bản",
+                "description": "Nội dung của thời kỳ"
+              },
+              {
+                "label": "Nhãn",
+                "description": "Các nhãn cho thời kỳ (thể loại)"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Ngôn ngữ",
+          "description": "Ngôn ngữ giao diện người dùng",
+          "options": [
+            {
+              "label": "Afrikaans"
+            },
+            {
+              "label": "Ả Rập"
+            },
+            {
+              "label": "Armenia"
+            },
+            {
+              "label": "Basque"
+            },
+            {
+              "label": "Bungari"
+            },
+            {
+              "label": "Catalan"
+            },
+            {
+              "label": "Trung Quốc"
+            },
+            {
+              "label": "Croatia / Hrvatski"
+            },
+            {
+              "label": "Séc"
+            },
+            {
+              "label": "Đan Mạch"
+            },
+            {
+              "label": "Hà Lan"
+            },
+            {
+              "label": "Tiếng Anh"
+            },
+            {
+              "label": "Tiếng Anh (24-giờ)"
+            },
+            {
+              "label": "Esperanto"
+            },
+            {
+              "label": "Estonia"
+            },
+            {
+              "label": "Faroe"
+            },
+            {
+              "label": "Ba Tư"
+            },
+            {
+              "label": "Phần Lan"
+            },
+            {
+              "label": "Pháp"
+            },
+            {
+              "label": "Galician"
+            },
+            {
+              "label": "Georgia"
+            },
+            {
+              "label": "Đức / Deutsch"
+            },
+            {
+              "label": "Hy Lạp"
+            },
+            {
+              "label": "Do Thái"
+            },
+            {
+              "label": "Hungary"
+            },
+            {
+              "label": "Iceland"
+            },
+            {
+              "label": "Indonesia"
+            },
+            {
+              "label": "Ý"
+            },
+            {
+              "label": "Nhật Bản"
+            },
+            {
+              "label": "Hàn Quốc"
+            },
+            {
+              "label": "Latvia"
+            },
+            {
+              "label": "Lithuania"
+            },
+            {
+              "label": "Luxembourg"
+            },
+            {
+              "label": "Malaysia"
+            },
+            {
+              "label": "Nepal"
+            },
+            {
+              "label": "Na Uy"
+            },
+            {
+              "label": "Ba Lan"
+            },
+            {
+              "label": "Bồ Đào Nha"
+            },
+            {
+              "label": "Bồ Đào Nha (Brazil)"
+            },
+            {
+              "label": "Rumani"
+            },
+            {
+              "label": "Nga"
+            },
+            {
+              "label": "Serbia - Kirin"
+            },
+            {
+              "label": "Serbia - Latin"
+            },
+            {
+              "label": "Sinhala"
+            },
+            {
+              "label": "Slovakia"
+            },
+            {
+              "label": "Slovenia"
+            },
+            {
+              "label": "Tây Ban Nha"
+            },
+            {
+              "label": "Thụy Điển"
+            },
+            {
+              "label": "Tagalog"
+            },
+            {
+              "label": "Tamil"
+            },
+            {
+              "label": "Đài Loan"
+            },
+            {
+              "label": "Telugu"
+            },
+            {
+              "label": "Thổ Nhĩ Kỳ"
+            },
+            {
+              "label": "Ukraina"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

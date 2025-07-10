@@ -1,0 +1,393 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "field": {
+            "fields": [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {
+                "label": "Bình luận",
+                "description": "Bình luận sẽ hiển thị khi người dùng yêu cầu xem đáp án cho tất cả các trang trình chiếu."
+              },
+              {
+                "label": "Luôn hiển thị bình luận"
+              },
+              {
+                "label": "Độ mờ nền"
+              },
+              {
+                "label": "Hiển thị dưới dạng nút"
+              },
+              {
+                "label": "Kích thước nút",
+                "options": [
+                  {
+                    "label": "Nhỏ"
+                  },
+                  {
+                    "label": "Lớn"
+                  }
+                ]
+              },
+              {
+                "label": "Tiêu đề"
+              },
+              {
+                "label": "Đi tới",
+                "options": [
+                  {
+                    "label": "Trang trình chiếu cụ thể"
+                  },
+                  {
+                    "label": "Trang trình chiếu tiếp theo"
+                  },
+                  {
+                    "label": "Trang trình chiếu trước"
+                  }
+                ]
+              },
+              {
+                "label": "Số trang trình chiếu cụ thể",
+                "description": "Chỉ áp dụng khi đã chọn 'Trang cụ thể'"
+              },
+              {
+                "label": "Ẩn",
+                "description": "Con trỏ mặc định, không có tiêu đề hoặc tab mục lục. Cảnh báo: Người dùng khuyết tật hoặc chỉ sử dụng bàn phím sẽ gặp khó khăn khi sử dụng thành phần này."
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Danh sách từ khóa"
+        },
+        {
+          "label": "Luôn hiển thị"
+        },
+        {
+          "label": "Tự động ẩn"
+        },
+        {
+          "label": "Độ mờ"
+        },
+        {
+          "fields": [
+            {
+              "label": "Hình ảnh",
+              "description": "Ảnh nền nên có tỉ lệ rộng : cao là 2:1 để tránh bị kéo giãn. Ảnh có độ phân giải cao sẽ hiển thị đẹp hơn ở màn hình lớn."
+            },
+            {
+              "label": "Chọn màu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Địa phương hóa",
+      "fields": [
+        {
+          "label": "Dịch cho \"Trang trình chiếu\"",
+          "default": "Trang trình chiếu"
+        },
+        {
+          "label": "Dịch cho \"Điểm số\"",
+          "default": "Điểm số"
+        },
+        {
+          "label": "Dịch cho \"Điểm số của bạn\"",
+          "default": "Điểm số của bạn"
+        },
+        {
+          "label": "Dịch cho \"Điểm số tối đa\"",
+          "default": "Điểm số tối đa"
+        },
+        {
+          "label": "Dịch cho \"Tổng số\"",
+          "default": "Tổng số"
+        },
+        {
+          "label": "Dịch cho \"Tổng điểm\"",
+          "default": "Tổng điểm"
+        },
+        {
+          "label": "Văn bản cho nút Hiển thị đáp án",
+          "default": "Hiển thị đáp án"
+        },
+        {
+          "label": "Văn bản cho nút \"Thử lại\"",
+          "default": "Thử lại"
+        },
+        {
+          "label": "Văn bản cho nút Xuất văn bản",
+          "default": "Xuất văn bản"
+        },
+        {
+          "label": "Ẩn tiêu đề nút danh sách từ khóa",
+          "default": "Ẩn danh sách từ khóa"
+        },
+        {
+          "label": "Tiêu đề nút hiển thị danh sách từ khóa",
+          "default": "Hiển thị danh sách từ khóa"
+        },
+        {
+          "label": "Nhãn Toàn màn hình",
+          "default": "Toàn màn hình"
+        },
+        {
+          "label": "Nhãn Thoát Toàn màn hình",
+          "default": "Thoát Toàn màn hình"
+        },
+        {
+          "label": "Nhãn Trang trước",
+          "default": "Trang trước"
+        },
+        {
+          "label": "Nhãn Trang tiếp theo",
+          "default": "Trang tiếp theo"
+        },
+        {
+          "label": "Nhãn Trang hiện tại",
+          "default": "Trang hiện tại"
+        },
+        {
+          "label": "Nhãn Trang cuối",
+          "default": "Trang cuối"
+        },
+        {
+          "label": "Nhãn Thoát chế độ đáp án",
+          "default": "Thoát chế độ đáp án"
+        },
+        {
+          "label": "Nhãn chế độ đáp án",
+          "default": "Chế độ đáp án"
+        },
+        {
+          "label": "Văn bản khi có nhiều nhiệm vụ trên một trang",
+          "default": "Nhiệm vụ nhiều phần"
+        },
+        {
+          "label": "Văn bản thông báo điểm số",
+          "default": "Bạn đạt được:"
+        },
+        {
+          "label": "Văn bản Chia sẻ lên Facebook",
+          "default": "Chia sẻ lên Facebook"
+        },
+        {
+          "label": "Văn bản Chia sẻ lên Twitter",
+          "default": "Chia sẻ lên Twitter"
+        },
+        {
+          "label": "Văn bản Chia sẻ lên Google",
+          "default": "Chia sẻ lên Google+"
+        },
+        {
+          "label": "Tiêu đề cho trang trình chiếu tổng kết",
+          "default": "Tổng kết"
+        },
+        {
+          "label": "Tiêu đề cho biểu tượng bình luận",
+          "default": "Hiển thị bình luận"
+        },
+        {
+          "label": "Tiêu đề cho nút In",
+          "default": "In"
+        },
+        {
+          "label": "Xác nhận hộp thoại in",
+          "default": "Bạn muốn in trình chiếu này như thế nào?"
+        },
+        {
+          "label": "Nhãn nút \"In tất cả các trang\"",
+          "default": "In tất cả các trang"
+        },
+        {
+          "label": "Nhãn nút \"In trang hiện tại\"",
+          "default": "In trang hiện tại"
+        },
+        {
+          "label": "Nhãn cho trang trình chiếu không có tiêu đề",
+          "default": "Không có tiêu đề"
+        },
+        {
+          "label": "Giải thích điều hướng trang trình chiếu cho công nghệ hỗ trợ",
+          "default": "Dùng mũi tên trái/phải để chuyển trang khi đã chọn canvas"
+        },
+        {
+          "label": "Nhãn canvas cho công nghệ hỗ trợ",
+          "default": "Canvas trình chiếu. Dùng mũi tên trái/phải để chuyển trang."
+        },
+        {
+          "label": "Nhãn thanh tiến trình cho công nghệ hỗ trợ",
+          "default": "Chọn trang để hiển thị"
+        },
+        {
+          "label": "Nhãn cho nhiệm vụ chưa hoàn thành",
+          "default": "@slideName chứa một nhiệm vụ chưa hoàn thành"
+        },
+        {
+          "label": "Nhãn cho nhiệm vụ đã hoàn thành",
+          "default": "@slideName chứa nhiệm vụ đã hoàn thành"
+        },
+        {
+          "label": "Nhãn bộ đếm trang. Các biến là @index, @total",
+          "default": "Trang @index trên @total"
+        },
+        {
+          "label": "Nhãn cho trang chỉ có đáp án đúng",
+          "default": "@slideName chỉ chứa đáp án đúng"
+        },
+        {
+          "label": "Nhãn cho trang có đáp án sai",
+          "default": "@slideName có đáp án sai"
+        },
+        {
+          "label": "Nhãn cho thanh chia sẻ mạng xã hội",
+          "default": "Chia sẻ kết quả"
+        },
+        {
+          "label": "Thông báo tổng điểm cho công nghệ hỗ trợ",
+          "default": "Bạn đạt @score trên tổng @maxScore điểm",
+          "description": "Các biến có sẵn: @score và @maxScore"
+        },
+        {
+          "label": "Thông báo đã vào chế độ toàn màn hình cho công nghệ hỗ trợ",
+          "default": "Bạn đã vào chế độ toàn màn hình"
+        },
+        {
+          "label": "Thông báo đã thoát chế độ toàn màn hình cho công nghệ hỗ trợ",
+          "default": "Bạn đã thoát chế độ toàn màn hình"
+        },
+        {
+          "label": "Tiêu đề hộp thoại xác nhận gửi kết quả",
+          "default": "Gửi câu trả lời của bạn"
+        },
+        {
+          "label": "Văn bản hộp thoại xác nhận gửi kết quả",
+          "default": "Việc này sẽ gửi kết quả của bạn, bạn có muốn tiếp tục không?"
+        },
+        {
+          "label": "Nút xác nhận hộp thoại gửi kết quả",
+          "default": "Gửi và xem kết quả"
+        },
+        {
+          "label": "Điều hướng trình chiếu",
+          "default": "Điều hướng trình chiếu"
+        },
+        {
+          "label": "Văn bản nút \"Xác nhận\"",
+          "default": "Xác nhận"
+        },
+        {
+          "label": "Văn bản nút \"Hủy\"",
+          "default": "Hủy"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi.",
+      "description": "Những tùy chọn này cho phép bạn ghi đè các cài đặt hành vi.",
+      "fields": [
+        {
+          "label": "Bật Chế độ Bề mặt Tương tác",
+          "description": "Loại bỏ các nút điều hướng cho người dùng cuối. Dùng Đi tới Trang để chuyển trang. Không có trang tổng kết trong chế độ này."
+        },
+        {
+          "label": "Ẩn trang trình chiếu tổng kết",
+          "description": "Ẩn trang tổng kết."
+        },
+        {
+          "label": "Ẩn nút \"Hiển thị đáp án\"",
+          "description": "Tùy chọn này xác định nút \"Hiển thị đáp án\" có hiển thị ở tất cả câu hỏi, tắt cho tất cả, hay cài đặt riêng cho từng câu.",
+          "options": [
+            {
+              "label": "Bật"
+            },
+            {
+              "label": "Tắt"
+            }
+          ]
+        },
+        {
+          "label": "Ghi đè nút \"Thử lại\"",
+          "description": "Tùy chọn này xác định nút \"Thử lại\" có hiển thị ở tất cả câu hỏi, tắt cho tất cả, hay cài đặt riêng cho từng câu.",
+          "options": [
+            {
+              "label": "Bật"
+            },
+            {
+              "label": "Tắt"
+            }
+          ]
+        },
+        {
+          "label": "Hiển thị nút \"Hiển thị đáp án\" ở trang tổng kết",
+          "description": "Nếu bật, học viên có thể xem đáp án cho tất cả câu hỏi khi đến trang tổng kết"
+        },
+        {
+          "label": "Hiển thị nút \"Thử lại\" ở trang tổng kết",
+          "description": "Nếu bật, học viên có thể làm lại tất cả câu hỏi khi đến trang tổng kết. Lưu ý: nếu tải lại trang, học viên vẫn có thể làm lại dù không hiển thị nút này."
+        },
+        {
+          "label": "Bật nút In",
+          "description": "Bật nút In."
+        },
+        {
+          "label": "Cài đặt Mạng xã hội",
+          "description": "Những tùy chọn này cho phép bạn ghi đè cài đặt hành vi cho mạng xã hội. Giá trị để trống sẽ tự động lấy nếu có liên kết, nếu không tất cả giá trị sẽ được tạo tự động.",
+          "fields": [
+            {
+              "label": "Hiển thị biểu tượng chia sẻ Facebook"
+            },
+            {
+              "label": "Cài đặt chia sẻ Facebook",
+              "fields": [
+                {
+                  "label": "Liên kết chia sẻ Facebook",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "Tin nhắn chia sẻ Facebook",
+                  "default": "Tôi đã đạt @score trên @maxScore trong một nhiệm vụ tại @currentpageurl."
+                }
+              ]
+            },
+            {
+              "label": "Hiển thị biểu tượng chia sẻ Twitter"
+            },
+            {
+              "label": "Cài đặt chia sẻ Twitter",
+              "fields": [
+                {
+                  "label": "Tin nhắn chia sẻ Twitter",
+                  "default": "Tôi đã đạt @score trên @maxScore trong một nhiệm vụ tại @currentpageurl."
+                },
+                {
+                  "label": "Liên kết chia sẻ Twitter",
+                  "default": "@currentpageurl"
+                },
+                {
+                  "label": "Hashtag chia sẻ Twitter",
+                  "default": "h5p, khóa học"
+                }
+              ]
+            },
+            {
+              "label": "Hiển thị biểu tượng chia sẻ Google+"
+            },
+            {
+              "label": "Liên kết chia sẻ Google",
+              "default": "@currentpageurl"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

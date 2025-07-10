@@ -1,0 +1,87 @@
+{
+  "semantics": [
+    {
+      "label": "Loại",
+      "options": [
+        {
+          "label": "Hình chữ nhật"
+        },
+        {
+          "label": "Hình tròn"
+        },
+        {
+          "label": "Đường dọc"
+        },
+        {
+          "label": "Đường ngang"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Màu nền"
+        },
+        {
+          "label": "Màu viền"
+        },
+        {
+          "label": "Độ dày viền"
+        },
+        {
+          "label": "Kiểu viền",
+          "options": [
+            {
+              "label": "Liền"
+            },
+            {
+              "label": "Chấm"
+            },
+            {
+              "label": "Gạch"
+            },
+            {
+              "label": "Kép"
+            },
+            {
+              "label": "Lõm"
+            },
+            {
+              "label": "Nổi"
+            }
+          ]
+        },
+        {
+          "label": "Bán kính viền"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Màu đường"
+        },
+        {
+          "label": "Độ dày đường"
+        },
+        {
+          "label": "Kiểu đường",
+          "options": [
+            {
+              "label": "Liền"
+            },
+            {
+              "label": "Chấm"
+            },
+            {
+              "label": "Gạch"
+            },
+            {
+              "label": "Kép"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "semantics": [
+    {
+      "label": "Xem trước",
+      "description": "Bạn có thể di chuyển (pan) ảnh bằng cách kéo chúng. Bạn cũng có thể chọn một ảnh rồi dùng phím + hoặc - trên bàn phím để phóng to/thu nhỏ, hoặc chỉ cần giữ phím Z trong khi lăn bánh xe chuột.",
+      "fields": [
+        {
+          "label": "Bố cục",
+          "options": [
+            {
+              "label": "1"
+            },
+            {
+              "label": "1-1"
+            },
+            {
+              "label": "2"
+            },
+            {
+              "label": "2-1"
+            },
+            {
+              "label": "1-2"
+            },
+            {
+              "label": "2-2"
+            },
+            {
+              "label": "3-1"
+            },
+            {
+              "label": "1-3"
+            },
+            {
+              "label": "2-3"
+            },
+            {
+              "label": "3-2"
+            },
+            {
+              "label": "3-3"
+            }
+          ]
+        },
+        {
+          "label": "Tùy chọn hiển thị",
+          "fields": [
+            {
+              "label": "Chiều cao"
+            },
+            {
+              "label": "Khoảng cách"
+            },
+            {
+              "label": "Khung"
+            }
+          ]
+        },
+        {
+          "label": "Các phần cắt ảnh",
+          "entity": "phần cắt",
+          "field": {
+            "label": "Phần cắt",
+            "fields": [
+              {
+                "label": "Hình ảnh"
+              },
+              {
+                "label": "Canh chỉnh",
+                "fields": [
+                  {
+                    "label": "Trên"
+                  },
+                  {
+                    "label": "Trái"
+                  }
+                ]
+              },
+              {
+                "label": "Văn bản thay thế",
+                "description": "Bắt buộc. Nếu trình duyệt không thể tải ảnh, văn bản này sẽ hiển thị thay thế. Cũng dùng cho trình đọc màn hình."
+              },
+              {
+                "label": "Văn bản khi di chuột",
+                "description": "Tùy chọn. Văn bản này sẽ hiển thị khi người dùng di chuột qua ảnh."
+              },
+              {
+                "label": "Tỉ lệ"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

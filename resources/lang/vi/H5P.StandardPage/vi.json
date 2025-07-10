@@ -1,0 +1,21 @@
+{
+  "semantics": [
+    {
+      "label": "Các thành phần",
+      "entity": "thành phần",
+      "field": {
+        "label": "Loại thành phần",
+        "description": "Thư viện cho trang này."
+      }
+    },
+    {
+      "label": "Nhãn cho văn bản trợ giúp",
+      "description": "Nhãn để hiển thị thông tin hữu ích bổ sung cho người dùng.",
+      "default": "Thêm thông tin"
+    },
+    {
+      "label": "Nhập thông tin hữu ích bổ sung",
+      "description": "Tại đây bạn có thể viết thông tin hữu ích bổ sung cho người dùng, thông tin này sẽ xuất hiện khi họ nhấn vào."
+    }
+  ]
+}

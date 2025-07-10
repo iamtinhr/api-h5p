@@ -1,0 +1,74 @@
+{
+  "semantics": [
+    {
+      "label": "Mô tả nhiệm vụ",
+      "description": "Đặt tiêu đề/hướng dẫn bạn muốn hiển thị phía trên hình ảnh trước/sau.",
+      "placeholder": "Bạn có thể thêm tiêu đề hoặc hướng dẫn tùy chọn tại đây."
+    },
+    {
+      "label": "Hình ảnh đầu tiên",
+      "fields": [
+        {
+          "label": "Hình ảnh đầu tiên",
+          "description": "Hình ảnh đầu tiên. Hãy đảm bảo nó có cùng kích thước với hình ảnh thứ hai."
+        },
+        {
+          "label": "Nhãn cho hình ảnh đầu tiên",
+          "description": "Nhãn hiển thị trên hình ảnh đầu tiên"
+        }
+      ]
+    },
+    {
+      "label": "Hình ảnh thứ hai",
+      "fields": [
+        {
+          "label": "Hình ảnh thứ hai",
+          "description": "Hình ảnh thứ hai. Hãy đảm bảo nó có cùng kích thước với hình ảnh đầu tiên."
+        },
+        {
+          "label": "Nhãn cho hình ảnh thứ hai",
+          "description": "Nhãn hiển thị trên hình ảnh thứ hai"
+        }
+      ]
+    },
+    {
+      "label": "Cài đặt hành vi",
+      "description": "Các tùy chọn này cho phép bạn cấu hình một số chi tiết",
+      "fields": [
+        {
+          "label": "Vị trí bắt đầu của thanh trượt (%)",
+          "description": "Đặt vị trí bắt đầu cho thanh trượt"
+        },
+        {
+          "label": "Hướng của thanh trượt",
+          "description": "Chọn Ngang để di chuyển trái/phải, Dọc để di chuyển lên/xuống.",
+          "options": [
+            {
+              "label": "Ngang"
+            },
+            {
+              "label": "Dọc"
+            }
+          ]
+        },
+        {
+          "label": "Màu của thanh trượt",
+          "default": "#f3f3f3"
+        }
+      ]
+    },
+    {
+      "label": "Văn bản hỗ trợ tiếp cận",
+      "fields": [
+        {
+          "label": "Thông báo phần trăm hình ảnh hiển thị",
+          "default": "@percentage % của hình ảnh đang được hiển thị",
+          "description": "@percentage là biến sẽ được thay thế bằng giá trị tương ứng."
+        },
+        {
+          "label": "Mẫu thử"
+        }
+      ]
+    }
+  ]
+}
