@@ -188,7 +188,13 @@ class H5PRepository implements H5PFrameworkInterface
         }
 //        $message = preg_replace('/(!|@|%)[a-z0-9]+/i', '%s', $message);
         $key = $this->normalizeLangKey($message);
-        return vsprintf(__("h5p::app.$key"), $replacements);
+        $translation = __("h5p::app.$key");
+
+        if ($translation === "h5p::app.$key") {
+            return $message;
+        }
+
+        return vsprintf($translation, $replacements);
     }
 
     public function normalizeLangKey(string $text): string

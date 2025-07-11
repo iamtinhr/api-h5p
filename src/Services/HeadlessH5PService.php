@@ -487,12 +487,15 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         $uberName = $library['name'] . ' ' . $library['majorVersion'] . '.' . $library['minorVersion'];
 
+        $contentUrl = Storage::disk('upload')->missing("h5p/content/$id") ? $config['url'] . '/editor' : null;
+
         $settings['contents']["cid-$id"] = [
             'library' => $uberName,
             'metadata' => [
                 'title' => $content['title'],
             ],
             'content' => $content,
+            'contentUrl' => $contentUrl,
             'jsonContent' => $safe_parameters,
             'fullScreen' => $content['library']['fullscreen'],
             // TODO check all of those endpointis are working fine
@@ -570,9 +573,12 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         $uberName = $library['name'] . ' ' . $library['majorVersion'] . '.' . $library['minorVersion'];
 
+        $contentUrl = Storage::disk('upload')->missing("h5p/content/$id") ? config('hh5p.url') . '/editor' : null;
+
         $settings = [
             'library' => $uberName,
             'content' => $content,
+            'contentUrl' => $contentUrl,
             'jsonContent' => json_encode([
                 'params' => json_decode($safe_parameters),
                 'metadata' => $content['metadata'],
