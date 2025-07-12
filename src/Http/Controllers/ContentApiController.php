@@ -117,9 +117,12 @@ class ContentApiController extends BaseController implements ContentApiSwagger
 
     public function download(AdminContentReadRequest $request, $id): StreamedResponse
     {
+        ob_end_clean();
+        ob_start();
+
         $filepath = $this->contentRepository->download($id);
 
-        return Storage::download($filepath);
+        return Storage::disk('upload')->download($filepath);
     }
 
     public function deleteUnused(): JsonResponse
