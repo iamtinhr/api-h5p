@@ -1,0 +1,8 @@
+{
+  "libraryStrings": {
+    "helpText": "Sử dụng một dòng trống để phân tách từng câu hỏi. Trong dạng trắc nghiệm, dòng đầu tiên là câu hỏi và các dòng tiếp theo là các lựa chọn trả lời. Những lựa chọn đúng được thêm dấu hoa thị (*) ở đầu, có thể thêm gợi ý và phản hồi: *phương án:gợi ý:phản hồi nếu chọn:phản hồi nếu không chọn. Ví dụ:",
+    "example": "Số PI là bao nhiêu?\n*3.14\n9.82\n\n4 * 0 bằng bao nhiêu?\n1\n4\n*0",
+    "warning": "Cảnh báo! Nếu bạn thay đổi nội dung trong trình chỉnh sửa văn bản, tất cả định dạng văn bản phong phú (bao gồm cả xuống dòng) sẽ bị xóa.",
+    "unknownQuestionType": "Câu hỏi không thể chỉnh sửa"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "libraryStrings": {
+    "browserCannotConvert": "Bạn đã cố tải lên một tệp glTF không có tài nguyên được nhúng. Trình duyệt này không hỗ trợ chuyển đổi trực tiếp sang tệp .glb. Vui lòng sử dụng một công cụ chuyển đổi khác.",
+    "conversionError": "Không thể chuyển đổi sang định dạng glb.",
+    "dropFolderHere": "Thả thư mục chứa tất cả tài nguyên glTF vào đây",
+    "fileDamaged": "Không thể kiểm tra tệp. Có thể tệp đã bị hỏng.",
+    "filetypeNotSupported": "Tệp này không phải là kiểu mô hình 3D được hỗ trợ.",
+    "noGLTFFound": "Không tìm thấy tệp glTF nào trong thư mục này",
+    "notAFolder": "Đây không phải là một thư mục.",
+    "onlyEmbeddedAssets": "Bạn đã cố tải lên một tệp glTF không có tài nguyên được nhúng. Nó nên nằm trong một thư mục cùng với các tệp khác. Hãy thả thư mục đó vào vùng tải lên để tạo một tệp duy nhất có thể sử dụng.",
+    "onlyVersionTwo": "Tệp glTF này là phiên bản 1.0. Vui lòng chuyển đổi sang phiên bản 2.0 để có thể sử dụng tại đây."
+  }
+}

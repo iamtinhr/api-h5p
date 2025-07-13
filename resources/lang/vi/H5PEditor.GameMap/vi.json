@@ -1,0 +1,19 @@
+{
+  "libraryStrings": {
+    "l10n.back": "Quay lại",
+    "l10n.toolbarButton-stage": "Thêm giai đoạn bài tập",
+    "l10n.toolbarButton-special-stage": "Thêm giai đoạn đặc biệt",
+    "l10n.done": "Hoàn tất",
+    "l10n.remove": "Xóa",
+    "l10n.selectAll": "Chọn tất cả",
+    "l10n.deselectAll": "Bỏ chọn tất cả",
+    "l10n.noNeighbors": "Chưa có kịch bản nào để kết nối.",
+    "l10n.contentRequired": "Bạn cần chọn loại nội dung cho kịch bản này.",
+    "l10n.unnamedStage": "Kịch bản chưa đặt tên",
+    "l10n.confirmationDialogRemoveHeader": "Xóa kịch bản",
+    "l10n.confirmationDialogRemoveDialog": "Bạn có chắc chắn muốn xóa kịch bản này không?",
+    "l10n.confirmationDialogRemoveCancel": "Không",
+    "l10n.confirmationDialogRemoveConfirm": "Có, hãy xóa!",
+    "a11y.pathFromTo": "Đường dẫn từ cảnh @from đến cảnh @to"
+  }
+}
