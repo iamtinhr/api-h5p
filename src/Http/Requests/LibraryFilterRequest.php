@@ -16,7 +16,7 @@ class LibraryFilterRequest extends FormRequest
     {
         $libraryParameters = json_decode($this->get('libraryParameters'));
         if (!$libraryParameters) {
-            abort(422, H5PException::NO_LIBRARY_PARAMETERS);
+            abort(422, __('h5p::h5p_exceptions.no_library_parameters'));
         }
 
         return $libraryParameters;

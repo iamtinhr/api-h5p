@@ -1035,7 +1035,7 @@ class H5PRepository implements H5PFrameworkInterface
         $content = H5PContent::with('library')->where(['id' => $id])->firstOrFail();
 
         if (is_null($content->library)) {
-            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+            throw H5PException::libraryNotFound();
         }
         $content = $content->toArray();
         $content['contentId'] = $content['id']; // : Identifier for the content

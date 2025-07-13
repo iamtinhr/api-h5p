@@ -114,7 +114,6 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         } catch (Exception $err) {
             var_dump($err);
         }
-
         return $isValid;
     }
 
@@ -608,12 +607,12 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     public function uploadFile($contentId, $field, $token, $nonce = null)
     {
 //        if (!$this->isValidEditorToken($token)) {
-//            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+//            throw H5PException::libraryNotFound();
 //        }
 
         $file = new H5peditorFile($this->getRepository());
         if (!$file->isLoaded()) {
-            throw new H5PException(H5PException::FILE_NOT_FOUND);
+            throw H5PException::fileNotFound();
         }
 
         // Make sure file is valid and mark it for cleanup at a later time
@@ -708,7 +707,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
         $path = $this->core->h5pF->getUploadedH5pPath();
         $response = $this->core->h5pF->fetchExternalData(H5PHubEndpoints::createURL($endpoint), NULL, TRUE, empty($path) ? TRUE : $path);
         if (!$response) {
-            throw new H5PException(H5PException::DOWNLOAD_FAILED . ' ' . $this->core->h5pF->getMessages('error'));
+            throw new H5PException(__('h5p::h5p_exceptions.download_failed') . ' ' . $this->core->h5pF->getMessages('error'));
         }
 
         return TRUE;
@@ -723,18 +722,18 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         // Determine which content type to install from post data
         if (!$machineName) {
-            throw new H5PException(H5PException::NO_CONTENT_TYPE);
+            throw H5PException::noContentType();
         }
 
         // Look up content type to ensure it's valid(and to check permissions)
         $contentType = $this->editor->ajaxInterface->getContentTypeCache($machineName);
         if (!$contentType) {
-            throw new H5PException(H5PException::INVALID_CONTENT_TYPE);
+            throw H5PException::invalidContentType();
         }
 
         // Check install permissions
         if (!$this->editor->canInstallContentType($contentType)) {
-            throw new H5PException(H5PException::INSTALL_DENIED);
+            throw H5PException::installDenied();
         } else {
             // Override core permission check
             $this->core->mayUpdateLibraries(TRUE);
@@ -769,12 +768,15 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
     {
         $this->validatePackage($file, false, false);
         $this->getStorage()->savePackage(NULL, NULL, TRUE);
-
         // Make content available to editor
-        $this->core->fs->moveContentDirectory($this->core->h5pF->getUploadedH5pFolderPath(), $contentId);
+        $getUploadedH5pFolderPath = $this->core->h5pF->getUploadedH5pFolderPath();
+        if (!is_dir($getUploadedH5pFolderPath)) {
+            throw H5PException::libraryNotFound();
+        }
+        $this->core->fs->moveContentDirectory($getUploadedH5pFolderPath, $contentId);
 
         // Clean up
-        $this->getEditorStorage()->removeTemporarilySavedFiles($this->core->h5pF->getUploadedH5pFolderPath());
+        $this->getEditorStorage()->removeTemporarilySavedFiles($getUploadedH5pFolderPath);
 
         return [
             'h5p' => $this->core->mainJsonData,
@@ -793,7 +795,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             !$this->callHubEndpoint(H5PHubEndpoints::CONTENT_TYPES . $machineName) ||
             !$this->core->librariesJsonData
         ) {
-            throw new H5PException(H5PException::INVALID_CONTENT_TYPE);
+            throw H5PException::invalidContentType();
         }
 
         foreach ($this->core->librariesJsonData as $libString => &$library) {

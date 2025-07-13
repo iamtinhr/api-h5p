@@ -50,13 +50,13 @@ class H5PContentRepository implements H5PContentRepositoryContract
         ])->latest()->first();
 
         if ($libDb === null) {
-            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+            throw  H5PException::libraryNotFound();
         }
 
         $json = json_decode($params);
 
         if ($json === null) {
-            throw new H5PException(H5PException::INVALID_PARAMETERS_JSON);
+            throw H5PException::invalidParametersJson();
         }
 
         $content = $this->hh5pService->getCore()->saveContent([
@@ -96,7 +96,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
         ])->latest()->first();
 
         if ($libDb === null) {
-            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+            throw H5PException::libraryNotFound();
         }
 
         // don't update library version if there is new
@@ -108,11 +108,11 @@ class H5PContentRepository implements H5PContentRepositoryContract
         $json = json_decode($params);
 
         if ($json === null) {
-            throw new H5PException(H5PException::INVALID_PARAMETERS_JSON);
+            throw H5PException::invalidParametersJson();
         }
 
         if ($content === null) {
-            throw new H5PException(H5PException::CONTENT_NOT_FOUND);
+            throw H5PException::contentNotFound();
         }
 
         $id = $this->hh5pService->getCore()->saveContent([
@@ -238,7 +238,7 @@ class H5PContentRepository implements H5PContentRepositoryContract
             return H5PContent::findOrFail($id);
         } else {
             @unlink($this->hh5pService->getRepository()->getUploadedH5pPath());
-            throw new H5PException(H5PException::LIBRARY_NOT_FOUND);
+            throw H5PException::libraryNotFound();
         }
 
         return false;

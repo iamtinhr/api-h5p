@@ -2,6 +2,7 @@
 
 namespace EscolaLms\HeadlessH5P\Http\Controllers;
 
+use EscolaLms\HeadlessH5P\Exceptions\H5PException;
 use EscolaLms\HeadlessH5P\Http\Requests\LibraryDeleteRequest;
 use EscolaLms\HeadlessH5P\Http\Requests\LibraryFilterRequest;
 use EscolaLms\HeadlessH5P\Http\Requests\LibraryInstallRequest;
@@ -94,9 +95,15 @@ class LibraryApiController extends BaseController implements LibraryApiSwagger
 
     public function libraryUpload(LibraryUploadRequest $request): JsonResponse
     {
-        $library = $this->hh5pService->uploadLibrary($request->getId(), $request->getH5PFile(), $request->getContentId());
+        try {
+            $library = $this->hh5pService->uploadLibrary($request->getId(), $request->getH5PFile(), $request->getContentId());
 
-        return response()->json(['success' => true, 'data' => $library]);
+            return response()->json(['success' => true, 'data' => $library]);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => $e->getMessage()], 422);
+        } catch (\Throwable $e) {
+            return response()->json(['success' => false, 'message' => __('h5p::h5p_exceptions.file_invalid')], 422);
+        }
     }
 
     public function filter(LibraryFilterRequest $request): JsonResponse

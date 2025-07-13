@@ -6,15 +6,58 @@ use Exception;
 
 class H5PException extends Exception
 {
-    const INVALID_PARAMETERS_JSON = 'Invalid Json Paramaters';
-    const LIBRARY_NOT_FOUND = 'Library not found';
-    const CONTENT_NOT_FOUND = 'Content not found';
-    const INVALID_FILE_TOKEN = 'Invalid file token';
-    const FILE_NOT_FOUND = 'File not found on the server';
-    const FILE_INVALID = 'Invalid h5p file';
-    const NO_CONTENT_TYPE = 'No content type was specified.';
-    const INVALID_CONTENT_TYPE = 'The chosen content type is invalid.';
-    const INSTALL_DENIED = 'You do not have permission to install content types. Contact the administrator of your site.';
-    const DOWNLOAD_FAILED = 'Failed to download the requested H5P.';
-    const NO_LIBRARY_PARAMETERS = 'Could not parse post data.';
+    public static function invalidParametersJson(): self
+    {
+        return new self(__('h5p::h5p_exceptions.invalid_parameters_json'));
+    }
+
+    public static function libraryNotFound(): self
+    {
+        return new self(__('h5p::h5p_exceptions.library_not_found'));
+    }
+
+    public static function contentNotFound(): self
+    {
+        return new self(__('h5p::h5p_exceptions.content_not_found'));
+    }
+
+    public static function invalidFileToken(): self
+    {
+        return new self(__('h5p::h5p_exceptions.invalid_file_token'));
+    }
+
+    public static function fileNotFound(): self
+    {
+        return new self(__('h5p::h5p_exceptions.file_not_found'));
+    }
+
+    public static function fileInvalid(): self
+    {
+        return new self(__('h5p::h5p_exceptions.file_invalid'));
+    }
+
+    public static function noContentType(): self
+    {
+        return new self(__('h5p::h5p_exceptions.no_content_type'));
+    }
+
+    public static function invalidContentType(): self
+    {
+        return new self(__('h5p::h5p_exceptions.invalid_content_type'));
+    }
+
+    public static function installDenied(): self
+    {
+        return new self(__('h5p::h5p_exceptions.install_denied'));
+    }
+
+    public static function downloadFailed(): self
+    {
+        return new self(__('h5p::h5p_exceptions.download_failed'));
+    }
+
+    public static function noLibraryParameters(): self
+    {
+        return new self(__('h5p::h5p_exceptions.no_library_parameters'));
+    }
 }
