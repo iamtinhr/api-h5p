@@ -26,7 +26,7 @@ class CreateHH5pContentsTable extends Migration
             $table->string('nonce', 8)->unique(); // used for assiging temporary editor files to content
 
             // TODO: do we need those ?
-            $table->text('filtered')->nullable();
+            $table->mediumText('filtered')->nullable();
             $table->string('slug', 127)->nullable();
             $table->string('embed_type', 127)->nullable();
             $table->bigInteger('disable')->unsigned()->default(0);
