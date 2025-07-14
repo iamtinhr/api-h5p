@@ -64,19 +64,19 @@ class ChangeHh5pContentsLibrariesStructureTable extends Migration
             $table->dropUnique('hh5p_libraries_dependencies_unique_key');
         });
         Schema::table('hh5p_contents_libraries', function (Blueprint $table) {
-            $table->primary(['content_id', 'library_id', 'dependency_type'], 'fk_primary');
+            $table->primary(['content_id', 'library_id', 'dependency_type'], 'contents_libraries_primary');
         });
         Schema::table('hh5p_libraries_languages', function (Blueprint $table) {
             $table->dropColumn('id');
         });
         Schema::table('hh5p_libraries_languages', function (Blueprint $table) {
-            $table->primary(['library_id', 'language_code'], 'fk_primary');
+            $table->primary(['library_id', 'language_code'], 'hh5p_libraries_languages_primary');
         });
         Schema::table('hh5p_libraries_dependencies', function (Blueprint $table) {
             $table->dropColumn('id');
         });
         Schema::table('hh5p_libraries_dependencies', function (Blueprint $table) {
-            $table->primary(['library_id', 'required_library_id'], 'fk_primary');
+            $table->primary(['library_id', 'required_library_id'], 'dependencies_primary');
         });
     }
 }

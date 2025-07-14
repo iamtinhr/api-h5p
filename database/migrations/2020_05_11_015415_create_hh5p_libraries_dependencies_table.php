@@ -17,7 +17,7 @@ class CreateHH5pLibrariesDependenciesTable extends Migration
             $table->bigInteger('library_id')->unsigned();
             $table->bigInteger('required_library_id')->unsigned();
             $table->string('dependency_type', 31);
-            $table->primary(['library_id', 'required_library_id'], 'fk_primary');
+            $table->primary(['library_id', 'required_library_id'], 'dependencies_primary');
 
             // TODO add foreign key
         });

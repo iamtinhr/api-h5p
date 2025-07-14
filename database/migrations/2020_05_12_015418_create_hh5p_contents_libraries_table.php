@@ -20,7 +20,7 @@ class CreateHH5pContentsLibrariesTable extends Migration
             $table->string('dependency_type', 31);
             $table->smallInteger('weight')->unsigned()->default(0);
             $table->boolean('drop_css');
-            $table->primary(['content_id', 'library_id', 'dependency_type'], 'fk_primary');
+            $table->primary(['content_id', 'library_id', 'dependency_type'], 'contents_libraries_primary');
         });
     }
 

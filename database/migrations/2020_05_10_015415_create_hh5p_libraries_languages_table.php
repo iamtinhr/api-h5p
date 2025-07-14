@@ -18,7 +18,7 @@ class CreateHH5pLibrariesLanguagesTable extends Migration
             $table->string('language_code', 31);
             // TODO: this should be json
             $table->text('translation', 65535);
-            $table->primary(['library_id', 'language_code'], 'fk_primary');
+            $table->primary(['library_id', 'language_code'], 'hh5p_libraries_languages_primary');
             // TODO: add foreign keys
         });
     }
