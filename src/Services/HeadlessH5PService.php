@@ -488,6 +488,12 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         $contentUrl = Storage::disk('upload')->missing("h5p/content/$id") ? $config['url'] . '/editor' : null;
 
+        $displayOptions = $this->getCore()->getDisplayOptionsForView(0, $content['id']);
+
+        if ($request->activityId !== '0') {
+            $displayOptions['export'] = false;
+        }
+
         $settings['contents']["cid-$id"] = [
             'library' => $uberName,
             'metadata' => [
@@ -503,7 +509,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
             //'resizeCode'      => '<script src="'.self::get_h5pcore_url('/js/h5p-resizer.js').'" charset="UTF-8"></script>',
             //'url'             => route('h5p.embed', ['id' => $content['id']]),
             'title' => $content['title'],
-            'displayOptions' => $this->getCore()->getDisplayOptionsForView(0, $content['id']),
+            'displayOptions' => $displayOptions,
             'contentUserData' => [
                 0 => [
                     'state' => '{}', // TODO this should be retrived
