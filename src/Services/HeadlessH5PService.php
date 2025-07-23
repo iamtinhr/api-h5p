@@ -490,7 +490,7 @@ class HeadlessH5PService implements HeadlessH5PServiceContract
 
         $displayOptions = $this->getCore()->getDisplayOptionsForView(0, $content['id']);
 
-        if ($request->activityId !== '0') {
+        if ($request->activityId) {
             $displayOptions['export'] = false;
         }
 
